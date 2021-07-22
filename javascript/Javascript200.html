@@ -230,6 +230,9 @@
         <li><a href="javascript200.html">조건문</a></li>
         <li><a href="javascript200.html">반복문</a></li>
     </ol>
+    <ol>
+        <li><a href="javascript400.html">알고리즘</a></li>
+    </ol>
 
     <h2 class="mt20">제어문</h2>
     <ul>
@@ -243,10 +246,11 @@
         <li><a href="#sample8">08. do while문</a></li>
         <li><a href="#sample9">09. for문</a></li>
         <li><a href="#">10. 중첩 for문</a></li>
-        <li><a href="#">11. for in문</a></li>
-        <li><a href="#">12. for of문</a></li>
-        <li><a href="#">13. break문</a></li>
-        <li><a href="#">14. continue문</a></li>
+        <li><a href="#">11. forEach문</a></li>
+        <li><a href="#">12. for in문</a></li>
+        <li><a href="#">13. for of문</a></li>
+        <li><a href="#">14. break문</a></li>
+        <li><a href="#">15. continue문</a></li>
     </ul>
 
     <hr>
@@ -786,7 +790,39 @@
 
             document.write("<br>");
         }
+        //for문을 이용해서 1~100까지 출력
+        document.write("*** for문을 이용해서 1~100까지 출력 ***<br>");
+        {
+            for( let i=1; i<=100; i++){
+                document.write(i + "<br>");
+            }
+            document.write("<br>");
+        }
 
+        //for문을 이용해서 화면에 1부터 100까지 출력 (짝수만 출력)
+        document.write("*** for문을 이용해서 1~100까지 출력 ***<br>");
+        {
+            for( let i=1; i<=100; i++){
+                if( i % 2 == 0) {
+                    document.write(i);
+                }
+            }
+        }
+        //for문을 이용해서 화면에 1부터 100까지 출력 (5의 배수만 출력)
+        document.write("*** 5의 배수만 출력 ***<br>");
+        {
+            for( let i=1; i<=100; i++){
+                if( i % 5 ==0) {
+                    document.write(i);
+                }
+            }
+        }
+        //for문을 이용해서 화면에 1부터 100까지 출력 (짝수는 빨간색, 홀수는 파란색 출력)
+        {
+            for( let i=1; i<=100; i++){
+                document.write(i+ "<br>")
+            }
+        }
         //sample10
         //중첩 for문
         {
@@ -830,6 +866,7 @@
 
         //sample200 : 테이블 만들기
         {
+            document.write("*** 테이블 만들기1 ***<br>");
             let num = 1;
             let table = "<table>";
 
@@ -846,25 +883,29 @@
 
             document.write(table);
         }
-        // //sample200 : 테이블 만들기2
-        // {
-        //     let num = 1;
-        //     let table = "<table>";
-
-        //     for( let i=1; i<=10; i++ ){
-        //         table += "<tr>";
-        //         for( let j=1; j<=10; j++ ){
-        //             table += "<td>" + num + "</td>";
-        //             num++;
-        //         }
-        //         table += "</tr>";
-        //     }
-
-        //     table += "</table>";
-
-        //     document.write(table);
-        // }
         {
+            document.write("*** 200. 테이블 만들기2 ***<br>");
+
+            let num = 100;
+            let table = "<table>";
+
+            for( let i=1; i<=10; i++){
+                table += "<tr>";
+                for( let j=1; j<=10; j++ ){
+                    table += "<td>" + num + "</td>";
+                    num--;
+                }
+                table += "</tr>";
+            }
+            
+            table += "</table>";
+
+            document.write("<br>")
+            document.write(table);
+        }
+        {
+            document.write("*** 200. 테이블 만들기3 ***<br>");
+
             let num = 100;
             let table = "<table>";
 
