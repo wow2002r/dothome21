@@ -1,129 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃 연습6</title>
     <style>
-        @font-face {
-            font-family: 'ImcreSoojin';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        *{
+        * {
             margin: 0;
             padding: 0;
-        }
-        #wrap {
-            width: 100%;
-            background-color: #fff;
-            font-family: 'ImcreSoojin';
-            background-color: #fff;
-            color: #fff;
-            font-size: 60px;
-            text-transform: uppercase;
-            text-align: center;
-            height: 4969px;
         }
         #header {
             width: 100%;
             height: 110px;
-            line-height: 110px;
-            background-color: #e3f2fd;
-
+            background-color: #e0f2f1 ; 
         }
         #banner {
             width: 100%;
-            height: 770px;
-            line-height: 770px;
-            background-color: #bbdefb;
+            height: 750px;
+            background-color: #b2dfdb ; 
         }
-        #content1 {
+        #contents1 {
             width: 100%;
-            height: 2368px;
-            line-height: 2368px;
-            background-color: #90caf9;
+            height: 1570px;
+            background-color: #80cbc4 ;
         }
-        #content2 {
+        #contents2 {
             width: 100%;
-            height: 1060px;
-            line-height: 1060px;
-            background-color: #64b5f6;
+            height: 530px;
+            background-color: #4db6ac ;
         }
-        #content3 {
+        #contents3 {
             width: 100%;
-            height: 447px;
-            line-height: 447px;
-            background-color: #42a5f5;
+            height: 2280px;
+            background-color: #26a69a ;
         }
         #footer {
             width: 100%;
-            height: 214px;
-            line-height: 214px;
-            background-color: #2196f3;
+            height: 270px;
+            background-color: #009688 ; 
         }
-        .header-inner {
-            width: 1118px;
-            height: 110px;
-            background-color: #f3e5f5;
-            margin: auto 0;
-        }
-        .banner-inner {
-            width: 1118px;
-            height: 770px;
-            background-color: #e1bee7;
-            margin: auto 0;
-        }
-        .content1-inner {
-            width: 1118px;
-            height: 2368px;
-            line-height: 2368px;
-            background-color: #ce93d8;
-            margin: auto 0;
-        }
-        .content2-inner {
-            width: 1118px;
-            height: 1060px;
-            background-color: #ba68c8;
-            margin: auto 0;
-        }
-        .content3-inner {
-            width: 1118px;
-            height: 447px;
-            background-color: #ab47bc;
-            margin: auto 0;
-        }
-        .footer-inner {
-            width: 1118px;
-            height: 213px;
-            background-color: #9c27b0;
-            margin: auto 0;
+        .container {
+            width: 1200px;
+            height: inherit;
+            background-color:rgb(0,0,0,0.3);
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <div id="wrap">
         <div id="header">
-            <div class="header-inner">header</div>
+            <div class="container"></div>
         </div>
+        <!-- //header -->
+        
         <div id="banner">
-            <div class="banner-inner">banner</div>
+            <div class="container"></div>
         </div>
-        <div id="content1">
-            <div class="content1-inner">content1</div>
+        <!-- //banner -->
+
+        <div id="contents">
+            <div id="contents1">
+                <div class="container"></div>
+            </div>
+            <div id="contents2">
+                <div class="container"></div>
+            </div>
+            <div id="contents3">
+                <div class="container"></div>
+            </div>
         </div>
-        <div id="content2">
-            <div class="content2-inner">content2</div>
-        </div>
-        <div id="content3">
-            <div class="content3-inner">content3</div>
-        </div>
+        <!-- //contents -->
+
         <div id="footer">
-            <div class="footer-inner">footer</div>
+            <div class="container"></div>
         </div>
+        <!-- //footer -->
+        
     </div>
+    <!-- //wrap -->
 </body>
 </html>
