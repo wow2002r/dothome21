@@ -846,7 +846,7 @@
 
             document.write(table);
         }
-        // //sample200 : 테이블 거꾸로 만들기
+        // //sample200 : 테이블 만들기2
         // {
         //     let num = 1;
         //     let table = "<table>";
@@ -864,6 +864,24 @@
 
         //     document.write(table);
         // }
+        {
+            let num = 100;
+            let table = "<table>";
+
+            for( let i=1; i<=10; i++){
+                table += "<tr>";
+                for( let j=1; j<=10; j++ ){
+                    table += "<td>" + num + "</td>";
+                    num--;
+                }
+                table += "</tr>";
+            }
+            
+            table += "</table>";
+
+            document.write("<br>")
+            document.write(table);
+        }
 
     </script>
 </body>
