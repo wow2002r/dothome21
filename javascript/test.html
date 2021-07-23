@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //변수 : 데이터 저장소
+        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
+        document.write("*** 100, 200, 300, 변수에 저장을해서 출력을 해보세요!!! ***<br>")
+        {
+        var x = 100;
+        var y = 200;
+        var z = 300;
+
+        document.write(x, "<br>");
+        document.write(y, "<br>");
+        document.write(z, "<br>");
+        }
+        //배열
+        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
+        document.write("*** 100, 200, 300, 변수에 저장을해서 출력을 해보세요!!! ***<br>")
+        {
+        const arr = new Array();
+        arr[1] = 100;
+        arr[2] = 200;
+        arr[3] = 300;
+
+        document.write(arr[1], "<br>");
+        document.write(arr[2], "<br>");
+        document.write(arr[3], "<br><br>");
+        }
+
+        //객체
+        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
+
+        //반복문
+        //for문을 이용해서 1~50까지 출력을 해보세요!!!
+        document.write("*** for문을 이용해서 1~50까지 출력을 해보세요!!! ***<br>")
+        {
+            for( let i=1; i<=50; i++) {
+                document.write(i+ "<br><br>");
+            }
+        }
+
+        //반복문
+        //for문을 이용해서 50~1까지 출력을 해보세요!!!
+        document.write("*** for문을 이용해서 50~1까지 출력을 해보세요!!! ***<br>")
+        {
+            for( let i=1; i<=50; i++) {
+                document.write(i, "<br><br>");
+
+            }
+        }
+
+        //반복문
+        //for문을 이용해서 1~50까지 짝수 출력을 해보세요!!!
+        document.write("*** for문을 이용해서 1~50까지 짝수 출력을 해보세요!!! ***<br>")
+        {
+            for( let i=1; i<=50; i++) {
+                if( 1 % 2 == 0) {
+                    document.write(i, "<br>br>");
+                }
+            }
+        }
+        //반복문
+        //for문을 이용해서 1~50까지 홀수 출력을 해보세요!!!
+        document.write("*** for문을 이용해서 1~50까지 홀수 출력을 해보세요!!! ***<br>")
+        {
+            const arr = [1]
+
+            const reverse = [];
+            for(let i=arr.length-1; i >= 0; i--) {
+                reverse.push(arr[i]);
+            }
+            document.write('arr : ' +arr)
+            document.write('<br>');
+            
+        }
+        //구구단 8단 출력
+
+        //구구단 5단부터 8단 출력
+    </script>
+</body>
+</html>
