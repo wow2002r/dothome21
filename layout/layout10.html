@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f9fbe7 ;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #f0f4c3 ;
+        }
+        main {
+            width: 100%;
+            overflow: hidden;
+        }
+        .aside {
+            width: 30%;
+            height: 900px;
+            float: left;
+            background-color: #dce775  ;
+        }
+        .atricle1 {
+            width: 70%;
+            height: 300px;
+            float: left;
+            background-color: #d4e157 ;
+        }
+        .atricle2 {
+            width: 70%;
+            height: 300px;
+            float: left;
+            background-color: #cddc39 ;
+        }
+        .atricle3 {
+            width: 70%;
+            height: 300px;
+            float: left;
+            background-color: #c0ca33 ;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #afb42b ;
+        }
+        @media (max-width: 1220px){
+            #wrap {
+                width: 100%;
+            }
+            .atricle1 {
+                height: 450px;
+            }
+            .atricle2 {
+                height: 450px;
+            }
+            .atricle3 {
+                width: 100%;
+                height: 300px;
+            }
+        }
+        @media (max-width: 800px){
+            .aside {
+                width: 100%;
+                height: 200px;
+            }
+            .atricle1 {
+                width: 50%;
+                height: 450px;
+            }
+            .atricle2 {
+                width: 50%;
+                height: 450px;
+            }
+        }
+        @media (max-width: 600px){
+            .atricle1 {
+                width: 100%;
+                height: 300px;
+            }
+            .atricle2 {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <aside class="aside"></aside>
+            <article class="atricle1"></article>
+            <article class="atricle2"></article>
+            <article class="atricle3"></article>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

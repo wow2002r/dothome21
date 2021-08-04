@@ -7,7 +7,8 @@
     <title>레이아웃 연습8 : float을 이용한 반응형</title>
     <style>
         * {
-            margin: 0; padding: 0;
+            margin: 0;
+            padding: 0;
         }
         body {
             background-color: #f3e5f5;
@@ -18,10 +19,11 @@
         }
         header {
             width: 100%;
-            height: 150px;
+            height: 113px;
             background-color: #e1bee7;
         }
         main {
+            width: 100%;
             overflow: hidden;
         }
         aside {
@@ -38,26 +40,38 @@
         }
         footer {
             width: 100%;
-            height: 150px;
+            height: 113px;
             background-color: #ab47bc;
             clear: both;
         }
-        @media (max-width: 1210px){
+        @media (max-width: 1220px){
+            #wrap {
+                width: 96%;
+            }
+        }
+        @media (max-width: 800px){
             #wrap {
                 width: 100%;
-                height: 300px;
             }
         }
         @media (max-width: 600px){
-            #aside {
+            header {
                 width: 100%;
                 height: 300px;
             }
-        }
-        @media (max-width: 600px){
-            #section {
+            aside {
                 width: 100%;
-                height: 300px;
+                height: 500px;
+                float: none;
+            }
+            section {
+                width: 100%;
+                height: 550px;
+                float: none;
+            }
+            footer {
+                width: 100%;
+                height: 150px;
             }
         }
     </style>

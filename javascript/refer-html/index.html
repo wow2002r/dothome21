@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Reference</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansLight';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: 'GmarketSansLight';
+        }
+
+        #header {
+            padding: 3% 2% 0% 2%;
+            border-bottom: 1px solid #000;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 96%;
+            background-color: #f5f5f5;
+        }
+
+        #header h1 {
+            font-family: 'GmarketSansBold';
+        }
+
+        #header strong {
+            position: absolute;
+            right: 2%;
+            bottom: 2%;
+        }
+
+        main h2 {
+            font-family: 'GmarketSansBold';
+            font-size: 80px;
+            text-align: center;
+            padding: 5%;
+            padding: 15% 5% 5%;
+        }
+
+        main h2 em {
+            color: #64b5f6;
+            font-style: normal;
+        }
+
+        #contents {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .refer {
+            background-color: #fff;
+            padding: 60px;
+            border: 1px solid #000;
+            margin-bottom: 300px;
+        }
+
+        .refer h3 {
+            display: inline-block;
+            padding: 6px 30px;
+            background: #fff;
+            margin-bottom: 40px;
+            background-color: #64b5f6;
+            color: #fff;
+        }
+
+        .refer table {
+            width: 100%;
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+        }
+
+        .refer table th {
+            border: 1px solid #aaa;
+            padding: 15px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+
+        .refer table td {
+            border: 1px solid #aaa;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .refer table tr {
+            transition: all 0.3s;
+        }
+
+        .refer table tr:hover {
+            background-color: #64b5f6;
+            color: #fff;
+            cursor: crosshair;
+        }
+
+        .link li {
+            list-style: none;
+        }
+
+        .link li a {
+            background: #000;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        a:hover,
+        a:focus {
+            animation-duration: 3s;
+            animation-name: rainbowLink;
+            animation-iteration-count: infinite;
+        }
+
+        .link li a:hover {
+            background: #64b5f6;
+        }
+
+        @keyframes rainbowLink {
+            0% { color: #ffffff ;}
+            15% { color: #1e88e5 ;}
+            30% { color: #2196f3 ;}
+            45% { color: #64b5f6 ;}
+            60% { color: #42a5f5 ;}
+            75% { color: #2196f3 ;}
+            90% { color: #1e88e5 ;}
+            100% { color: #ffffff ;}
+        }
+
+        @media (max-width: 1220px){
+            #contents {
+                width: 96%;
+            }
+        }
+
+        @media (max-width: 800px){
+            #header {
+                padding: 6% 2% 2% 2%;
+            }
+            #header h1 {
+                font-size: 20px;
+            }
+            #header strong {
+                font-size: 14px;
+                bottom: 10%;
+            }
+            main h2 {
+                font-size: 30px;
+                padding: 22% 5% 5%;
+            }
+            .refer {
+                padding: 10px;
+                margin-bottom: 100px;
+            }
+            .refer h3 {
+                margin-bottom: 10px;
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+            .refer table th {
+                padding: 8px;
+            }
+            .refer table td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>라인 중학교 1학년 코딩반</h1>
+        <strong>최재광</strong>
+    </header>
+    <!-- //header -->
+    <main id="contents">
+        <h2>HTML <em>레퍼런스 북</em></h2>
+        <ul class="link">
+            <li><a href="../javascript602-sample02.html"><b>HTML속성 첫 글자 검색하기</b></a></li>
+        </ul>
+        <section class="refer">
+            <h3>Alphabet</h3>
+            <table>
+                <colgroup>
+                    <col style="width: 30%">
+                    <col style="width: 70%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>속성</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>하이퍼링크를 걸어주는 태그입니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;abbr&gt;</td>
+                        <td>abbreviation(약자, 약어)의 약자로 마우스 오버 액션에 반응하여 해당 태그 부분에 마우스 커서가 이동하면 윈도우즈 도움말 형식처럼 입력해둔 문장이 나타나게 됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>글자를 굵게 표시하는 태그로, bold의 약자입니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;bdi&gt;</td>
+                        <td>Bi-Directional Isolation을 의미하며, 주위의 텍스트들과는 다른 방향으로 써지는 텍스트 영역을 정의할 때 사용합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;bdo&gt;</td>
+                        <td>Bi-Directional Override를 의미하며, 자식 요소의 텍스트 방향성(text directionality)을 정의할 때 사용합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>줄을 바꿔줍니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;cite&gt;</td>
+                        <td>책,영화그림 같은 작품의 제목을 지정할 때 사용합니다. (이탤릭체로 표시함)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;code&gt;</td>
+                        <td>컴퓨터의 코드를 보이게 해줍니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;data&gt;</td>
+                        <td>주어진 요소의 데이터 값을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dfn&gt;</td>
+                        <td>웹페이지 내의 용어,단어등을 정의할 때 사용됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;kbd&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;mark&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;noscript&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;object&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;optgroup&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;output&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;param&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;picture&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;portal&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;pre&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;progress&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;q&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;rp&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;rt&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ruby&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;s&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;samp&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;slot&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;small&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;source&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;sub&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;summary&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;sup&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;template&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;time&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;track&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;u&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;var&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;wbr&gt;</td>
+                        <td></td>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+    <!-- //contents -->
+</body>
+
+</html>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="https://tistory4.daumcdn.net/tistory/2933724/skin/images/font.css">
+    <link rel="stylesheet" href="https://tistory4.daumcdn.net/tistory/2933724/skin/images/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css"
+        integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'NEXON Lv1 Gothic OTF';
+            line-height: 1.6;
+        }
+
+        body {
+            padding: 5%;
+            margin-bottom: 400px;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+        }
+
+        hr {
+            margin: 5% 0;
+            border-style: dashed;
+            border-color: #E6E6E6;
+            border-width: 1px;
+        }
+
+        img {
+            vertical-align: top;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sample {
+            border: 1px solid #E6E6E6;
+            border-radius: 5px;
+        }
+
+        .sample h2 {
+            position: relative;
+            font-size: 16px;
+            background-color: #F2F2F2;
+            padding: 15px;
+            border-bottom: 1px solid #E6E6E6;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .sample h2 .dot {
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .sample h2 .dot::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            border-radius: 50%;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+
+        .sample h2 .dot::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px;
+            top: 0;
+        }
+
+        .sample .ex {
+            padding: 20px;
+        }
+
+        .sample .ex .text {
+            margin: 10px 0;
+        }
+
+        .sample .re {
+            padding: 20px;
+            border-top: 1px solid #E6E6E6;
+        }
+
+        .sample .re a {
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .sample .re a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .sample .problem {
+            padding: 25px;
+            border-bottom: 1px solid #E6E6E6;
+            line-height: 1.6;
+        }
+
+        .sample pre {
+            margin: 0 !important;
+            border-radius: 0;
+            ;
+        }
+
+        .sample .desc {
+            padding: 25px;
+            border-bottom: 1px solid #E6E6E6;
+        }
+
+        .sample .desc dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+        }
+
+        .sample .desc dd {
+            padding: 3px 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .sample .sam {
+            padding: 25px;
+            border-bottom: 1px solid #E6E6E6;
+        }
+
+        .sample .sam dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+        }
+
+        .sample .sam dd {
+            padding: 3px 0 16px 0;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        ol li {
+            display: inline;
+            text-align: center;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+
+        ol li a {
+            display: inline-block;
+            border-radius: 30px;
+            padding: 2px 20px 0px 20px;
+            border: 1px solid #000;
+        }
+
+        ol li a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        ol li.active {
+            background: #000;
+        }
+
+        ol li.active a {
+            color: #fff;
+        }
+        .mt20 {
+            margin-top: 20px;
+        }
+        .ol1::before {
+            content: "데이터 저장하기 : ";
+        }
+        .ol2::before {
+            content: "데이터 불러오기 : ";
+        }
+        .ol3::before {
+            content: "데이터 실행하기 : ";
+        }
+        .ol4::before {
+            content: "데이터 제어하기 : ";
+        }
+        .ol5::before {
+            content: "데이터 연습하기 : ";
+        }
+        .ol6::before {
+            content: "데이터 메서드 : ";
+        }
+
+        .view {
+            padding: 20px;
+        }
+        
+        .view table {
+            width: 100%;
+            border: 1px solid #e6e6e6; /*속기형 작성법*/
+            text-align: center;
+            /* border-width: 1px;
+            border-style: 1px;
+            border-width: 1px; */            
+        }
+        .view table th {
+            padding: 13px 5px 11px 5px;
+        }
+        .view table td {
+            /*padding-top: 13px;
+            padding-right: 5px;
+            padding-bottom: 11px;
+            padding-left: 5px; 
+            padding: 13px 5px 11px 5px;  위/오른쪽/아래/왼쪽 
+            padding: 13px 5px 11px;  위:13px/왼쪽,오른쪽5px/아래:15px 
+            padding: 13px 5px;  
+            padding: 13px;   
+            */
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td {
+            border: 1px solid #e6e6e6;
+        
+        }
+
+        .view table td.result {
+            color: #fff;
+            transition: all 0.3s;
+            cursor: zoom-in;
+        }
+        .view table td.result:hover {
+            color: #000;
+        }
+     </style>
+</head>
+
+<body>
+    <h1>Javascript 문법 정리</h1>
+    <ol class="ol1">
+        <li><a href="Javascript100.html">변수</a></li>
+        <li><a href="Javascript100.html">상수</a></li>
+        <li><a href="Javascript100.html">배열(Array)</a></li>
+        <li><a href="Javascript100.html">객체(Object)</a></li>
+    </ol>
+    <ol class="ol2">
+        <li><a href="Javascript500.html">변수</a></li>
+        <li><a href="Javascript500.html">상수</a></li>
+        <li><a href="Javascript500.html">배열</a></li>
+        <li><a href="Javascript500.html">객체</a></li>
+    </ol>
+    <ol class="ol3">
+        <li><a href="Javascript300.html">함수(function)</a></li>
+    </ol>
+    <ol class="ol4">
+        <li><a href="Javascript200.html">조건문</a></li>
+        <li><a href="Javascript200.html">반복문</a></li>
+    </ol>
+    <ol class="ol5">
+        <li><a href="Javascript400.html">알고리즘</a></li>
+    </ol>
+    <ol class="ol6">
+        <li><a href="Javascript601.html">배열 메서드</a></li>
+        <li><a href="Javascript602.html">문자열 메서드</a></li>
+        <li><a href="Javascript603.html">브라우저 메서드</a></li>
+        <li><a href="Javascript604.html">날짜 메서드</a></li>
+        <li><a href="Javascript605.html">이벤트 메서드</a></li>
+    </ol>
+
+    <h2 class="mt20">문자열 메서드</h2>
+    <ul>
+        <li><a href="#sample01">01. 변수 : 데이터 불러오기 : 기본</a></li>
+        <li><a href="#sample02">02. 문자열 메서드 : length : 문자열 길이 구하기</a></li>
+        <li><a href="#sample03">03. 문자열 메서드 : toUpperCase() : 문자열 대문자 변경하기 : 반환(문자열)</a></li>
+        <li><a href="#sample04">03. 문자열 메서드 : toUpperCase() : 문자열 소문자 변경하기 : 반환(문자열)</a></li>
+        <li><a href="#sample05">04. 문자열 메서드 : trim() : 문자열 공백 제거하기 : 반환(문자열)</a></li>
+        <li><a href="#sample06">05. 문자열 메서드 : indexOf : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample07">05. 문자열 메서드 : lastIndexOf : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample08">05. 문자열 메서드 : search() : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample09">09. 문자열 메서드 : includes() : 문자열 포함여부 : 반환(숫자)</a></li>
+        <li><a href="#sample10">10. 문자열 메서드 : search() : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample11">11. 문자열 메서드 : search() : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample12">12. 문자열 메서드 : search() : 문자열 검색하기 : 반환(숫자)</a></li>
+        <li><a href="#sample13">13. 문자열 메서드 : search() : 문자열 검색하기 : 반환(숫자)</a></li>
+
+    </ul>
+
+    <hr>
+    <!-- sample01 -->
+    <div id="sample01" class="sample">
+        <h2>01. 문자열 메서드 : 문자열 결합 / 템플릿 문자열 <span class="dot"></span></h2>
+        <div class="view">
+            <table>
+                <colgroup>
+                    <col style="width: 4%">
+                    <col style="width: 22%">
+                    <col style="width: 22%">
+                    <col style="width: 32%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>기본값</th>
+                        <th>메서드</th>
+                        <th>결과값</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="smaple01_N1"></td>
+                        <td class="smaple01_Q1"></td>
+                        <td class="smaple01_M1"></td>
+                        <td class="smaple01_R1 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple01_N2"></td>
+                        <td class="smaple01_Q2"></td>
+                        <td class="smaple01_M2"></td>
+                        <td class="smaple01_R2 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple01_N3"></td>
+                        <td class="smaple01_Q3"></td>
+                        <td class="smaple01_M3"></td>
+                        <td class="smaple01_R3 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple01_N4"></td>
+                        <td class="smaple01_Q4"></td>
+                        <td class="smaple01_M4"></td>
+                        <td class="smaple01_R4 result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const str1 = "자바스크립트";
+    const str2 = "제이쿼리";
+
+
+    document.querySelector(".smaple01_M1").innerHTML = str1 + str2;
+
+    const num1 = 100;
+    const num2 = 200;
+
+
+    document.querySelector(".smaple01_M2").innerHTML = num1 + num2;
+
+    const txt1 = " 모던 ";
+    const txt2 = " 자바스크립트 ";
+    const txt3 = " 핵심 가이드 ";
+
+
+    document.querySelector(".smaple01_M3").innerHTML = "나는 ${txt1} 모던(modern) 자바스크립트$(javascript) 핵심 가이드를 사고 싶다";
+
+    const txm1 = "모던";
+    const txm2 = "자바스크립트";
+    const txm3 = "핵심";
+
+
+    document.querySelector(".smaple01_M2").innerHTML = num1 + num2;
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <hr>
+    <!-- sample02 -->
+    <div id="sample02" class="sample">
+        <h2>02. 문자열 메서드 : length : 문자열 길이 구하기 : 반환(숫자) <span class="dot"></span></h2>
+        <div class="view">
+            <table>
+                <colgroup>
+                    <col style="width: 4%">
+                    <col style="width: 22%">
+                    <col style="width: 22%">
+                    <col style="width: 32%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>기본값</th>
+                        <th>메서드</th>
+                        <th>결과값</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="smaple02_N1"></td>
+                        <td class="smaple02_Q1"></td>
+                        <td class="smaple02_M1"></td>
+                        <td class="smaple02_R1 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple02_N2"></td>
+                        <td class="smaple02_Q2"></td>
+                        <td class="smaple02_M2"></td>
+                        <td class="smaple02_R2 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple02_N3"></td>
+                        <td class="smaple02_Q3"></td>
+                        <td class="smaple02_M3"></td>
+                        <td class="smaple02_R3 result"></td>
+                    </tr>
+                    <tr>
+                        <td class="smaple02_N4"></td>
+                        <td class="smaple02_Q4"></td>
+                        <td class="smaple02_M4"></td>
+                        <td class="smaple02_R4 result"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const str1 = "자바스크립트";
+    const currentStr1 = str1.length;
+
+    document.querySelector(".smaple02_N1").innerHTML = "1";
+    document.querySelector(".smaple02_Q1").innerHTML = str1;
+    document.querySelector(".smaple02_M1").innerHTML = "length";
+    document.querySelector(".smaple02_R1").innerHTML = currentStr1;
+
+    const str2 = "javascript";
+    const currentStr2 = str2.length;
+
+    document.querySelector(".smaple02_N2").innerHTML = "2";
+    document.querySelector(".smaple02_Q2").innerHTML = str2;
+    document.querySelector(".smaple02_M2").innerHTML = "length";
+    document.querySelector(".smaple02_R2").innerHTML = currentStr2;
+
+    const str3 = "javascript";
+    const currentStr3 = str3.length;
+
+    document.querySelector(".smaple02_N3").innerHTML = "3";
+    document.querySelector(".smaple02_Q3").innerHTML = str3;
+    document.querySelector(".smaple02_M3").innerHTML = "length";
+    document.querySelector(".smaple02_R3").innerHTML = currentStr3;
+
+    const str4 = "javascript";
+    const currentStr4 = str4.length;
+
+    document.querySelector(".smaple02_N4").innerHTML = "4";
+    document.querySelector(".smaple02_Q4").innerHTML = str4;
+    document.querySelector(".smaple02_M4").innerHTML = "length";
+    document.querySelector(".smaple02_R4").innerHTML = currentStr4;
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <hr>
+<!-- sample03 -->
+<div id="sample03" class="sample">
+    <h2>03. 문자열 메서드 : toUpperCase() : 문자열 대문자 변경하기 : 반환(문자열) <span class="dot"></span></h2>
+    <div class="view">
+        <table>
+            <colgroup>
+                <col style="width: 4%">
+                <col style="width: 22%">
+                <col style="width: 22%">
+                <col style="width: 32%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>기본값</th>
+                    <th>메서드</th>
+                    <th>결과값</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="smaple03_N1"></td>
+                    <td class="smaple03_Q1"></td>
+                    <td class="smaple03_M1"></td>
+                    <td class="smaple03_R1 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple03_N2"></td>
+                    <td class="smaple03_Q2"></td>
+                    <td class="smaple03_M2"></td>
+                    <td class="smaple03_R2 result"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const str1 = "javascript";
+    const currentStr1 = str1.toUpperCase();
+
+    document.querySelector(".smaple03_N1").innerHTML = "1";
+    document.querySelector(".smaple03_Q1").innerHTML = str1;
+    document.querySelector(".smaple03_M1").innerHTML = "toUpperCase";
+    document.querySelector(".smaple03_R1").innerHTML = currentStr1;
+
+
+    const str2 = "Javascript";
+    const currentStr2 = str2.toUpperCase();
+
+    document.querySelector(".smaple03_N2").innerHTML = "2";
+    document.querySelector(".smaple03_Q2").innerHTML = str2;
+    document.querySelector(".smaple03_M2").innerHTML = "toUpperCase";
+    document.querySelector(".smaple03_R2").innerHTML = currentStr2;
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <hr>
+<!-- sample04 -->
+<div id="sample04" class="sample">
+    <h2>04. 문자열 메서드 : trim() : 문자열 공백 제거하기 : 반환(문자열) <span class="dot"></span></h2>
+    <div class="view">
+        <table>
+            <colgroup>
+                <col style="width: 4%">
+                <col style="width: 22%">
+                <col style="width: 22%">
+                <col style="width: 32%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>기본값</th>
+                    <th>메서드</th>
+                    <th>결과값</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="smaple04_N1"></td>
+                    <td class="smaple04_Q1"></td>
+                    <td class="smaple04_M1"></td>
+                    <td class="smaple04_R1 result"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const str1 = "javascript";
+    const currentStr1 = str1.toUpperCase();
+
+    document.querySelector(".smaple03_N1").innerHTML = "1";
+    document.querySelector(".smaple03_Q1").innerHTML = str1;
+    document.querySelector(".smaple03_M1").innerHTML = "toUpperCase";
+    document.querySelector(".smaple03_R1").innerHTML = currentStr1;
+
+
+    const str2 = "Javascript";
+    const currentStr2 = str2.toUpperCase();
+
+    document.querySelector(".smaple03_N2").innerHTML = "2";
+    document.querySelector(".smaple03_Q2").innerHTML = str2;
+    document.querySelector(".smaple03_M2").innerHTML = "toUpperCase";
+    document.querySelector(".smaple03_R2").innerHTML = currentStr2;
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+    
+    <hr>
+<!-- sample05 -->
+<div id="sample05" class="sample">
+    <h2>05. 문자열 메서드 : indexOf()/ : lastIndexOf() : search() : indexOf : 문자열 검색하기 : 반환(숫자) <span class="dot"></span></h2>
+    <div class="view">
+        <table>
+            <colgroup>
+                <col style="width: 4%">
+                <col style="width: 32%">
+                <col style="width: 32%">
+                <col style="width: 32%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>기본값</th>
+                    <th>메서드</th>
+                    <th>결과값</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="smaple05_N1"></td>
+                    <td class="smaple05_Q1"></td>
+                    <td class="smaple05_M1"></td>
+                    <td class="smaple05_R1 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N2"></td>
+                    <td class="smaple05_Q2"></td>
+                    <td class="smaple05_M2"></td>
+                    <td class="smaple05_R2 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N3"></td>
+                    <td class="smaple05_Q3"></td>
+                    <td class="smaple05_M3"></td>
+                    <td class="smaple05_R3 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N4"></td>
+                    <td class="smaple05_Q4"></td>
+                    <td class="smaple05_M4"></td>
+                    <td class="smaple05_R4 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N5"></td>
+                    <td class="smaple05_Q5"></td>
+                    <td class="smaple05_M5"></td>
+                    <td class="smaple05_R5 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N6"></td>
+                    <td class="smaple05_Q6"></td>
+                    <td class="smaple05_M6"></td>
+                    <td class="smaple05_R6 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N7"></td>
+                    <td class="smaple05_Q7"></td>
+                    <td class="smaple05_M7"></td>
+                    <td class="smaple05_R7 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N8"></td>
+                    <td class="smaple05_Q8"></td>
+                    <td class="smaple05_M8"></td>
+                    <td class="smaple05_R8 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N9"></td>
+                    <td class="smaple05_Q9"></td>
+                    <td class="smaple05_M9"></td>
+                    <td class="smaple05_R9 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N10"></td>
+                    <td class="smaple05_Q10"></td>
+                    <td class="smaple05_M10"></td>
+                    <td class="smaple05_R10 result"></td>
+                </tr>
+                <tr>
+                    <td class="smaple05_N11"></td>
+                    <td class="smaple05_Q11"></td>
+                    <td class="smaple05_M11"></td>
+                    <td class="smaple05_R11 result"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
+    <script>
+        //sample01
+        //01. 문자열 메서드 : 문자열 결합 / 템플릿 문자열
+        {
+            const str1 = "자바스크립트";
+            const str2 = "제이쿼리";
+
+            document.querySelector(".smaple01_N1").innerHTML = "1";
+            document.querySelector(".smaple01_Q1").innerHTML = "자바스크립트, 제이쿼리";
+            document.querySelector(".smaple01_M1").innerHTML = "문자열 결합";
+            document.querySelector(".smaple01_R1").innerHTML = str1 + str2;
+
+            const num1 = 100;
+            const num2 = 200;
+
+            document.querySelector(".smaple01_N2").innerHTML = "2";
+            document.querySelector(".smaple01_Q2").innerHTML = "100, 200";
+            document.querySelector(".smaple01_M2").innerHTML = "nuber 결합";
+            document.querySelector(".smaple01_R2").innerHTML = num1 + num2;
+
+            const txt1 = " 모던 ";
+            const txt2 = " 자바스크립트 ";
+            const txt3 = " 핵심 가이드 ";
+
+            document.querySelector(".smaple01_N3").innerHTML = "3";
+            document.querySelector(".smaple01_Q3").innerHTML = "모던, 자바스크립트, 핵심 가이드";
+            document.querySelector(".smaple01_M3").innerHTML = "템플릿 문자열";
+            document.querySelector(".smaple01_R3").innerHTML = "나는 " + txt1 + "(modern)" + txt2 + "(javascript)" + txt3  + "를 배우고 싶다";
+                        
+
+            const txm1 = "모던";
+            const txm2 = "자바스크립트";
+            const txm3 = "핵심";
+
+            document.querySelector(".smaple01_N4").innerHTML = "4";
+            document.querySelector(".smaple01_Q4").innerHTML = "100, 200";
+            document.querySelector(".smaple01_M4").innerHTML = "nuber 결합";
+            document.querySelector(".smaple01_R4").innerHTML = "나는 " + txt1 + "(modern)" + txt2 + "(javascript)" + txt3  + "를 배우고 싶다";
+        }
+        //smaple02
+        //02. 문자열 메서드 : length : 문자열 길이 구하기 : 반환(숫자)
+        {
+            const str1 = "자바스크립트";
+            const currentStr1 = str1.length;
+
+            document.querySelector(".smaple02_N1").innerHTML = "1";
+            document.querySelector(".smaple02_Q1").innerHTML = str1;
+            document.querySelector(".smaple02_M1").innerHTML = "length";
+            document.querySelector(".smaple02_R1").innerHTML = currentStr1;
+
+            const str2 = "javascript";
+            const currentStr2 = str2.length;
+
+            document.querySelector(".smaple02_N2").innerHTML = "2";
+            document.querySelector(".smaple02_Q2").innerHTML = str2;
+            document.querySelector(".smaple02_M2").innerHTML = "length";
+            document.querySelector(".smaple02_R2").innerHTML = currentStr2;
+
+            const str3 = "javascript";
+            const currentStr3 = str3.length;
+
+            document.querySelector(".smaple02_N3").innerHTML = "3";
+            document.querySelector(".smaple02_Q3").innerHTML = str3;
+            document.querySelector(".smaple02_M3").innerHTML = "length";
+            document.querySelector(".smaple02_R3").innerHTML = currentStr3;
+
+            const str4 = "javascript";
+            const currentStr4 = str4.length;
+
+            document.querySelector(".smaple02_N4").innerHTML = "4";
+            document.querySelector(".smaple02_Q4").innerHTML = str4;
+            document.querySelector(".smaple02_M4").innerHTML = "length";
+            document.querySelector(".smaple02_R4").innerHTML = currentStr4;
+        }
+        //smaple03
+        //03. 문자열 메서드 : toUpperCase() : 문자열 대문자 변경하기 : 반환(문자열)
+        {
+            const str1 = "javascript";
+            const currentStr1 = str1.toUpperCase();
+
+            document.querySelector(".smaple03_N1").innerHTML = "1";
+            document.querySelector(".smaple03_Q1").innerHTML = str1;
+            document.querySelector(".smaple03_M1").innerHTML = "toUpperCase";
+            document.querySelector(".smaple03_R1").innerHTML = currentStr1;
+
+
+            const str2 = "Javascript";
+            const currentStr2 = str2.toUpperCase();
+
+            document.querySelector(".smaple03_N2").innerHTML = "2";
+            document.querySelector(".smaple03_Q2").innerHTML = str2;
+            document.querySelector(".smaple03_M2").innerHTML = "toUpperCase";
+            document.querySelector(".smaple03_R2").innerHTML = currentStr2;
+        }
+        //smaple04
+        //04. 문자열 메서드 : toUpperCase() : 문자열 대문자 변경하기 : 반환(문자열)
+        {
+            const str1 ="       'javascript'       "
+            const currentStr1 = str1.trim();
+
+            document.querySelector(".smaple04_N1").innerHTML = "1";
+            document.querySelector(".smaple04_Q1").innerHTML = "' &nbsp; &nbsp; &nbsp; javascript &nbsp; &nbsp; &nbsp; '";
+            document.querySelector(".smaple04_M1").innerHTML = "trim()";
+            document.querySelector(".smaple04_R1").innerHTML = currentStr1;
+        }
+        //smaple05
+        //05. 문자열 메서드 : indexOf : 문자열 검색하기 : 반환(숫자)
+        //문자열의 인덱스 위치를 반환, 문자열의 첫번째 문자의 위치는 0, 다섯번째 4
+        //문자열이 없는 경우는 -1
+        //영문 대소문자 구별하여 검색
+        //search는 정규식 표현으로 검색
+        {
+            const str = "자바스크립트(javascript) 공부";
+
+            const text1 = str.indexOf("javascript");
+
+            document.querySelector(".smaple05_N1").innerHTML = "1";
+            document.querySelector(".smaple05_Q1").innerHTML = str;
+            document.querySelector(".smaple05_M1").innerHTML = "indexOf('javascript')";
+            document.querySelector(".smaple05_R1").innerHTML = text1;
+
+            const text2 = str.indexOf("자바스크립트");
+
+            document.querySelector(".smaple05_N2").innerHTML = "2";
+            document.querySelector(".smaple05_Q2").innerHTML = str;
+            document.querySelector(".smaple05_M2").innerHTML = "indexOf('자바스크립트')'";
+            document.querySelector(".smaple05_R2").innerHTML = text2;
+
+            const text3 = str.indexOf("제이쿼리");
+
+            document.querySelector(".smaple05_N3").innerHTML = "3";
+            document.querySelector(".smaple05_Q3").innerHTML = str;
+            document.querySelector(".smaple05_M3").innerHTML = "indexOf('제이쿼리')'";
+            document.querySelector(".smaple05_R3").innerHTML = text3;
+
+            const text4 = str.lastIndexOf("a");
+
+            document.querySelector(".smaple05_N4").innerHTML = "4";
+            document.querySelector(".smaple05_Q4").innerHTML = str;
+            document.querySelector(".smaple05_M4").innerHTML = "lastIndexOf('a')'";
+            document.querySelector(".smaple05_R4").innerHTML = text4;
+            
+            const text5 = str.lastIndexOf("a");
+
+            document.querySelector(".smaple05_N5").innerHTML = "5";
+            document.querySelector(".smaple05_Q5").innerHTML = str;
+            document.querySelector(".smaple05_M5").innerHTML = "lastIndexOf('a')'";
+            document.querySelector(".smaple05_R5").innerHTML = text5;
+
+            const text6 = str.search("/javascript/");
+
+            document.querySelector(".smaple05_N6").innerHTML = "6";
+            document.querySelector(".smaple05_Q6").innerHTML = str;
+            document.querySelector(".smaple05_M6").innerHTML = "search(/javascript/)'";
+            document.querySelector(".smaple05_R6").innerHTML = text6;
+
+            const text7 = str.search("/jquery/");
+
+            document.querySelector(".smaple05_N7").innerHTML = "7";
+            document.querySelector(".smaple05_Q7").innerHTML = str;
+            document.querySelector(".smaple05_M7").innerHTML = "search('/jquery/')'";
+            document.querySelector(".smaple05_R7").innerHTML = text7;
+
+            const text8 = str.includes("javascript");
+
+            document.querySelector(".smaple05_N8").innerHTML = "8";
+            document.querySelector(".smaple05_Q8").innerHTML = str;
+            document.querySelector(".smaple05_M8").innerHTML = "includes('javascript')'";
+            document.querySelector(".smaple05_R8").innerHTML = text8;
+            
+            const text9 = str.includes("jquery");
+
+            document.querySelector(".smaple05_N9").innerHTML = "9";
+            document.querySelector(".smaple05_Q9").innerHTML = str;
+            document.querySelector(".smaple05_M9").innerHTML = "includes('jquery')'";
+            document.querySelector(".smaple05_R9").innerHTML = text9;
+            
+            const text10 = str.startsWith("jquery");
+
+            document.querySelector(".smaple05_N10").innerHTML = "10";
+            document.querySelector(".smaple05_Q10").innerHTML = str;
+            document.querySelector(".smaple05_M10").innerHTML = "includes('jquery')'";
+            document.querySelector(".smaple05_R10").innerHTML = text10;
+            
+            const text11 = str.endsWith("jquery");
+
+            document.querySelector(".smaple05_N11").innerHTML = "11";
+            document.querySelector(".smaple05_Q11").innerHTML = str;
+            document.querySelector(".smaple05_M11").innerHTML = "includes('jquery')'";
+            document.querySelector(".smaple05_R11").innerHTML = text11;
+        }
+    </script>
+</body>
+
+</html>
