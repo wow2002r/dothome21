@@ -9,81 +9,61 @@
 <body>
     
     <script>
-        //변수 : 데이터 저장소
-        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
-        document.write("*** 100, 200, 300, 변수에 저장을해서 출력을 해보세요!!! ***<br>")
+
+        
+        document.write("***20210805***<br>")
         {
-        var x = 100;
-        var y = 200;
-        var z = 300;
+            const arr = [100, 200, 300, 400, 500];
 
-        document.write(x, "<br>");
-        document.write(y, "<br>");
-        document.write(z, "<br>");
-        }
-        //배열
-        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
-        document.write("*** 100, 200, 300, 변수에 저장을해서 출력을 해보세요!!! ***<br>")
-        {
-        const arr = new Array();
-        arr[1] = 100;
-        arr[2] = 200;
-        arr[3] = 300;
-
-        document.write(arr[1], "<br>");
-        document.write(arr[2], "<br>");
-        document.write(arr[3], "<br><br>");
-        }
-
-        //객체
-        //100, 200, 300, 변수에 저장을해서 출력을 해보세요!!!
-
-        //반복문
-        //for문을 이용해서 1~50까지 출력을 해보세요!!!
-        document.write("*** for문을 이용해서 1~50까지 출력을 해보세요!!! ***<br>")
-        {
-            for( let i=1; i<=50; i++) {
-                document.write(i+ "<br><br>");
+            for(let i = 0; i < arr.length; i++) {
+                document.write(arr[i], "<br><br>");
             }
         }
-
-        //반복문
-        //for문을 이용해서 50~1까지 출력을 해보세요!!!
-        document.write("*** for문을 이용해서 50~1까지 출력을 해보세요!!! ***<br>")
+        document.write("***forEach문을 이용해서 각 데이터를 출력***<br>")
         {
-            for( let i=1; i<=50; i++) {
-                document.write(i, "<br><br>");
+            const arr = [100, 200, 300, 400, 500];
 
-            }
+            arr.forEach((element) => {
+                document.write(element, "<br>");
+            });
+
+            arr.forEach((index) => {
+                document.write(index, "<br>");
+            });
         }
-
-        //반복문
-        //for문을 이용해서 1~50까지 짝수 출력을 해보세요!!!
-        document.write("*** for문을 이용해서 1~50까지 짝수 출력을 해보세요!!! ***<br>")
         {
-            for( let i=1; i<=50; i++) {
-                if( 1 % 2 == 0) {
-                    document.write(i, "<br>br>");
-                }
+            //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(선언적 함수);
+
+            //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(익명 함수);
+            //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(매게변수 함수);
+            //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(리턴값 함수);
+            function func() {
+                document.write("함수가 실행되었습니다.<br>");
             }
+            func();
+
+            //
+            const func2 = function() {
+                document.write("함수가 실행되었습니다.<br>")
+            }
+            func2();
+
+            function func3(str) {
+                document.write(str);
+            }
+            func3("함수가 실행되었습니다.<br>")
+            func3("함수가 실행되었음.<br>")
+            func3("함수가 실행.<br>")
+
+            function func4() {
+                const str = "함수가 실행되었습니다.<br>"
+                return str;
+            }
+            document.write(func4());
         }
-        //반복문
-        //for문을 이용해서 1~50까지 홀수 출력을 해보세요!!!
-        document.write("*** for문을 이용해서 1~50까지 홀수 출력을 해보세요!!! ***<br>")
         {
-            const arr = [1]
-
-            const reverse = [];
-            for(let i=arr.length-1; i >= 0; i--) {
-                reverse.push(arr[i]);
-            }
-            document.write('arr : ' +arr)
-            document.write('<br>');
             
         }
-        //구구단 8단 출력
-
-        //구구단 5단부터 8단 출력
     </script>
 </body>
 </html>
