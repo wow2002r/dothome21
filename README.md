@@ -10,7 +10,3 @@
 ### HTML 레퍼런스 북  <a href="https://wow2002r.github.io/dothome21/javascript/refer-html/index.html">바로가기</a>
 
 ### CSS 레퍼런스 북  <a href="https://wow2002r.github.io/dothome21/javascript/refer-css/index.html">바로가기</a>
-
-git add*
-
-git push
