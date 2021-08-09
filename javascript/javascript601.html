@@ -293,8 +293,16 @@
         <li><a href="sample05">05. 배열 메서드 : indexOf() : 배열 요소 검색하기 : 반환(숫자)</a></li>
         <li><a href="sample05">05. 배열 메서드 : lastIndexOf() : 배열 요소 끝에서 검색하기 : 반환(숫자)</a></li>
         <li><a href="sample05">05. 배열 메서드 : includes() : 배열 요소 검색하기 : 반환(불린)</a></li>
+        <li><a href="sample05">05. 배열 메서드 : revers() : 배열 요소 검색하기 : 반환(불린)</a></li>
+        <li><a href="sample05">05. 배열 메서드 : includes() : 배열 요소 검색하기 : 반환(불린)</a></li>
         <li><a href="sample06">06. 배열 메서드 : find() : 배열 요소 검색하기 : 반환(요소)</a></li>
-        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 첫요소 검색하기 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 첫요소 검색하기 : 반환(배열)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() : 조건에 만족하는 배열 요소 검색하기 : 반환(요소)</a></li>
+        <li><a href="sample06">06. 배열 메서드 : findIndex() :  : 반환(요소)</a></li>
        
     </ul>
     <h2 class="mt20">배열 메서드 샘플</h2>
@@ -597,6 +605,70 @@
 
     <!-- sample06 -->
     <div id="sample06" class="sample">
+        <h2>06. 배열 메서드 : indexOf() / lastIndexOf() / includes() : 배열 요소 검색하기 : 반환(숫자)<span class="dot"></span></h2>
+        <div class="view">
+            <table>
+                <colgroup>
+                    <col style="width: 4%">
+                    <col style="width: 32%">
+                    <col style="width: 22%">
+                    <col style="width: 42%"> 
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>기본값</th>
+                        <th>메서드</th>
+                        <th>결과값</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sample06_N1"></td>
+                        <td class="sample06_Q1"></td>
+                        <td class="sample06_M1"></td>
+                        <td class="sample06_R1 result"></td>
+                    </tr>       
+                    <tr>
+                        <td class="sample06_N2"></td>
+                        <td class="sample06_Q2"></td>
+                        <td class="sample06_M2"></td>
+                        <td class="sample06_R2 result"></td>
+                    </tr>       
+                    <tr>
+                        <td class="sample06_N3"></td>
+                        <td class="sample06_Q3"></td>
+                        <td class="sample06_M3"></td>
+                        <td class="sample06_R3 result"></td>
+                    </tr>       
+                </tbody>
+            </table>
+        </div>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">{   
+    const arr = [100, 200, 300, 400, 500];
+    const text = arr.indexOf(200)
+
+    document.querySelector(".sample05_R1").innerHTML = text;
+
+    const arr2 = [100, 200, 300, 400, 500];
+    const text2 = arr2.lastIndexOf(500)
+
+    document.querySelector(".sample05_R2").innerHTML = text2;
+
+    const arr3 = [100, 200, 300, 400, 500];
+    const text3 = arr3.includes(200)
+
+    document.querySelector(".sample05_R3").innerHTML = text3;
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+    <!-- //sample06 -->
+
+    <!-- sample06 -->
+    <!-- <div id="sample06" class="sample">
         <h2>06. 배열 메서드 : fine() / findIndex() : 배열 요소 검색하기 : 반환(요소)<span class="dot"></span></h2>
         <div class="view">
             <table>
@@ -658,7 +730,7 @@
 </code></pre>
         </div>
     </div>
-    <hr>
+    <hr> -->
     <!-- //sample06 -->
     
 
@@ -782,11 +854,23 @@
             document.querySelector(".sample05_R3").innerHTML = text3;
         }
 
+        //smaple06
+        //05. 배열 메서드 : indexOf() : 배열 요소 검색하기 : 반환(숫자)</a></li>
+        //05. 배열 메서드 : lastIndexOf() : 배열 요소 끝에서 검색하기 : 반환(숫자)</a></li>
+        //05. 배열 메서드 : includes() : 배열 요소 검색하기 : 반환(불린)</a></li>
+        {
+            const arr = [100, 200, 300, 400, 500];
+            
+            //각 데이터를 for문을 이용해서 출력해보세요!!!
+
+            for()
+        }
+
         //sample06
         //06. 배열 메서드 : find() : 배열 요소 검색하기 : 반환(요소) - 콜백 함수 
         //06. 배열 메서드 : findIndex() : 배열 첫요소 검색하기 : 반환(요소)
-        {
-            const arr = [100, 200, 300, 400, 500];
+        // {
+        //     const arr = [100, 200, 300, 400, 500];
             
             //선언적 리턴값 함수
             //const find = arr.find(function(element){})
@@ -802,29 +886,29 @@
             // });
 
             //화살표 함수 괄호 리턴 생략
-            const find = arr.find(element => element === 300);
+        //     const find = arr.find(element => element === 300);
 
-            document.querySelector(".sample06_N1").innerHTML = "1";
-            document.querySelector(".sample06_Q1").innerHTML = "[100, 200, 300, 400, 500]";
-            document.querySelector(".sample06_M1").innerHTML = "찾는 요소 : 300";  
-            document.querySelector(".sample06_R1").innerHTML = find;
+        //     document.querySelector(".sample06_N1").innerHTML = "1";
+        //     document.querySelector(".sample06_Q1").innerHTML = "[100, 200, 300, 400, 500]";
+        //     document.querySelector(".sample06_M1").innerHTML = "찾는 요소 : 300";  
+        //     document.querySelector(".sample06_R1").innerHTML = find;
 
-            const text = ["javascript", 'react', 'vue'];
-            const find2 = text.find(element => element === "javascript");
+        //     const text = ["javascript", 'react', 'vue'];
+        //     const find2 = text.find(element => element === "javascript");
 
-            document.querySelector(".sample06_N2").innerHTML = "2";
-            document.querySelector(".sample06_Q2").innerHTML = "['javascript', 'react', 'vue']";
-            document.querySelector(".sample06_M2").innerHTML = "찾는 요소 : javascript";  
-            document.querySelector(".sample06_R2").innerHTML = find2;
+        //     document.querySelector(".sample06_N2").innerHTML = "2";
+        //     document.querySelector(".sample06_Q2").innerHTML = "['javascript', 'react', 'vue']";
+        //     document.querySelector(".sample06_M2").innerHTML = "find() : javascript";  
+        //     document.querySelector(".sample06_R2").innerHTML = find2;
 
-            const text3 = ["javascript", 'react', 'vue'];
-            const find3 = text.findIndex(element => element === "javascript");
+        //     const text3 = ["javascript", 'react', 'vue'];
+        //     const find3 = text.findIndex(element => element === "javascript");
 
-            document.querySelector(".sample06_N3").innerHTML = "3";
-            document.querySelector(".sample06_Q3").innerHTML = "['javascript', 'react', 'vue']";
-            document.querySelector(".sample06_M3").innerHTML = "찾는 요소 : javascript";  
-            document.querySelector(".sample06_R3").innerHTML = find3;
-        }
+        //     document.querySelector(".sample06_N3").innerHTML = "3";
+        //     document.querySelector(".sample06_Q3").innerHTML = "['javascript', 'react', 'vue']";
+        //     document.querySelector(".sample06_M3").innerHTML = "findindex() : javascript";  
+        //     document.querySelector(".sample06_R3").innerHTML = find3;
+        // }
         
     </script>
 </body>

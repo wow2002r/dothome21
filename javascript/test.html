@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-    <script>
 
-        
-        document.write("***20210805***<br>")
+<body>
+
+    <script>
+        document.write("***20210805***<br>") 
         {
             const arr = [100, 200, 300, 400, 500];
 
-            for(let i = 0; i < arr.length; i++) {
+            for (let i = 0; i < arr.length; i++) {
                 document.write(arr[i], "<br><br>");
             }
         }
-        document.write("***forEach문을 이용해서 각 데이터를 출력***<br>")
+        document.write("***forEach문을 이용해서 각 데이터를 출력***<br>") 
         {
             const arr = [100, 200, 300, 400, 500];
 
@@ -30,8 +30,7 @@
             arr.forEach((index) => {
                 document.write(index, "<br>");
             });
-        }
-        {
+        } {
             //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(선언적 함수);
 
             //"함수가 실행되었습니다."를 funtion을 이용해서 출력해주세요! *(익명 함수);
@@ -43,7 +42,7 @@
             func();
 
             //
-            const func2 = function() {
+            const func2 = function () {
                 document.write("함수가 실행되었습니다.<br>")
             }
             func2();
@@ -60,10 +59,37 @@
                 return str;
             }
             document.write(func4());
+        } 
+        {
+            let sum = 0;
+            for (var i = 1; i <= 100; i++) {
+                sum += i;
+            }
+            document.write(sum, "<br><br>");
+        }
+        { 
+            function func(){
+                document.write("함수2가 실행되었습니다. <br><br>");
+            }
+            function callback(str){
+                document.write("함수1가 실행되었습니다. <br><br>");
+                str();
+            }
+            callback(func);
         }
         {
-            
+            document.write("***17번***<br>")
+            function func(){
+                document.write("함수가 실행되었습니다.<br>");
+            }
+            function callblack(num){
+                for( let i=1; i<=5; i++){
+                    num();
+                }
+            }
+            callback(func);
         }
     </script>
 </body>
+
 </html>

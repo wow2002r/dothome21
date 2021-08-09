@@ -11,27 +11,50 @@
 <body>
 
     <script type="text/javascript">
-        let num = prompt("먼저 잡고 싶은 물건은 무엇인가요? 1.과일, 2.떡, 3.수정구슬, 4.현찰 5.반지");
+        // switch
+        // let num = prompt("먼저 잡고 싶은 물건은 무엇인가요? 1.과일, 2.떡, 3.수정구슬, 4.현찰 5.반지");
 
-        switch (num) {
-            case "1":
-                document.write("당신은 무드에 약해 화술과 매너가 좋은 타입 입니다.");
-                break;
-            case "2":
+        // switch (num) {
+        //     case "1":
+        //         document.write("당신은 무드에 약해 화술과 매너가 좋은 타입 입니다.");
+        //         break;
+        //     case "2":
+        //         document.write("당신은 열정적이고 열중하는 타입 입니다.")
+        //         break;
+        //     case "3":
+        //         document.write("당신은 정열적이고 열중하는 타입 입니다.");
+        //         break;
+        //     case "4":
+        //         document.write("당신은 부드럽고 따듯한 타입 입니다.");
+        //         break;
+        //     case "5":
+        //         document.write("당신은 자기를 보호해 줄 수 있는 이성 타입 입니다.");
+        //         break;
+        //     default:
+        //         document.write("해당사항이 없습니다.");
+        //         break;
+        // }
+        // if문
+        {
+            let num = prompt("먼저 잡고 싶은 물건은 무엇인가요? 1.과일, 2.떡, 3.수정구슬, 4.현찰 5.반지");
+
+            if(num == 1){
+                document.write("당신은 무드에 약해 화술과 매너가 좋은 타입 입니다.")
+            }
+            if(num == 2){
                 document.write("당신은 열정적이고 열중하는 타입 입니다.")
-                break;
-            case "3":
-                document.write("당신은 정열적이고 열중하는 타입 입니다.");
-                break;
-            case "4":
-                document.write("당신은 부드럽고 따듯한 타입 입니다.");
-                break;
-            case "5":
-                document.write("당신은 자기를 보호해 줄 수 있는 이성 타입 입니다.");
-                break;
-            default:
+            }
+            if(num == 3){
+                document.write("당신은 정열적이고 열중하는 타입 입니다.")
+            }
+            if(num == 4){
+                document.write("당신은 부드럽고 따듯한 타입 입니다.")
+            }
+            if(num == 5){
+                document.write("당신은 자기를 보호해 줄 수 있는 이성 타입 입니다.")
+            }
+            if("default")break;
                 document.write("해당사항이 없습니다.");
-                break;
         }
     </script>
 </body>
