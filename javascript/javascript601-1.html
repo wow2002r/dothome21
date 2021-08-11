@@ -11,248 +11,260 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css"
         integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            @font-face {
-                font-family: 'NEXON Lv1 Gothic OTF';
-                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-            }
-    
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: 'NEXON Lv1 Gothic OTF';
-                line-height: 1.6;
-                word-break: break-all;
-            }
-    
-            body {
-                padding: 5%;
-                margin-bottom: 400px;
-            }
-    
-            h1 {
-                padding-bottom: 20px;
-            }
-    
-            hr {
-                margin: 5% 0;
-                border-style: dashed;
-                border-color: #e6e6e6;
-                border-width: 1px;
-            }
-    
-            img {
-                vertical-align: top;
-                border-radius: 5px;
-                margin: 5px;
-            }
-    
-            ul {
-                list-style: none;
-            }
-    
-            a {
-                text-decoration: none;
-                color: #333;
-            }
-    
-            .sample {
-                border: 1px solid #e6e6e6;
-                border-radius: 5px;
-            }
-    
-            .sample h2 {
-                position: relative;
-                font-size: 16px;
-                background-color: #f2f2f2;
-                padding: 15px;
-                border-bottom: 1px solid #e6e6e6;
-                border-radius: 5px 5px 0 0;
-            }
-    
-            .sample h2 .dot {
-                width: 10px;
-                height: 10px;
-                background: #989898;
-                display: block;
-                border-radius: 50%;
-                position: absolute;
-                right: 30px;
-                top: 20px;
-            }
-    
-            .sample h2 .dot::before {
-                content: '';
-                width: 10px;
-                height: 10px;
-                background: #989898;
-                border-radius: 50%;
-                position: absolute;
-                left: -15px;
-                top: 0;
-            }
-    
-            .sample h2 .dot::after {
-                content: '';
-                width: 10px;
-                height: 10px;
-                background: #989898;
-                position: absolute;
-                border-radius: 50%;
-                right: -15px;
-                top: 0;
-            }
-    
-            .sample .ex {
-                padding: 20px;
-            }
-    
-            .sample .ex .text {
-                margin: 10px 0;
-            }
-    
-            .sample .re {
-                padding: 20px;
-                border-top: 1px solid #e6e6e6;
-            }
-    
-            .sample .re a {
-                color: #333;
-                text-decoration: none;
-                border: 1px solid #333;
-                border-radius: 30px;
-                padding: 10px 30px;
-                margin: 5px;
-                display: inline-block;
-            }
-    
-            .sample .re a:hover {
-                background-color: #000;
-                color: #fff;
-            }
-    
-            .sample .problem {
-                padding: 25px;
-                border-bottom: 1px solid #e6e6e6;
-                line-height: 1.6;
-            }
-    
-            .sample pre {
-                margin: 0 !important;
-                border-radius: 0;
-                ;
-            }
-    
-            .sample .desc {
-                padding: 25px;
-                border-bottom: 1px solid #e6e6e6;
-            }
-    
-            .sample .desc dt {
-                padding: 3px 0;
-                margin-bottom: 6px;
-            }
-    
-            .sample .desc dd {
-                padding: 3px 0 16px 0;
-                line-height: 1.6;
-            }
-    
-            .sample .sam {
-                padding: 25px;
-                border-bottom: 1px solid #e6e6e6;
-            }
-    
-            .sample .sam dt {
-                padding: 3px 0;
-                margin-bottom: 6px;
-            }
-    
-            .sample .sam dd {
-                padding: 3px 0 16px 0;
-            }
-    
-            ol {
-                list-style: none;
-            }
-    
-            ol li {
-                display: inline;
-                text-align: center;
-                line-height: 40px;
-                margin-bottom: 5px;
-            }
-    
-            ol li a {
-                display: inline-block;
-                border-radius: 30px;
-                padding: 2px 20px 0px 20px;
-                border: 1px solid #000;
-            }
-    
-            ol li a:hover {
-                background: #000;
-                color: #fff;
-            }
-    
-            ol li.active {
-                background: #000;
-            }
-    
-            ol li.active a {
-                color: #fff;
-            }
-            .mt20 {
-                margin-top: 20px;
-            }
-            .ol1::before {
-                content: "데이터 저장하기 : ";
-            }
-            .ol2::before {
-                content: "데이터 불러오기 : ";
-            }
-            .ol3::before {
-                content: "데이터 실행하기 : ";
-            }
-            .ol4::before {
-                content: "데이터 제어하기 : ";
-            }
-            .ol5::before {
-                content: "데이터 연습하기 : ";
-            }
-            .ol6::before {
-                content: "데이터 메서드 : ";
-            }
-    
-            .view {
-                padding: 20px;
-            }
-            .view table {
-                width: 100%;
-                border: 1px solid #e6e6e6; 
-                text-align: center;
-                vertical-align: middle;
-                border-collapse: collapse;
-            }
-            .view table th {
-                padding: 13px 5px 11px 5px;
-            }
-            .view table td {
-                border: 1px solid #e6e6e6; 
-                padding: 13px 5px 11px 5px;
-            }
-            .view table td.result {
-                color: #fff;
-                transition: all 0.3s;
-                cursor: zoom-in;
-            }
-            .view table td.result:hover {
-                color: #000;
-                background-color: #f5f5f5;
-            }
-        </style>
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'NEXON Lv1 Gothic OTF';
+            line-height: 1.6;
+            word-break: break-all;
+        }
+
+        body {
+            padding: 5%;
+            margin-bottom: 400px;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+        }
+
+        hr {
+            margin: 5% 0;
+            border-style: dashed;
+            border-color: #e6e6e6;
+            border-width: 1px;
+        }
+
+        img {
+            vertical-align: top;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sample {
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+        }
+
+        .sample h2 {
+            position: relative;
+            font-size: 16px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-bottom: 1px solid #e6e6e6;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .sample h2 .dot {
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        .sample h2 .dot::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            border-radius: 50%;
+            position: absolute;
+            left: -15px;
+            top: 0;
+        }
+
+        .sample h2 .dot::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #989898;
+            position: absolute;
+            border-radius: 50%;
+            right: -15px;
+            top: 0;
+        }
+
+        .sample .ex {
+            padding: 20px;
+        }
+
+        .sample .ex .text {
+            margin: 10px 0;
+        }
+
+        .sample .re {
+            padding: 20px;
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .sample .re a {
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .sample .re a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .sample .problem {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+            line-height: 1.6;
+        }
+
+        .sample pre {
+            margin: 0 !important;
+            border-radius: 0;
+            ;
+        }
+
+        .sample .desc {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .sample .desc dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+        }
+
+        .sample .desc dd {
+            padding: 3px 0 16px 0;
+            line-height: 1.6;
+        }
+
+        .sample .sam {
+            padding: 25px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .sample .sam dt {
+            padding: 3px 0;
+            margin-bottom: 6px;
+        }
+
+        .sample .sam dd {
+            padding: 3px 0 16px 0;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        ol li {
+            display: inline;
+            text-align: center;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+
+        ol li a {
+            display: inline-block;
+            border-radius: 30px;
+            padding: 2px 20px 0px 20px;
+            border: 1px solid #000;
+        }
+
+        ol li a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        ol li.active {
+            background: #000;
+        }
+
+        ol li.active a {
+            color: #fff;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .ol1::before {
+            content: "데이터 저장하기 : ";
+        }
+
+        .ol2::before {
+            content: "데이터 불러오기 : ";
+        }
+
+        .ol3::before {
+            content: "데이터 실행하기 : ";
+        }
+
+        .ol4::before {
+            content: "데이터 제어하기 : ";
+        }
+
+        .ol5::before {
+            content: "데이터 내장 객체 : ";
+        }
+
+        .ol6::before {
+            content: "데이터 공부하기 : ";
+        }
+
+        .view {
+            padding: 20px;
+        }
+
+        .view table {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+            vertical-align: middle;
+            border-collapse: collapse;
+        }
+
+        .view table th {
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td {
+            border: 1px solid #e6e6e6;
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td.result {
+            color: #fff;
+            transition: all 0.3s;
+            cursor: zoom-in;
+        }
+
+        .view table td.result:hover {
+            color: #000;
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
 
 <body>
@@ -278,17 +290,18 @@
         <li><a href="javascript200.html">반복문</a></li>
     </ol>
     <ol class="ol5">
-        <li><a href="javascript400.html">알고리즘</a></li>
-    </ol>
-    <ol class="ol6">
-        <li><a href="javascript601.html">배열 메서드</a></li>
-        <li><a href="javascript602.html">문자열 메서드</a></li>
-        <li><a href="javascript603.html">브라우저 메서드</a></li>
-        <li><a href="javascript604.html">날짜 메서드</a></li>
+        <li><a href="javascript602.html">문자열 객체</a></li>
+        <li><a href="javascript601.html">배열 객체</a></li>
+        <li><a href="javascript604.html">날짜 객체</a></li>
+        <li><a href="javascript609.html">수학 객체</a></li>
+        <li><a href="javascript608.html">숫자 객체</a></li>
+        <li><a href="javascript603.html">브라우저 객체</a></li>
+        <li><a href="javascript607.html">요소 객체</a></li>
         <li><a href="javascript605.html">이벤트 메서드</a></li>
     </ol>
-    <ol class="ol7">
+    <ol class="ol6">
         <li><a href="javascript606.html">샘플</a></li>
+        <li><a href="javascript606.html">알고리즘</a></li>
     </ol>
 
     <h2 class="mt20">배열 메서드</h2>
@@ -356,7 +369,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
     const text = arr.length;
 
@@ -417,7 +430,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
 
     const text1 = arr.join("*");
@@ -477,7 +490,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
     const text = arr.push(600);
 
@@ -538,7 +551,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
     const text = arr.shift();
 
@@ -607,7 +620,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
 
     const text = arr.indexOf(200);
@@ -673,7 +686,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     
 }
 </code></pre>
@@ -720,7 +733,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     
 }
 </code></pre>
@@ -790,7 +803,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     
 }
 </code></pre>
@@ -869,7 +882,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     
 }
 </code></pre>
@@ -920,7 +933,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     
 }
 </code></pre>
@@ -971,7 +984,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+            <pre class="line-numbers"><code class="language-js">{
     const text1 = [100, 200, 300, 400, 500];
 
     const find = text1.find(element => element === 300);
@@ -1041,7 +1054,7 @@
             </table>
         </div>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">
+            <pre class="line-numbers"><code class="language-js">
 }
 </code></pre>
         </div>
@@ -1152,7 +1165,7 @@
             document.querySelector(".sample05_Q1").innerHTML = "[100, 200, 300, 400, 500]";
             document.querySelector(".sample05_M1").innerHTML = ".indexOf(200)";
             document.querySelector(".sample05_R1").innerHTML = text;
-            
+
             const text2 = arr.lastIndexOf(200);
 
             document.querySelector(".sample05_N2").innerHTML = "2";
@@ -1194,7 +1207,9 @@
             document.querySelector(".sample06_M2").innerHTML = ".sort()";
             document.querySelector(".sample06_R2").innerHTML = text2;
 
-            const text3 = arr.sort(function(a,b){return b-a;});
+            const text3 = arr.sort(function (a, b) {
+                return b - a;
+            });
 
             document.querySelector(".sample06_N3").innerHTML = "3";
             document.querySelector(".sample06_Q3").innerHTML = "[100, 200, 300, 400, 500]";
@@ -1276,7 +1291,7 @@
             document.querySelector(".sample09_M3").innerHTML = "2, 3, javascript";
             document.querySelector(".sample09_R3").innerHTML = result3;
             document.querySelector(".sample09_A3").innerHTML = arrNum3;
-            
+
             const arrNum4 = [100, 200, 300, 400, 500];
             const result4 = arrNum4.splice(1, 1, "javascript");
 
@@ -1297,7 +1312,7 @@
 
             const arrNum6 = [100, 200, 300, 400, 500];
             const result6 = arrNum6.splice(0, 4, "javascript", "jquery");
-        
+
             document.querySelector(".sample09_N6").innerHTML = "6";
             document.querySelector(".sample09_Q6").innerHTML = "[100, 200, 300, 400, 500]";
             document.querySelector(".sample09_M6").innerHTML = "0, 4, javascript, jquery";
@@ -1391,7 +1406,7 @@
             //     return el;
             // });
             // const result1 = arrNum1.map((el)=>el);
-            const result1 = arrNum1.map((el)=>el);
+            const result1 = arrNum1.map((el) => el);
 
             document.querySelector(".sample12_N1").innerHTML = "1";
             document.querySelector(".sample12_Q1").innerHTML = "['javascript','react','vue']";
@@ -1400,22 +1415,28 @@
             console.log(result1);
 
             const arrNum2 = [100, 200, 300, 400, 500];
-            const result2 = arrNum2.map((el)=>el + "web");
+            const result2 = arrNum2.map((el) => el + "web");
 
             document.querySelector(".sample12_N2").innerHTML = "2";
             document.querySelector(".sample12_Q2").innerHTML = "[100, 200, 300, 400, 500]";
             document.querySelector(".sample12_M2").innerHTML = "map()";
             document.querySelector(".sample12_R2").innerHTML = result2;
-            
+
             const arrNum3 = [100, 200, 300, 400, 500];
-            const result3 = arrNum3.map((el)=>el * 2);
+            const result3 = arrNum3.map((el) => el * 2);
 
             document.querySelector(".sample12_N3").innerHTML = "3";
             document.querySelector(".sample12_Q3").innerHTML = "[100, 200, 300, 400, 500]";
             document.querySelector(".sample12_M3").innerHTML = "map()";
             document.querySelector(".sample12_R3").innerHTML = result3;
 
-            const arrNum4 = [{a: 100},{a: 200},{a: 300}]
+            const arrNum4 = [{
+                a: 100
+            }, {
+                a: 200
+            }, {
+                a: 300
+            }]
             const result4 = arrNum4.map(el => el.a);
 
             document.querySelector(".sample12_N4").innerHTML = "4";
@@ -1436,7 +1457,7 @@
             document.querySelector(".sample13_R1").innerHTML = result1;
 
             const arrNum2 = [100, 200, 300, 400, 500];
-            const result2 = arrNum2.reduce((previous, current) => previous + current) ;
+            const result2 = arrNum2.reduce((previous, current) => previous + current);
 
             document.querySelector(".sample13_N2").innerHTML = "2";
             document.querySelector(".sample13_Q2").innerHTML = "[100, 200, 300, 400, 500]";
@@ -1444,11 +1465,11 @@
             document.querySelector(".sample13_R2").innerHTML = result2;
 
             const arrNum3 = [100, 200, 300, 400, 500];
-            const result3 = arrNum3.reduce((previous, current) => previous + current) ;
-        
+            const result3 = arrNum3.reduce((previous, current) => previous + current);
+
             const arrNum3 = [100, 200, 300, 400, 500];
             let sum = 0;
-            for( let i=0; i<arrNum3.length; i++){
+            for (let i = 0; i < arrNum3.length; i++) {
                 sum = sum + arrNum3[i];
             }
             document.querySelector(".sample13_N3").innerHTML = "3";
@@ -1456,8 +1477,11 @@
             document.querySelector(".sample13_M3").innerHTML = "for(합계)";
             document.querySelector(".sample13_R3").innerHTML = sum;
 
-            const arrNum4 = [[100,200],[300,400]];
-            const result4 = arrNum4.reduce((p,c) => p.concat(c));
+            const arrNum4 = [
+                [100, 200],
+                [300, 400]
+            ];
+            const result4 = arrNum4.reduce((p, c) => p.concat(c));
 
             document.querySelector(".sample13_N4").innerHTML = "4";
             document.querySelector(".sample13_Q4").innerHTML = "[[100,200],[300,400]]";
@@ -1466,7 +1490,7 @@
             console.log(result4)
 
             const arrNum5 = ["javascript", "react", "vue"];
-            const arrNum5 = arrNum5.reduceRight((p,c) => p+c);
+            const arrNum5 = arrNum5.reduceRight((p, c) => p + c);
 
             document.querySelector(".sample13_N5").innerHTML = "5";
             document.querySelector(".sample13_Q5").innerHTML = "['javascript','react','vue'";

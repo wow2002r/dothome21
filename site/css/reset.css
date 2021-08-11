@@ -1,0 +1,45 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 여백 초기화 */
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+    color: #222;
+    letter-spacing: -1px
+}
+body,
+button,
+input,
+select,
+table,
+textarea {
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif
+}
+/* 링크 초기화 */
+a {
+    color: #222;
+    text-decoration: none
+}
+a {
+    color: #222;
+    text-decoration: none
+}
+
+/* 목록 초기화 */
+ol,
+ul {
+    list-style: none;
+}
