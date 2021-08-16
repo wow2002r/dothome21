@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -24,6 +25,7 @@
             padding: 0;
             font-family: 'NEXON Lv1 Gothic OTF';
             line-height: 1.6;
+            word-break: break-all;
         }
 
         body {
@@ -38,7 +40,7 @@
         hr {
             margin: 5% 0;
             border-style: dashed;
-            border-color: #e6e6e6;
+            border-color: #E6E6E6;
             border-width: 1px;
         }
 
@@ -58,16 +60,16 @@
         }
 
         .sample {
-            border: 1px solid #e6e6e6;
+            border: 1px solid #E6E6E6;
             border-radius: 5px;
         }
 
         .sample h2 {
             position: relative;
             font-size: 16px;
-            background-color: #f2f2f2;
+            background-color: #F2F2F2;
             padding: 15px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             border-radius: 5px 5px 0 0;
         }
 
@@ -114,7 +116,7 @@
 
         .sample .re {
             padding: 20px;
-            border-top: 1px solid #e6e6e6;
+            border-top: 1px solid #E6E6E6;
         }
 
         .sample .re a {
@@ -134,7 +136,7 @@
 
         .sample .problem {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             line-height: 1.6;
         }
 
@@ -146,7 +148,7 @@
 
         .sample .desc {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .desc dt {
@@ -161,7 +163,7 @@
 
         .sample .sam {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .sam dt {
@@ -192,27 +194,34 @@
         }
 
         ol li a:hover {
-            background: #000;
+            background-color: #000;
             color: #fff;
-        }
-
-        ol li.active {
-            background: #000;
         }
 
         ol li.active a {
             color: #fff;
+            background: #000;
         }
-        .mt20 {
+        .mt20{
             margin-top: 20px;
         }
-        table {
-            border-collapse:collapse;
+        .all > div {
+            margin-right: 10%;
+            margin-bottom: 3%;
         }
-        table tr td {
-            border: 1px solid #989898;
-            padding: 5px;
+        .all > div.active h2 a {
+            text-decoration: underline;
+            background-color: #000;
+            color: #fff;
         }
+
+        .all sam {
+            background-color: #000;
+            border-radius: 100%;
+            color: #fff;
+            padding: 1px 20px;
+        }
+
         .ol1::before {
             content: "데이터 저장하기 : ";
         }
@@ -229,14 +238,81 @@
             content: "데이터 내장 객체 : ";
         }
         .ol6::before {
-            content: "데이터 공부하기 : ";
+            content : "데이터 공부하기 : ";
+        }
+
+        .page {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .page li {
+            display: inline;
+            list-style: none;
+        }
+
+        .page li a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .page li a:hover {
+            color: #098a4c;
+        }
+
+        .view {
+            padding: 20px;
+        }
+
+        .view table {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            /* 속기형 작성법 */
+            text-align: center;
+            vertical-align: middle;
+            border-collapse: collapse;
+        }
+
+        .view table th {
+            /*
+                padding-top: 13px;
+                padding-right: 5px;
+                padding-bottom: 11px;
+                padding-left: 5px;
+                padding: 13px 5px 11px 5px;  위/오른쪽/아래/왼쪽 
+                padding: 13px 5px 11px;  위:13px / 왼쪽.오른쪽:5px / 아래:11px
+                padding: 13px 5px;  위.아래:13px / 왼쪽.오른쪽:5px 
+                padding: 13px; 위.오른쪽.아래.왼쪽:13px 
+                */
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td {
+            border: 1px solid #e6e6e6;
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td.result {
+            color: #fff;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .view table td.result:hover {
+            color: #000;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
 
 <body>
-
     <h1>Javascript 문법 정리</h1>
+    <ul class="page">
+        <li><a href="../refer-html/index.html">HTML</a></li>
+        <li><a href="../refer-css/index.html">CSS</a></li>
+        <li><a href="../javascript/javascript100.html">JAVASCRIPT</a></li>
+    </ul>
     <ol class="ol1">
         <li><a href="javascript100.html">변수</a></li>
         <li><a href="javascript100.html">상수</a></li>
@@ -264,41 +340,39 @@
         <li><a href="javascript608.html">숫자 객체</a></li>
         <li><a href="javascript603.html">브라우저 객체</a></li>
         <li><a href="javascript607.html">요소 객체</a></li>
-        <li><a href="javascript605.html">이벤트 메서드</a></li>
+        <li><a href="javascript605.html">이벤트 객체</a></li>
     </ol>
     <ol class="ol6">
         <li><a href="javascript606.html">샘플</a></li>
-        <li><a href="javascript606.html">알고리즘</a></li>
+        <li><a href="javascript400.html">알고리즘</a></li>
     </ol>
+
     <h2 class="mt20">이벤트 메서드</h2>
     <ul>
-        <li><a href="#sample1">01. </a></li>
-       
+       <li><a href="#sample01">01. 배열 메서드</a></li>
     </ul>
 
     <hr>
 
     <!-- sample1 -->
     <div id="sample1" class="sample">
-        <h2>01.  <span class="dot"></span></h2>
+        <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-   
+            <pre class="line-numbers"><code class="language-js">{
+
+}
 </code></pre>
         </div>
     </div>
     <hr>
-    <!-- //sample1 -->
+    <!-- sample1 -->
 
 
-    <hr>
-    <hr>
-    <hr>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
-        //sample01
-       
+        //sample1
+
     </script>
 </body>
 

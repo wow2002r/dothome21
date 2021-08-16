@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -24,6 +25,7 @@
             padding: 0;
             font-family: 'NEXON Lv1 Gothic OTF';
             line-height: 1.6;
+            word-break: break-all;
         }
 
         body {
@@ -38,7 +40,7 @@
         hr {
             margin: 5% 0;
             border-style: dashed;
-            border-color: #e6e6e6;
+            border-color: #E6E6E6;
             border-width: 1px;
         }
 
@@ -58,16 +60,16 @@
         }
 
         .sample {
-            border: 1px solid #e6e6e6;
+            border: 1px solid #E6E6E6;
             border-radius: 5px;
         }
 
         .sample h2 {
             position: relative;
             font-size: 16px;
-            background-color: #f2f2f2;
+            background-color: #F2F2F2;
             padding: 15px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             border-radius: 5px 5px 0 0;
         }
 
@@ -114,7 +116,7 @@
 
         .sample .re {
             padding: 20px;
-            border-top: 1px solid #e6e6e6;
+            border-top: 1px solid #E6E6E6;
         }
 
         .sample .re a {
@@ -134,7 +136,7 @@
 
         .sample .problem {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             line-height: 1.6;
         }
 
@@ -146,7 +148,7 @@
 
         .sample .desc {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .desc dt {
@@ -161,7 +163,7 @@
 
         .sample .sam {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .sam dt {
@@ -192,75 +194,143 @@
         }
 
         ol li a:hover {
-            background: #000;
+            background-color: #000;
             color: #fff;
-        }
-
-        ol li.active {
-            background: #000;
         }
 
         ol li.active a {
             color: #fff;
+            background: #000;
         }
-        .mt20 {
+        .mt20{
             margin-top: 20px;
+        }
+        .all > div {
+            margin-right: 10%;
+            margin-bottom: 3%;
+        }
+        .all > div.active h2 a {
+            text-decoration: underline;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .all sam {
+            background-color: #000;
+            border-radius: 100%;
+            color: #fff;
+            padding: 1px 20px;
         }
 
         .ol1::before {
-            content: "데이터 저장하기 : "
+            content: "데이터 저장하기 : ";
         }
-
         .ol2::before {
-            content: "데이터 불러오기 : "
+            content: "데이터 불러오기 : ";
         }
-
         .ol3::before {
-            content: "데이터 실행하기 : "
+            content: "데이터 실행하기 : ";
         }
-
         .ol4::before {
-            content: "데이터 제어하기 : "
+            content: "데이터 제어하기 : ";
         }
-        
         .ol5::before {
             content: "데이터 내장 객체 : ";
         }
-
         .ol6::before {
-            content: "데이터 공부하기 : ";
+            content : "데이터 공부하기 : ";
         }
-        .sam {
-            background-color: #000;
+
+        .page {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .page li {
+            display: inline;
+            list-style: none;
+        }
+
+        .page li a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .page li a:hover {
+            color: #098a4c;
+        }
+
+        .view {
+            padding: 20px;
+        }
+
+        .view table {
+            width: 100%;
+            border: 1px solid #e6e6e6;
+            /* 속기형 작성법 */
+            text-align: center;
+            vertical-align: middle;
+            border-collapse: collapse;
+        }
+
+        .view table th {
+            /*
+                padding-top: 13px;
+                padding-right: 5px;
+                padding-bottom: 11px;
+                padding-left: 5px;
+                padding: 13px 5px 11px 5px;  위/오른쪽/아래/왼쪽 
+                padding: 13px 5px 11px;  위:13px / 왼쪽.오른쪽:5px / 아래:11px
+                padding: 13px 5px;  위.아래:13px / 왼쪽.오른쪽:5px 
+                padding: 13px; 위.오른쪽.아래.왼쪽:13px 
+                */
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td {
+            border: 1px solid #e6e6e6;
+            padding: 13px 5px 11px 5px;
+        }
+
+        .view table td.result {
             color: #fff;
-            background-repeat: 30px;
-            padding: 0.1em 1.5px;
-            font-size: 0.8em;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .view table td.result:hover {
+            color: #000;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
 
 <body>
-
     <h1>Javascript 문법 정리</h1>
+    <ul class="page">
+        <li><a href="../refer-html/index.html">HTML</a></li>
+        <li><a href="../refer-css/index.html">CSS</a></li>
+        <li><a href="../javascript/javascript100.html">JAVASCRIPT</a></li>
+    </ul>
     <ol class="ol1">
-        <li><a href="Javascript100.html">변수</a></li>
-        <li><a href="Javascript100.html">상수</a></li>
-        <li><a href="Javascript100.html">배열(Array)</a></li>
-        <li><a href="Javascript100.html">객체(Object)</a></li>
+        <li><a href="javascript100.html">변수</a></li>
+        <li><a href="javascript100.html">상수</a></li>
+        <li><a href="javascript100.html">배열(Array)</a></li>
+        <li><a href="javascript100.html">객체(Object)</a></li>
     </ol>
     <ol class="ol2">
-        <li><a href="Javascript500.html">변수</a></li>
-        <li><a href="Javascript500.html">상수</a></li>
-        <li><a href="Javascript500.html">배열</a></li>
-        <li><a href="Javascript500.html">객체</a></li>
+        <li><a href="javascript500.html">변수</a></li>
+        <li><a href="javascript500.html">상수</a></li>
+        <li><a href="javascript500.html">배열</a></li>
+        <li><a href="javascript500.html">객체</a></li>
     </ol>
     <ol class="ol3">
-        <li><a href="Javascript300.html">함수(function)</a></li>
+        <li><a href="javascript300.html">함수(function)</a></li>
     </ol>
     <ol class="ol4">
-        <li><a href="Javascript200.html">조건문</a></li>
-        <li><a href="Javascript200.html">반복문</a></li>
+        <li><a href="javascript200.html">조건문</a></li>
+        <li><a href="javascript200.html">반복문</a></li>
     </ol>
     <ol class="ol5">
         <li><a href="javascript602.html">문자열 객체</a></li>
@@ -270,582 +340,53 @@
         <li><a href="javascript608.html">숫자 객체</a></li>
         <li><a href="javascript603.html">브라우저 객체</a></li>
         <li><a href="javascript607.html">요소 객체</a></li>
-        <li><a href="javascript605.html">이벤트 메서드</a></li>
+        <li><a href="javascript605.html">이벤트 객체</a></li>
     </ol>
     <ol class="ol6">
         <li><a href="javascript606.html">샘플</a></li>
-        <li><a href="javascript606.html">알고리즘</a></li>
+        <li><a href="javascript400.html">알고리즘</a></li>
     </ol>
 
     <h2 class="mt20">문자열 객체 샘플</h2>
     <ul>
-        <li><a href="Javascript603-1.html">01. CSS 속성 첫 글자만 검색하기</a><a class="sam" href="javascript602.html">charAt</a></li>
-        <li><a href="Javascript603-1.html">02. CSS 속성 검색하면 설명 보여주기</a><a class="sam" href="javascript601.html"></a></li>
-        <li><a href="Javascript603-1.html">03. CSS 속성 정렬하기</a><a class="sam" href="javascript601.html"></a></li>
+       <li><a href="javascriptSample01.html">01. CSS 속성 첫 글자만 검색하기</a><a class="sam" href="javascript602.html">charAt()</a></li>
+       <li><a href="javascriptSample02.html">02. CSS 속성 검색하면 설명 보여주기</a><a class="sam" href="javascript601.html">find()</a></li>
+       <li><a href="javascriptSample03.html">03. CSS 속성 정렬하기</a><a class="sam" href="javascript601.html">sort()</a></li>
+    </ul>
+
+    <h2 class="mt20">샘플</h2>
+    <ul>
+       <li><a href="javascriptSample.html">01. HTML 속성 첫 글자만 검색하기</a></li>
+       <li><a href="javascriptSample.html">02. HTML 속성 검색하면 설명 보여주기</a></li>
+       <li><a href="javascriptSample.html">03. HTML 속성 정렬하기</a></li>
     </ul>
 
     <h2 class="mt20">날짜 객체 샘플</h2>
     <ul>
-        <li><a href="Javascript603-1.html">01. 시계 만들기</a></li>
-        <li><a href="Javascript603-1.html">02. HTML 요소 검색하면 설명 보여주기</a></li>
-        <li><a href="Javascript603-1.html">03. HTML 요소 정렬하기</a></li>
+       <li><a href="javascriptSample04.html">01. 시계 만들기</a><a class="sam" href="javascript604.html">getHours()</a></li>
     </ul>
 
     <hr>
 
-
-
+    <!-- sample1 -->
     <div id="sample1" class="sample">
-        <h2>01. 변수 : 데이터 저장소 <span class="dot"></span></h2>
+        <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    var x = 100; //변수 x에 숫자 100을 저장
-    var y = 200; //변수 y에 숫자 200을 저장
-    var z = "javascript"; //변수 z에 문자 javascript 저장
+            <pre class="line-numbers"><code class="language-js">{
 
-    document.write("*** 01. 변수 : 데이터 저장소 ***");
-    document.write(x);
-    document.write(y);
-    document.write(z);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample2" class="sample">
-        <h2>02. 변수 : 데이터 저장 + 데이터 변경 <span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    let x = 100;
-    let y = 200;
-    let z = "javascript";
-    x = 300;    //변수 x에 값이 100에서 300으로 변경
-    y = 400;
-    z = "jquery";
-
-    document.write("*** 02. 변수 : 데이터 저장 + 데이터 변경 ***");
-    document.write(x);
-    document.write(y);
-    document.write(z);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample3" class="sample">
-        <h2>03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    let x = 100;
-    let y = 200;
-    let z = "javascript";
-    x += 300;       // x = x + 300; (대입연산자)
-    y += 400;       // y = y + 400;
-    z += "jquery";  // z = z + "jquery";
-
-    document.write("*** 03. 변수 ***");
-    document.write(x);
-    document.write(y);
-    document.write(z);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample4" class="sample">
-        <h2>04. 상수<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const x = 100;
-    const y = 200;
-    const z = "javascript";
-    // x = 300;
-    // y = 400;
-    // z = "jquery";
-    //Uncaught TypeError: Assignment to constant variable.
-
-    document.write("*** 04. 상수 ***");
-    document.write(x);
-    document.write(y);
-    document.write(z);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample5" class="sample">
-        <h2>05. 배열 : 표현방법1<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const arr = new Array();    //배열 선언
-    arr[0] = 100;               //첫번재 배열 저장소에 숫자 100을 저장
-    arr[1] = 200;               //두번재 배열 저장소에 숫자 200을 저장
-    arr[2] = "javascript";      //세번재 배열 저장소에 문자 javascript를 저장
-
-    document.write("*** 05. 배열 ***");
-    document.write(arr[0]);
-    document.write(arr[1]);
-    document.write(arr[2]);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample6" class="sample">
-        <h2>06. 배열 : 표현방법2<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const arr = new Array(100, 200, "javascript");
-
-    document.write("*** 06. 배열 ***");
-    document.write(arr[0]);
-    document.write(arr[1]);
-    document.write(arr[2]);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample7" class="sample">
-        <h2>07. 배열 : 표현방법3<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const arr = [];     //배열 선언
-    arr[0] = 100;              
-    arr[1] = 200;              
-    arr[2] = "javascript";   
-
-    document.write("*** 07. 배열 ***");
-    document.write(arr[0]);
-    document.write(arr[1]);
-    document.write(arr[2]);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample8" class="sample">
-        <h2>08. 배열 : 표현방법4<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const arr = [100, 200, "javascript"];    //배열 선언
-
-    document.write("*** 08. 배열 ***");
-    document.write(arr[0]);
-    document.write(arr[1]);
-    document.write(arr[2]);
-}
-</code></pre>
-        </div>
-    </div>
-
-    <hr>
-
-    <div id="sample9" class="sample">
-        <h2>09. 객체 : 표현 방법1 : 배열 스타일<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = new Object();
-    obj[0] = 100;
-    obj[1] = 200;
-    obj[2] = "javascript";
-
-    document.write("*** 09. 객체 ***<br>");
-    document.write(obj[0], "<br>");
-    document.write(obj[1], "<br>");
-    document.write(obj[2], "<br><br>");
 }
 </code></pre>
         </div>
     </div>
     <hr>
-    <div id="sample10" class="sample">
-        <h2>10. 객체 : 데이터 저장(키와 값) : 표현 방법2 : 객체 스타일<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = new Object;
-    obj.a = 100;
-    obj.b = 200;
-    obj.c = "javascript";
+    <!-- sample1 -->
 
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample11" class="sample">
-        <h2>11.객체 : 데이터 저장 (키와 값) : 표현 방법3 : 키워드 생략<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = {};
-    obj.a = 100;
-    obj.b = 200;
-    obj.c = "javascript";
-
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample12" class="sample">
-        <h2>12.객체 : 데이터 저장 (키와 값) : 표현 방법4<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = {a:100, b:200, c:"javascript"};
-
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample13" class="sample">
-        <h2>13.객체 : 데이터 저장 (키와 값) : 표현 방법5 : 배열 속에 객체<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = [
-    {a:100, b:200},
-    {c:"javascript"}
-    ];
-    document.write(obj[0].a);
-    document.write(obj[0].b);
-    document.write(obj[1].c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample14" class="sample">
-        <h2>14.객체 : 데이터 저장 (키와 값) : 표현 방법6 : 객체 속에 배열<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = {
-    a: 100,
-    b: [200, 300],
-    c: "javascript"
-    }
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.b[0]);
-    document.write(obj.b[1]);
-    document.write(obj.c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample15" class="sample">
-        <h2>15.객체 : 데이터 저장 (키와 값) : 표현 방법7 : 객체 속에 변수<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const a = 100;
-    const b = 200;
-    const c = "javascript";
-
-    const obj = {a, b, c}
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.c);
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <div id="sample16" class="sample">
-        <h2>16.객체 : 데이터 저장 (키와 값) : 표현 방법8 : 객체 속에 함수<span class="dot"></span></h2>
-        <div class="code">
-<pre class="line-numbers"><code class="language-js">{
-    const obj = {
-    a: 100,
-    b: [200, 300],
-    c: "javascript",
-    d: function(){
-        document.write("자바스크립트가 실행되었습니다.<br>");
-    },
-    e: function(){
-        document.write( obj.c + "가 실행되었습니다.<br>");
-    },
-    f: function(){
-        document.write( this.c + "가 실행되었습니다.<br>");
-    },
-    }
-    document.write(obj.a);
-    document.write(obj.b);
-    document.write(obj.b[0]);
-    document.write(obj.b[1]);
-    document.write(obj.c);
-    obj.d();
-    obj.e();
-    obj.f();
-}
-</code></pre>
-</div>
-</div>
-<hr>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
         //sample1
-        //01. 변수 : 데이터 저장소
-        {
-            var x = 100; //변수 x에 숫자 100을 저장
-            var y = 200; //변수 y에 숫자 200을 저장
-            var z = "javascript"; //변수 z에 문자 javascript 저장
 
-            document.write("*** 01. 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
-        }
-
-        //sample2
-        //02. 변수 : 데이터 저장 + 데이터 변경
-        {
-            let x = 100;
-            let y = 200;
-            let z = "javascript";
-            x = 300;    //변수 x에 값이 100에서 300으로 변경
-            y = 400;
-            z = "jquery";
-
-            document.write("*** 02. 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
-        }
-
-        //sample3
-        //변수 : 데이터 저장 + 데이터 변경 + 데이터 추가
-        {
-            let x = 100;
-            let y = 200;
-            let z = "javascript";
-            x += 300;       // x = x + 300; (대입연산자)
-            y += 400;       // y = y + 400;
-            z += "jquery";  // z = z + "jquery";
-            
-            document.write("*** 03. 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
-        }
-
-        //sample4
-        //상수 : 데이터 저장소 : 데이터 값이 변하지 않음
-        {
-            const x = 100;
-            const y = 200;
-            const z = "javascript";
-            // x = 300;
-            // y = 400;
-            // z = "jquery";
-            //Uncaught TypeError: Assignment to constant variable.
-
-            document.write("*** 04. 상수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
-        }
-
-        //sample5
-        //배열 : 여러 개의 데이터 저장 : 표현 방법1
-        {   
-            const arr = new Array();    //배열 선언
-            arr[0] = 100;               //첫번재 배열 저장소에 숫자 100을 저장
-            arr[1] = 200;               //두번재 배열 저장소에 숫자 200을 저장
-            arr[2] = "javascript";      //세번재 배열 저장소에 문자 javascript를 저장
-
-            document.write("*** 05. 배열 ***<br>");
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2], "<br><br>");
-        }
-
-        //sample06
-        //배열 : 표현 방법2
-        {
-            const arr = new Array(100, 200, "javascript");
-
-            document.write("*** 06. 배열 ***<br>");
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2], "<br><br>");
-        }
-
-        //sample07
-        //배열 : 표현 방법3
-        {
-            const arr = [];     
-            arr[0] = 100;              
-            arr[1] = 200;              
-            arr[2] = "javascript";   
-
-            document.write("*** 07. 배열 ***<br>");
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2], "<br><br>");
-        }
-
-        //sample08
-        //배열 : 표현 방법4
-        {
-            const arr = [100, 200, "javascript"];    
-
-            document.write("*** 08. 배열 ***<br>");
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2], "<br><br>");
-        }
-
-        //sample09
-        //객체 : 데이터 저장(키와 값) : 표현 방법1 : 배열 스타일
-        {
-            const obj = new Object();
-            obj[0] = 100;
-            obj[1] = 200;
-            obj[2] = "javascript";
-
-            document.write("*** 09. 객체 ***<br>");
-            document.write(obj[0], "<br>");
-            document.write(obj[1], "<br>");
-            document.write(obj[2], "<br><br>");
-        }
-
-        //sample10
-        //객체 : 데이터 저장(키와 값) : 표현 방법2
-        {
-            const obj = new Object();
-            obj.a = 100;
-            obj.b = 200;
-            obj.c = "javascript";
-
-            document.write("*** 10. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.c, "<br><br>");
-        }
-
-        //sample11
-        //객체 : 데이터 저장(키와 값) : 표현 방법3 : 키워드 생략
-        {
-            const obj = {};
-            obj.a = 100;
-            obj.b = 200;
-            obj.c = "javascript";
-
-            document.write("*** 11. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.c, "<br><br>");
-        }
-
-        //sample12
-        //객체 : 데이터 저장(키와 값) : 표현 방법4 
-        {
-            const obj = {a:100, b:200, c:"javascript"};
-
-            document.write("*** 12. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.c, "<br><br>");
-        }
-
-        //sample13
-        //객체 : 데이터 저장(키와 값) : 표현 방법5 : 배열 속에 객체
-        {
-            const obj = [
-                {a:100, b:200},
-                {c:"javascript"}
-            ];
-
-            document.write("*** 13. 객체 ***<br>");
-            document.write(obj[0].a, "<br>");
-            document.write(obj[0].b, "<br>");
-            document.write(obj[1].c, "<br><br>");
-        }
-
-        //sample14
-        //객체 : 데이터 저장(키와 값) : 표현 방법6 : 객체 속에 배열
-        {
-            const obj = {
-                a: 100,
-                b: [200, 300],
-                c: "javascript"
-            }
-            document.write("*** 14. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.b[0], "<br>");
-            document.write(obj.b[1], "<br>");
-            document.write(obj.c, "<br><br>");
-        }
-
-        //sample15
-        //객체 : 데이터 저장(키와 값) : 표현 방법7 : 객체 속에 변수
-        {
-            const a = 100;
-            const b = 200;
-            const c = "javascript";
-
-            const obj = { a, b, c }
-
-            document.write("*** 15. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.c, "<br><br>");
-        }
-
-        //sample16
-        //객체 : 데이터 저장(키와 값) : 표현 방법8 : 객체 속에 함수
-        {
-            const obj = {
-                a: 100,
-                b: [200,300],
-                c: "javascript",
-                d: function(){
-                    document.write("javascript가 실행되었습니다.<br>");
-                },
-                e: function(){
-                    document.write( obj.c + "가 실행되었습니다.<br>");
-                },
-                f: function(){
-                    document.write( this.c + "가 실행되었습니다.<br>");
-                }
-            }
-
-            document.write("*** 16. 객체 ***<br>");
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.b[0], "<br>");
-            document.write(obj.b[1], "<br>");
-            document.write(obj.c, "<br>");
-            obj.d();
-            obj.e();
-            obj.f();
-        }
     </script>
 </body>
 

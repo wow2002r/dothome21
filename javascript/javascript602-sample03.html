@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 속성 검색하기</title>
+    <title>CSS 속성 검색하기</title>
     <style>
         @font-face {
             font-family: 'GyeonggiBatang';
@@ -52,7 +53,7 @@
         }
 
         .board {
-            margin: 5vw 10vw 10vw 10vw;
+            margin: 4vw 10vw 10vw 10vw;
             width: 80vw;
             background-color: #F1F3F6;
             border: 2px solid #000;
@@ -111,9 +112,7 @@
 
         .board .search-result ul li.hide {
             display: none;
-
         }
-
 
         @media (max-width: 800px) {
             .board {
@@ -130,30 +129,25 @@
             .board span {
                 font-size: 12px;
             }
-
-            .board .search input {
+            .board .search input{
                 width: 100%;
                 box-sizing: border-box;
                 font-size: 16px;
                 padding: 10px 10px 10px 20px;
             }
-
-            .board .list {
+            .board.search-result {
                 margin-top: 20px;
             }
-
             .girl {
                 width: 200px;
             }
-
             .dog {
                 width: 100px;
             }
-
-            button {
-                font-family: 'GyeonggiBatang';
-                padding: 10px 20px;
-            }
+        }
+        button {
+            font-family: 'GyeonggiBatang';
+            padding: 10px 20px;
         }
     </style>
 </head>
@@ -161,17 +155,18 @@
 <body>
     <div id="wrap">
         <div class="board">
-            <span>CSS 속성을 넣어주세요!!</span>
-            <h1>CSS 속성 검색하기</h1>
+            <span>CSS 속성을 순서대로 정리하기</span>
+            <h1>CSS 속성 정리</h1>
             <div class="button-wrap">
-                <button class="asce">오름차순</button>
-                <button class="asce">내림차순</button>
+                <button class="asc">오름차순</button>
+                <button class="dsc">내림차순</button>
             </div>
             <div class="search-result">
                 <ul>
                     <li>align-content</li>
-                    <li>align-tiems</li>
+                    <li>align-items</li>
                     <li>align-self</li>
+                    <li>all</li>
                 </ul>
             </div>
         </div>
@@ -184,40 +179,32 @@
     </div>
 
     <script>
-        const cssProp = [{
-            id: 1,
-            name: "align-content"
-        },
-        {
-            id: 2,
-            name: "align-tiems"
-        },
-        {
-            id: 3,
-            name: "align-self"
-        },
-    ]
-    
-    document.write(cssProp[0].name,"<br>")
-    //align-content
-    
-    document.write(cssProp[1].name,"<br>")
-    //align-tiems
+        const cssProp = [
+            {
+                id: 1, name: "align-content"
+            },
+            {
+                id: 2, name: "align-items"
+            },
+            {
+                id: 3, name: "align-self"
+            },
+            {
+                id: 4, name: "all"
+            },
+        ];
+
+        const searchResult = document.querySelector(".search-result");
+        const ascrButton = document.querySelector(".asce");
+
+        function updataList(){
+            let listHTML = '';
+
+            for ( let prop of cssProp ){
+                searchResult.innerHTML += "<li>"+ prop.id + prop.name +"<li>"
+            }
+        }
         
-    document.write(cssProp[2].name,"<br>")
-    //align-self
-
-    //for of문
-    for(let i of cssProp) {
-        document.write(Prop.name)
-    }
-
-    document.write("<br>")
-    //align-self
-
-    //align-tiems
-
-    //align-self
     </script>
 </body>
 

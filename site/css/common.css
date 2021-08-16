@@ -1,7 +1,25 @@
+
 /* container */
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-color: #C5CAE8;
+    position: relative;
+    /* background-color: #C5CAE8; */
+}
+.container-fluid {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* bin-style */
+.btn-style1 {
+    border: 1px solid #000;
+    padding: 7 30px;
+}
+.btn-style1.radius {
+    border-radius: 30px;
+}
+.dark .btn-style {
+    border-color: #fff;
 }

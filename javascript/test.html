@@ -89,6 +89,56 @@
             }
             callback(func);
         }
+        document.write("***11번***<br>")
+        {
+            (function (){
+                document.write("함수가 실행되었습니다.<br><br>");
+            })();
+        }
+        document.write("***13번***<br>")
+        {
+            function func1(a,b) {
+                document.write(arguments[0]);
+                document.write(arguments[1]);
+            }
+            func1("함수A가 실행되었습니다","함수B가 실행되었습니다<br><br>")
+        }
+        document.write("***15번***<br>")
+        {
+            let sum = 0;
+            for(var i=1; i<=100; i++) {
+                sum += i;
+            }
+            document.write(sum, "<br><br>")
+        }
+        document.write("***16번***<br>")
+        {
+            function func(){
+                document.write("함수2가 실행되었습니다.");
+            }
+            function callback(str){
+                document.write("함수1가 실행되었습니다.");
+                str();
+            }
+            callback(func, "<br><br>");
+        }
+        document.write("***20번***<br>")
+        {
+            const objA = {
+                a: 100,
+                b: 200
+            }
+            const objB = {
+                c: "javascript",
+                d: "jquery"
+            }
+            const spread = {...objA, ...objB}
+
+            document.write(spread.a);
+            document.write(spread.b);
+            document.write(spread.c);
+            document.write(spread.d);
+        }
     </script>
 </body>
 
