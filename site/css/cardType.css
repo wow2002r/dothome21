@@ -1,0 +1,108 @@
+/* 카드 타입 유형 */
+body {
+    background: #f3f3f3;
+}
+.cardType{
+    background-color: #fff;
+    box-shadow: 0 0 50px rgb(0,0,0,0.1);
+}
+
+
+/* cardType01 */
+.cardType01 {
+    font-family: 'S-CoreDream';
+    padding: 150px 0;
+    background-color: #fff;
+}
+
+.cardType01 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    font-family: 'S-CoreDream';
+    margin-bottom: 7px;
+}
+
+.cardType01 p {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 1.20;
+    margin-bottom: 40px;
+}
+
+/* flex를 이용한 레이아웃 */
+.card-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-wrap>div {
+    width: 387px;
+}
+
+.card h2 {
+    padding: 0 0 337px;
+}
+.card .card-title {
+    display: block;
+    font-size: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .card-desc {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+
+    /* 두줄 효과 */
+    display: -webkit-box;
+
+    /* 밴더 프리픽스 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card .card-keyword {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+/* cardt2 */
+.cardType02 {
+    font-family: 'S-CoreDream';
+    padding: 150px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cardType02 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    font-family: 'S-CoreDream';
+    margin-bottom: 7px;
+}
+
+.cardType02 p {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 1.20;
+    margin-bottom: 40px;
+}
+
+.cardType02 .card {
+    width: 205px;
+    height: 356px;
+    margin: 40px;
+}
+
+.cardType02 .card-wrap .card {
+    width: 285px;
+    height: 356px;
+    margin: 40px 20px 0 0;
+    padding: 15px 15px 16px 14px;
+    border-radius: 5px;
+    border: solid 1px #E6E6E6;
+}

@@ -1,24 +1,22 @@
 :root {
     /* 폰트 */
     font-size: 16px;
-
-    --fontScore1 : font-family: 'S-CoreDream-1Thin';
-    --fontScore2 : font-family: 'S-CoreDream-2ExtraLight';
-    --fontScore3 : font-family: 'S-CoreDream-3Light';
-    --fontScore4 : ;
-    --fontScore5 : font-family: 'S-CoreDream-5Medium';
-    --fontScore6 : font-family: 'S-CoreDream-6Bold';
-    --fontScore7 : font-family: 'S-CoreDream-7ExtraBold';
-    --fontScore8 : font-family: 'S-CoreDream-8Heavy';
-
-    --fontGmarkL : font-family: 'GmarketSansLight';
-    --fontGmarkM : font-family: 'GmarketSansMedium';
-    --fontGmarkB : font-family: 'NEXON Lv2 Gothic Bold';
-
-    --fontNexon1L : font-family: 'NEXON Lv1 Gothic OTF Light';
-    --fontNexon1M : font-family: 'NEXON Lv1 Gothic OTF';
-    --fontNexon1B : font-family: 'NEXONFootballGothicBA1';
-    --fontNexon2L : font-family: 'NEXON Lv2 Gothic Light';
-    --fontNexon2M : font-family: 'NEXON Lv2 Gothic';
-    --fontNexon2B : font-family: 'NEXON Lv2 Gothic Bold';
+    
+    --fontScore1 : 'S-CoreDream-1Thin';
+    --fontScore2 : 'S-CoreDream-2ExtraLight';
+    --fontScore3 : 'S-CoreDream-3Light';
+    --fontScore4 : 'S-CoreDream-4Regular';
+    --fontScore5 : 'S-CoreDream-5Medium';
+    --fontScore6 : 'S-CoreDream-6Bold';
+    --fontScore7 : 'S-CoreDream-7ExtraBold';
+    --fontScore8 : 'S-CoreDream-8Heavy';
+    --fontGmarkL : 'GmarketSansLight';
+    --fontGmarkM : 'GmarketSansMedium';
+    --fontGmarkB : 'GmarketSansBold';
+    --fontNexon1L : 'NEXON Lv1 Gothic OTF Light';
+    --fontNexon1M : 'NEXON Lv1 Gothic OTF';
+    --fontNexon1B : 'NEXON Lv1 Gothic OTF Bold';
+    --fontNexon2L : 'NEXON Lv2 Gothic Light';
+    --fontNexon2M : 'NEXON Lv2 Gothic';
+    --fontNexon2B : 'NEXON Lv2 Gothic Bold';
 }
