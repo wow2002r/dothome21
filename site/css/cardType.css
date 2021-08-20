@@ -2,9 +2,10 @@
 body {
     background: #f3f3f3;
 }
-.cardType{
+
+.cardType {
     background-color: #fff;
-    box-shadow: 0 0 50px rgb(0,0,0,0.1);
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.1);
 }
 
 
@@ -26,7 +27,7 @@ body {
     font-weight: 200;
     font-size: 15px;
     line-height: 1.20;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* flex를 이용한 레이아웃 */
@@ -42,6 +43,7 @@ body {
 .card h2 {
     padding: 0 0 337px;
 }
+
 .card .card-title {
     display: block;
     font-size: 32px;
@@ -70,7 +72,7 @@ body {
     opacity: 0.5;
 }
 
-/* cardt2 */
+/* cardType02 */
 .cardType02 {
     font-family: 'S-CoreDream';
     padding: 150px 0;
@@ -89,7 +91,7 @@ body {
     font-weight: 200;
     font-size: 15px;
     line-height: 1.20;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .cardType02 .card {
@@ -105,4 +107,64 @@ body {
     padding: 15px 15px 16px 14px;
     border-radius: 5px;
     border: solid 1px #E6E6E6;
+}
+
+.cardType02 .card-wrap .card-title {
+    font-size: 29px;
+}
+
+.cardType02 .card-wrap span {
+    font-size: 15px;
+}
+
+.cardType02 .card-wrap .button {
+    width: 53px;
+    height: 25px;
+    padding: 5px 16px 4px;
+    margin: 40px 0 0;
+    border-radius: 20px;
+    border: solid 1px #000;
+    background-color: #000;
+    float: left;
+}
+
+.cardType02 .card-wrap .button2 {
+    width: 67px;
+    height: 25px;
+    padding: 4px 14px 3px 15px;
+    margin: 40px 0 0 3px;
+    border-radius: 20px;
+    border: solid 1px #000;
+    background-color: #000;
+    float: left;
+}
+
+.cardType02 .card-wrap p.site {
+    width: 21px;
+    height: 12px;
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.cardType02 .card-wrap p.coding {
+    width: 21px;
+    height: 12px;
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
 }
