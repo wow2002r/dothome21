@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //
+        {
+            const obj = {
+                a: 1000,
+                b: 2000,
+                c: 3000,
+            }
+            document.write(obj.a, "<br>")
+            document.write(obj.b, "<br>")
+            document.write(obj.c, "<br>")
+        }
+        {
+            const obj = {
+                a: 1000,
+                b: 2000,
+                c: 3000,
+            }
+            document.write(obj.a, "<br>")
+            document.write(obj.b, "<br>")
+            document.write(obj.c, "<br>")
+            document.write(obj.a + obj.b + obj.c, "<br>")
+            document.write(obj.b + obj.c, "<br>")
+            document.write(obj.a + obj.c, "<br>")
+            document.write(obj.a / obj.a, "<br>")
+            document.write(obj.b / obj.a, "<br>")
+            document.write(obj.c / obj.a, "<br>")
+            document.write(Object.keys(obj, "<br><br>"));
+        }
+        {
+            const obj = [
+                {a: 1000},
+                {a: 2000},
+                {a: 3000}
+            ]
+            document.write(obj[0].a,"<br>")
+            document.write(obj[1].a,"<br>")
+            document.write(obj[2].a,"<br>")
+            document.write(obj[0].a + obj[1].a + obj[2].a,"<br>")
+            document.write(obj[1].a + obj[2].a,"<br>")
+            document.write(obj[0].a + obj[2].a,"<br>")
+            document.write(obj[1].a / obj[1].a,"<br>")
+            document.write(obj[1].a / obj[0].a,"<br>")
+            document.write(obj[2].a / obj[0].a,"<br>")
+            document.write(Object.keys(obj))
+        }
+        {
+            const obj3 = [1000, 2000, 3000, "a", "b", "c"]
+
+            
+        }
+    </script>
+</body>
+
+</html>

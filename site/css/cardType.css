@@ -72,99 +72,35 @@ body {
     opacity: 0.5;
 }
 
-/* cardType02 */
-.cardType02 {
-    font-family: 'S-CoreDream';
-    padding: 150px 0;
-    background-color: #fff;
-    text-align: center;
-}
 
-.cardType02 h2 {
-    font-weight: 500;
+
+
+
+/* cardType02 */
+h2#h22 {
+    margin: 0 309px 40px 15px;
     font-size: 50px;
     font-family: 'S-CoreDream';
-    margin-bottom: 7px;
+    font-weight: 500;
 }
 
-.cardType02 p {
-    font-weight: 200;
-    font-size: 15px;
-    line-height: 1.20;
-    margin-bottom: 50px;
-}
-
-.cardType02 .card {
-    width: 205px;
-    height: 356px;
-    margin: 40px;
-}
-
-.cardType02 .card-wrap .card {
-    width: 285px;
-    height: 356px;
-    margin: 40px 20px 0 0;
-    padding: 15px 15px 16px 14px;
-    border-radius: 5px;
-    border: solid 1px #E6E6E6;
-}
-
-.cardType02 .card-wrap .card-title {
-    font-size: 29px;
-}
-
-.cardType02 .card-wrap span {
-    font-size: 15px;
-}
-
-.cardType02 .card-wrap .button {
-    width: 53px;
-    height: 25px;
-    padding: 5px 16px 4px;
-    margin: 40px 0 0;
-    border-radius: 20px;
-    border: solid 1px #000;
-    background-color: #000;
-    float: left;
-}
-
-.cardType02 .card-wrap .button2 {
-    width: 67px;
-    height: 25px;
-    padding: 4px 14px 3px 15px;
-    margin: 40px 0 0 3px;
-    border-radius: 20px;
-    border: solid 1px #000;
-    background-color: #000;
-    float: left;
-}
-
-.cardType02 .card-wrap p.site {
-    width: 21px;
-    height: 12px;
+h3 {
+    font-size: 20px;
     font-family: 'S-CoreDream';
-    font-weight: 400;
-    font-size: 10px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
+
 }
 
-.cardType02 .card-wrap p.coding {
-    width: 21px;
-    height: 12px;
-    font-family: 'S-CoreDream';
-    font-weight: 400;
-    font-size: 10px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
+img {
+    width: 590px;
+    height: 387px;
+    padding: 0px 41px 21px 20px;
+}
+
+.box {
+    width: 410px;
+    height: 140px;
+    margin: 0 109px 12px 10px;
+    padding: 56px 18px 13px 15px;
+    opacity: 0.8;
+    background-color: #9a481d;
 }
