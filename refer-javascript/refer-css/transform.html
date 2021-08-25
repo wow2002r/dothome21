@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Reference</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansLight';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: 'GmarketSansLight';
+        }
+
+        #header {
+            padding: 3% 2% 0% 2%;
+            border-bottom: 1px solid #000;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 96%;
+            background-color: #f5f5f5;
+        }
+
+        #header h1 {
+            font-family: 'GmarketSansBold';
+        }
+
+        #header strong {
+            position: absolute;
+            right: 2%;
+            bottom: 2%;
+        }
+
+        main h2 {
+            font-family: 'GmarketSansBold';
+            font-size: 80px;
+            text-align: center;
+            padding: 15% 5% 5%;
+        }
+
+        main h2 em {
+            color: #90caf9;
+            font-style: normal;
+        }
+
+        #contents {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .refer {
+            background-color: #fff;
+            padding: 60px;
+            border: 1px solid #000;
+            margin-bottom: 300px;
+        }
+
+        .refer h3 {
+            display: inline-block;
+            padding: 6px 30px;
+            margin-bottom: 40px;
+            background-color: #90caf9;
+            color: #fff;
+        }
+
+        .refer h3 a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .refer h3.active {
+            box-shadow: inset 0 -5px 0 0 #64b5f6;
+        }
+
+        .refer table {
+            width: 100%;
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+        }
+
+        .refer table th {
+            border: 1px solid #aaa;
+            padding: 15px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+
+        .refer table td {
+            border: 1px solid #aaa;
+            padding: 15px;
+
+        }
+
+        .refer table tr {
+            transition: all 0.3s;
+        }
+
+        .refer table tr:hover {
+            background-color: #90caf9;
+            color: #fff;
+            cursor: crosshair;
+        }
+
+        .link {
+            margin-bottom: 20px;
+        }
+
+        .link li {
+            list-style: none;
+            display: inline;
+        }
+
+        .link li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 13px 10px 10px 15px;
+            background-color: #000;
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 2px;
+        }
+
+        .link li a:hover {
+            background: #90caf9;
+        }
+
+        .page {
+            text-align: right;
+            margin-bottom: 3px;
+        }
+
+        .page li {
+            display: inline;
+            list-style: none;
+        }
+
+        .page li a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .page li a:hover {
+            color: #64b5f6;
+        }
+
+        .black {
+            background: #000;
+            columns: #fff;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .sample {
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+            margin-bottom: 40px;
+        }
+
+        .sample h3 {
+            background: #F6F6F6;
+            height: 40px;
+            padding-top: 13px;
+            margin-bottom: 0;
+        }
+
+        .sample h3 span {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #E96E4C;
+            border-radius: 50%;
+            margin-left: 15px;
+            position: relative;
+        }
+
+        .sample h3 span::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #E6A935;
+            border-radius: 50%;
+            position: absolute;
+            left: 23px;
+            top: 0;
+        }
+
+        .sample h3 span::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #85C33D;
+            border-radius: 50%;
+            position: absolute;
+            left: 45px;
+            top: 0;
+        }
+
+        .sample .boxWrap {
+            padding: 20px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .sample .boxWrap>div {
+            float: left;
+            margin: 25px;
+            background: #ccc;
+            width: 170px;
+            height: 170px;
+            text-align: center;
+            line-height: 170px;
+            color: #fff;
+        }
+
+        .translate01 {
+            transform: translate(10px, 10px);
+        }
+
+        .translate02 {
+            transform: translate(15px, 15px);
+        }
+
+        .translate03 {
+            transform: translate(20px, 20px);
+        }
+
+        .translate04 {
+            transform: translate(25px, 25px);
+        }
+
+        .translate05 {
+            transform: translate(30px, 30px);
+        }
+
+        @media (max-width: 1220px) {
+            #contents {
+                width: 98%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .sample {
+                box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+                margin-bottom: 40px;
+            }
+
+            .sample h6 {
+                background: #F6F6F6;
+                height: 40px;
+                padding-top: 13px;
+                margin-bottom: 0;
+            }
+
+            .sample h6 span {
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: #E96E4C;
+                border-radius: 50%;
+                margin-left: 15px;
+                position: relative;
+            }
+
+            .sample h6 span::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                background-color: #E6A935;
+                border-radius: 50%;
+                position: absolute;
+                left: 23px;
+                top: 0;
+            }
+
+            .sample h6 span::after {
+                content: '';
+                width: 15px;
+                height: 15px;
+                background-color: #85C33D;
+                border-radius: 50%;
+                position: absolute;
+                left: 45px;
+                top: 0;
+            }
+
+            .sample .boxWrap {
+                padding: 20px;
+                background: #fff;
+                overflow: hidden;
+            }
+
+            .sample .boxWrap>div {
+                float: left;
+                margin: 25px;
+                background: #ccc;
+                width: 170px;
+                height: 170px;
+                text-align: center;
+                line-height: 170px;
+                color: #fff;
+            }
+
+            .box-button {
+                border-top: 1px solid #F1F1F1;
+                padding: 20px;
+            }
+
+            .box-button>a {
+                color: #333;
+                text-decoration: none;
+                border: 1px solid #333;
+                border-radius: 30px;
+                padding: 5px 30px;
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .box-button>a:hover {
+                background-color: #000;
+                color: #fff;
+            }
+
+            .box-wrap {
+                overflow: hidden;
+                padding: 40px;
+            }
+
+            .box-wrap>div {
+                float: left;
+                width: 130px;
+                height: 130px;
+                background: #F1F1F1;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height: 130px;
+                color: #fff;
+                margin: 30px;
+                transition: all 0.3s;
+                perspective: 500px;
+            }
+
+            .box-wrap>div>div {
+                transition: all 0.3s;
+            }
+
+            .box-wrap>div>div:hover {
+                transform: none;
+            }
+
+            .box-wrap.background1>div>div {
+                background-image: linear-gradient(to top, #FBC2EB 0%, #A6C1EE 100%);
+            }
+
+            .box-wrap.background2>div>div {
+                background-image: linear-gradient(to top, #FDCBF1 0%, #FDCBF1 1%, #E6DEE9 100%);
+            }
+
+            .box-wrap.background3>div>div {
+                background-image: linear-gradient(120deg, #A6C0FE 0%, #F68084 100%);
+            }
+
+            .box-wrap.background4>div>div {
+                background-image: linear-gradient(to top, #30CFD0 0%, #330867 100%);
+            }
+
+            .box-wrap.background5>div>div {
+                background-image: linear-gradient(to right, #EEA2A2 0%, #BBC1BF 19%, #57C6E1 42%, #B49FDA 79%, #7AC5D8 100%);
+            }
+
+            .box-wrap.background6>div>div {
+                background-image: linear-gradient(to top, #DBDCD7 0%, #DDDCD7 24%, #E2C9CC 30%, #E7627D 46%, #B8235A 59%, #801357 71%, #3D1635 84%, #1C1A27 100%);
+            }
+
+            .box-wrap.background7>div>div {
+                background-image: linear-gradient(to top, #A18CD1 0%, #FBC2EB 100%);
+            }
+
+            .box-wrap.background8>div>div {
+                background-image: linear-gradient(to top, #FAD0C4 0%, #FFD1FF 100%);
+            }
+
+            .box-wrap.background9>div>div {
+                background-image: linear-gradient(to top, #D299C2 0%, #FEF9D7 100%);
+            }
+
+            .box-wrap.background10>div>div {
+                background-image: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            }
+
+            .box-wrap.background11>div>div {
+                background-image: linear-gradient(to top, #FDDB92 0%, #D1FDFF 100%);
+            }
+
+            .box-wrap.background12>div>div {
+                background-image: linear-gradient(180deg, #2AF598 0%, #009EFD 100%);
+            }
+
+            .box-wrap.background13>div>div {
+                background-image: linear-gradient(to top, #0BA360 0%, #3CBA92 100%);
+            }
+
+            .box-wrap.background14>div>div {
+                background-image: linear-gradient(to top, #FF0844 0%, #FFB199 100%);
+            }
+
+            .box-wrap.background15>div>div {
+                background-image: linear-gradient(to right, #F83600 0%, #F9D423 100%);
+            }
+
+            .box-wrap.background16>div>div {
+                background-image: linear-gradient(to top, #E8198B 0%, #C7EAFD 100%);
+            }
+
+            #contents {
+                width: 96%;
+            }
+
+            #header {
+                padding: 6% 2% 2% 2%;
+            }
+
+            #header h1 {
+                font-size: 16px;
+            }
+
+            #header strong {
+                font-size: 14px;
+                bottom: 10%;
+            }
+
+            main h2 {
+                font-size: 30px;
+                padding: 22% 5% 5%;
+            }
+
+            .refer {
+                padding: 10px;
+                margin-bottom: 100px;
+            }
+
+            .refer h3 {
+                margin-bottom: 10px;
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+
+            .refer table th {
+                padding: 8px;
+            }
+
+            .refer table td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>라인 중학교 1학년 코딩반</h1>
+        <strong>최재광</strong>
+    </header>
+    <!-- //header -->
+    <main id="contents">
+        <h2>CSS <em>레퍼런스 북</em></h2>
+        <ul class="page">
+            <li><a href="../refer-html/index.html">HTML</a></li>
+            <li><a href="../refer-css/index.html">CSS</a></li>
+            <li><a href="../Javascript100.html">JAVASCRIPT</a></li>
+        </ul>
+        <section class="refer">
+            <h3 class="active"><a href="index.html">Alphabet</a></h3>
+            <h3><a href="index2.html">Topics</a></h3>
+            <h3><a href="transform.html">transform</a></h3>
+
+
+            <table>
+                <colgroup>
+                    <col style="width: 10%">
+                    <col style="width: 20%">
+                    <col style="width: 30%">
+                    <col style="width: 40%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택자</th>
+                        <th>종류</th>
+                        <th>예시</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5" class="va">translate</td>
+                        <td>translate()</td>
+                        <td>transform: translate(10px, 20px)</td>
+                        <td>X좌표, Y좌표 이동을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td>translate3d()</td>
+                        <td>transform: translate3d(10px, 20px, 30px)</td>
+                        <td>X좌표, Y좌표, Z좌표 이동을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td>translateX()</td>
+                        <td>transform: translateX(10px)</td>
+                        <td>X좌표 이동을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td>translateY()</td>
+                        <td>transform: translateY(10px)</td>
+                        <td>Y좌표 이동을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td>translateZ()</td>
+                        <td>transform: translateZ(10px)</td>
+                        <td>Z좌표 이동을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="va">scale</td>
+                        <td>scale()</td>
+                        <td>transform: scale(2, 2)</td>
+                        <td>선택한 요소의 X축과 Y축 확대를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>scale3d()</td>
+                        <td>transform: scale3d(2, 2, 2)</td>
+                        <td>선택한 요소의 X축, Y축, Z축 확대를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>scaleX()</td>
+                        <td>transform: scaleX(2)</td>
+                        <td>선택한 요소의 X축 확대를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>scaleY()</td>
+                        <td>transform: scaleY(2)</td>
+                        <td>선택한 요소의 Y축 확대를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>scaleZ()</td>
+                        <td>transform: scaleZ(2)</td>
+                        <td>선택한 요소의 Z축 확대를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="va">skew</td>
+                        <td>skew()</td>
+                        <td>transform: skew(10deg, 20deg)</td>
+                        <td>선택한 요소의 X축, Y축 회전을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skew3d()</td>
+                        <td>transform: skew3d(10deg, 20deg, 30deg)</td>
+                        <td>선택한 요소의 X축, Y축, Z축 회전을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skewX()</td>
+                        <td>transform: skewX(10deg)</td>
+                        <td>선택한 요소의 X축 회전을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skewY()</td>
+                        <td>transform: skewY(10deg)</td>
+                        <td>선택한 요소의 Y축 회전을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skewZ()</td>
+                        <td>transform: skewZ(10deg)</td>
+                        <td>선택한 요소의 Z축 회전을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="va">skew</td>
+                        <td>skew()</td>
+                        <td>transform: skew(10deg, 20deg)</td>
+                        <td>선택한 요소의 X축, Y축 기울기를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skewX()</td>
+                        <td>transform: skewX(10deg)</td>
+                        <td>선택한 요소의 X축 기울기를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>skewY()</td>
+                        <td>transform: skewY(10deg)</td>
+                        <td>선택한 요소의 Y축 기울기를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="va">etc</td>
+                        <td>transform-origin</td>
+                        <td>transform-origin: 20%, 30%</td>
+                        <td>선택한 요소의 X축, Y축 기준점을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>transform-style</td>
+                        <td>transform-style: preserve-3d</td>
+                        <td>선택한 요소 스타일을 3D로 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>perspective</td>
+                        <td>perspective: 500px</td>
+                        <td>선택한 요소의 원근점 거리를 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>perspective-origin</td>
+                        <td>perspective-origin: 500px</td>
+                        <td>선택한 요소의 원근점 뱡향을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>backface-visibility</td>
+                        <td>backface-visibility: hidden;</td>
+                        <td>선택한 요소의 3D 뒷면의 배경 유무를 설정합니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- //contents -->
+
+    <!-- sample01 -->
+    <div class="bs-docs-section">
+        <h2 id="intro1" class="page-header">Sample01</h2>
+        <div class="sample">
+            <h3><span><em class="sr-only">transform: translate</em></span></h3>
+            <div class="box-wrap background1 sample1">
+                <div class="box">
+                    <div class="translate01"><span>translate01</span></div>
+                </div>
+                <div class="box">
+                    <div class="translate02"><span>translate02</span></div>
+                </div>
+                <div class="box">
+                    <div class="translate03"><span>translate03</span></div>
+                </div>
+                <div class="box">
+                    <div class="translate04"><span>translate04</span></div>
+                </div>
+                <div class="box">
+                    <div class="translate05"><span>translate05</span></div>
+                </div>
+            </div>
+        </div>
+        <pre class="line-numbers language-css"><code>.translate01 {transform: translate(10px, 10px);}
+.translate02 {transform: translate(15px, 15px);}
+.translate03 {transform: translate(20px, 20px);}
+.translate04 {transform: translate(25px, 25px);}
+.translate05 {transform: translate(30px, 30px);}
+</code></pre>
+    </div>
+    <!-- //sample01 -->
+    
+</body>
+
+</html>

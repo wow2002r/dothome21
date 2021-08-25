@@ -77,20 +77,20 @@ body {
 
 
 /* cardType02 */
-h2#h22 {
+.cardType02 .h2#h22 {
     margin: 0 309px 40px 15px;
     font-size: 50px;
     font-family: 'S-CoreDream';
     font-weight: 500;
 }
 
-h3 {
+.cardType02 .h3 {
     font-size: 20px;
     font-family: 'S-CoreDream';
 
 }
 
-img {
+.img {
     width: 590px;
     height: 387px;
     padding: 0px 41px 21px 20px;
@@ -103,4 +103,113 @@ img {
     padding: 56px 18px 13px 15px;
     opacity: 0.8;
     background-color: #9a481d;
+}
+
+/* cardType03 */
+.cardType03 h2 {
+    width: 411px;
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-size: 58px;
+    margin: 96px 360px 43px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+/* 첫번째 이미지1 */
+.cardType03 img {
+    width: 594px;
+    height: 589px;
+    margin: 0 360px 0;
+    flex-grow: 0;
+    vertical-align: middle;
+    outline: 0;
+}
+
+/* 첫번째 이미지 */
+.cardType03 .image {
+    width: 0;
+    height: 0;
+}
+
+/* 링크 */
+.cardType03 .a1 {
+
+}
+
+/* .cardType03 .bg {
+    width: 575px;
+    height: 144px;
+    flex-grow: 0;
+    padding: 6px 19px 12px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+} */
+
+.cardType03 h3 {
+    width: 575px;
+    height: 144px;
+    flex-grow: 0;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+
+.cardType03 .p1 {
+    width: 377px;
+    font-family: 'GmarketSans';
+    font-weight: 200;
+    font-size: 22px;
+    color: #fff;
+}
+
+.cardType03 .p2 {
+    width: 377px;
+    font-family: 'GmarketSans';
+    font-weight: 200;
+    font-size: 22px;
+    color: #fff;
+}
+
+.cardType03 .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 594px;
+    height: 144px;
+    flex-grow: 0;
+    position: absolute;
+    margin: 0 360px 0;
+    bottom: 14%;
+}
+
+.cardType03 .text2 {
+    width: 187px;
+    height: 44px;
+    margin: 0 60px 0 970px;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardType03 .p3 {
+    width: 377px;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+}
+
+.cardType03 .img2 {
+    width: 287px;
+    height: 285px;
+    margin: 0 60px 0 970px;
+    flex-grow: 0;
+    vertical-align: middle;
 }
