@@ -105,6 +105,7 @@ body {
     background-color: #9a481d;
 }
 
+/* -------------------------------- */
 /* cardType03 */
 .cardType03 h2 {
     width: 411px;
@@ -130,11 +131,54 @@ body {
     outline: 0;
 }
 
+/* 두번째 이미지 */
+.cardType03 .img2 {
+    width: 287px;
+    height: 285px;
+    margin: 0 60px 0 970px;
+    flex-grow: 0;
+    vertical-align: middle;
+    outline: 0;
+    display:inherit;
+}
+
+/* 세번째 이미지 */
+.cardType03 .img3 {
+    width: 287px;
+    height: 285px;
+    margin: 19px 60px 0 970px;
+    flex-grow: 0;
+    vertical-align: middle;
+    outline: 0;
+    display: block;
+}
+
+/* 네번째 이미지 */
+.cardType03 .img4 {
+    width: 287px;
+    height: 285px;
+    margin: 0 60px 0 1280px;
+    flex-grow: 0;
+    vertical-align: middle;
+    outline: 0;
+}
+
+/* 다섯번째 이미지 */
+.cardType03 .img5 {
+    width: 287px;
+    height: 285px;
+    margin: 0 60px 0 1280px;
+    flex-grow: 0;
+    vertical-align: middle;
+    outline: 0;
+}
+
 /* 첫번째 이미지 */
 .cardType03 .image {
     width: 0;
     height: 0;
 }
+
 
 /* 링크 */
 .cardType03 .a1 {
@@ -163,7 +207,7 @@ body {
 }
 
 
-
+/* 글씨 1*/
 .cardType03 .p1 {
     width: 377px;
     font-family: 'GmarketSans';
@@ -172,6 +216,7 @@ body {
     color: #fff;
 }
 
+/* 글씨 2*/
 .cardType03 .p2 {
     width: 377px;
     font-family: 'GmarketSans';
@@ -186,30 +231,82 @@ body {
     height: 144px;
     flex-grow: 0;
     position: absolute;
-    margin: 0 360px 0;
+    margin: 0 360px 27px;
     bottom: 14%;
 }
 
 .cardType03 .text2 {
     width: 187px;
     height: 44px;
-    margin: 0 60px 0 970px;
+    margin: 220px 60px 0px 987px;
+    position: absolute;
     flex-grow: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.cardType03 .text3 {
+    width: 187px;
+    height: 44px;
+    margin: 235px 60px 0px 987px;
+    position: absolute;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardType03 .text4 {
+    width: 187px;
+    height: 44px;
+    margin: 218px 0px 0px 1298px;
+    position: absolute;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardType03 .text5 {
+    width: 187px;
+    height: 44px;
+    margin: 235px 60px 0px 987px;
+    position: absolute;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 글씨3 */
 .cardType03 .p3 {
-    width: 377px;
+    flex-grow: 0;
     font-family: 'GmarketSans';
     font-weight: 400;
     font-size: 30px;
+    text-align:center;
     color: #fff;
+    margin: 2px
 }
 
-.cardType03 .img2 {
-    width: 287px;
-    height: 285px;
-    margin: 0 60px 0 970px;
+.cardType03 .p4 {
     flex-grow: 0;
-    vertical-align: middle;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    font-size: 30px;
+    text-align:center;
+    color: #fff;
+    margin: 2px
+}
+
+.cardType03 .p5 {
+    flex-grow: 0;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    font-size: 30px;
+    text-align:center;
+    color: #fff;
+    margin: 2px
+}
+
+.cardType03 .p6 {
+    flex-grow: 0;
+    font-family: 'GmarketSans';
+    font-weight: 400;
+    font-size: 30px;
+    text-align:center;
+    color: #fff;
+    margin: 2px
 }
