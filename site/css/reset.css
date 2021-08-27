@@ -47,12 +47,12 @@ textarea {
 /* 링크 초기화 */
 a {
     color: #222;
-    text-decoration: none
+    text-decoration: none;
 }
 /* 목록 초기화 */
 ol,
 ul {
-    list-style: none
+    list-style: none;
 }
 /* 스타일 초기화 */
 strong {
