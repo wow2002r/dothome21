@@ -1,0 +1,27 @@
+body {
+    background: #f3f3f3;
+    width: 100%;
+}
+
+.testSite {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgb(0, 0, 0, 0.1);
+}
+
+.testSite .container {
+    display: flex;
+}
+
+.testSite h2{
+    width: 555px;
+    height: 120px;
+    font-family: 'S-CoreDream';
+    font-weight: 600;
+    font-size: 50px;
+    text-align:center;
+    margin-left: 120%;
+}
+
+
+
+/* img/cover_img_feature1.png */
