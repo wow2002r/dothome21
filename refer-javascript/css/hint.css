@@ -1,0 +1,27 @@
+/*  결과값 보여주는CSS */
+.box h3 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px;
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 5px;
+}
+.box h3:hover {
+    cursor: pointer;
+}
+.box div {
+    display: inline-block;
+    background-color: #272822;
+    color: #fff;
+    padding: 8px;
+    border-radius: 0 5px 5px 5px;
+    display: none;
+    margin-top: -5px;
+}
+.box.active div {
+    display: block;
+}

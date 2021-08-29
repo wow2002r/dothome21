@@ -1,62 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cardType03</title>
+    <meta name="author" content="deayeong0412">
+    <meta name="description" content="웹 사이트 제작을 위한 사이트입니다.">
+    <meta name="keywords" content="송대영, 사이트, 웹퍼블리셔, 웹 접근성, 화려한 디자인, daeyeong0412, publisher, css3, html, markup, design">
+    <title>CardType</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <!--  -->
-    <link rel="stylesheet" href="css/cardType.css">
-</head>
 
+    <!-- Card Type CSS -->
+    <link rel="stylesheet" href="css/cardType.css">
+
+    <!-- 나눔스퀘어 웹 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
 <body>
+    <!-- cardType01 -->
     <section class="cardType">
         <div class="container">
-            <div class="cardType03">
-                <h3>전세계 맛집탐방</h3>
-                <div class="wrap">
-                    <div class="imgbox">
-                        <img class="img01" src="img/card1-3.jpg" alt="맛집1">
-                        <div class="tx">
-                            <span class="ss1">무엇이든 맛봐드립니다<br></span>
-                            <span class="ss2">맛잇는 집 그 어느곳이라도 달려갑니다<br></span>
-                            <span class="ss3">문의하세요wow2002r@yahoo.io</span>
-                        </div>
+            <div class="cardType01">
+                <h2>오늘의 여행 추천</h2>
+                <p>국내 여행 및 해외여행의 추천지의 베스트 이미지 샷을 올리는 공간 입니다. 각종 여행지와 해당 여행지에 대한 정보를 볼수있습니다.</p>
+                <div class="card-wrap">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/card01.jpg" alt="바다 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">바다</strong>
+                            <span class="card-desc">파란 바다와 하얀 건물들로 유명한<br>그리스의 산토리니</span>
+                            <span class="card-keyword">
+                                <span>#그리스</span>
+                                <span>#바다</span>
+                                <span>#산토리니</span>
+                                <span>#포카리스웨이트</span>
+                            </span>
+                        </a>
                     </div>
-                    <div class="imgbox">
-                        <img class="img02" src="img/card1-3.2.jpg" alt="맛집1">
-                        <div class="tx1">
-                            <span class="ss">컵케이크맛집</span>
-                        </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/card02.jpg" alt="신비한 자연경관 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">신비한 자연경관</strong>
+                            <span class="card-desc">유네스코 세계 자연 유산으로 유명한<br>짐바브웨의 빅토리아 폭포</span>
+                            <span class="card-keyword">
+                                <span>#짐바브웨</span>
+                                <span>#유네스코</span>
+                                <span>#폭포</span>
+                                <span>#세계 3대 폭포</span>
+                            </span>
+                        </a>
                     </div>
-                    <div class="imgbox img-samll">
-                        <img class="img02" src="img/card1-3.3.jpg" alt="맛집1">
-                        <div class="tx1">
-                            <span class="ss">양식맛집</span>
-                        </div>
-                    </div>
-                    <div class="imgbox img-samll">
-                        <img class="img02 test" src="img/card1-3.4.jpg" alt="맛집1">
-                        <div class="tx1">
-                            <span class="ss">햄버거맛집</span>
-                        </div>
-                    </div>
-                    <div class="imgbox img-samll">
-                        <img class="img02" src="img/card1-3.5.jpg" alt="맛집1">
-                        <div class="tx1">
-                            <span class="ss">스테이크맛집</span>
-                        </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/card03.jpg" alt="산과 넓은 초원 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">산과 넓은 초원</strong>
+                            <span class="card-desc">반지의 제왕 촬영지로 유명한<br>뉴질랜드의 남 섬</span>
+                            <span class="card-keyword">
+                                <span>#뉴질랜드</span>
+                                <span>#남 섬</span>
+                                <span>#반지의 제왕</span>
+                                <span>#호빗</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</body>
+    <!-- //cardType01 -->
 
+    <!-- cardType02 -->
+    <section class="cardType">
+        <div class="container">
+            <div class="cardType02">
+                <h2>웹스토리보이 강의</h2>
+                <p>웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.</p>
+                <div class="card-wrap">
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/image 1.jpg" alt="웹표준 사이트 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">웹표준 사이트 만들기</strong>
+                            <span class="card-desc">웹접근성 지침서를 준수하여 만들 사이트 입니다. 기본기를 다지기 위한...</span>
+                            <span class="card-keyword">
+                                <span>SITE</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/image 2.jpg" alt="기업 사이트 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">기업 사이트 만들기</strong>
+                            <span class="card-desc">웹접근성 지침서를 준수하여 만들 사이트 입니다. 기본기를 다지기 위한...</span>
+                            <span class="card-keyword">
+                                <span>SITE</span>
+                                <span>CODING</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/image 3.jpg" alt="반응형 사이트 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">반응형 사이트 만들기</strong>
+                            <span class="card-desc">웹접근성 지침서를 준수하여 만들 사이트 입니다. 기본기를 다지기 위한...</span>
+                            <span class="card-keyword">
+                                <span>SITE</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="img/image 4.jpg" alt="포폴 사이트 관련 이미지입니다." class="card-img">
+                            <strong class="card-title">포폴 사이트 만들기</strong>
+                            <span class="card-desc">웹접근성 지침서를 준수하여 만들 사이트 입니다. 기본기를 다지기 위한...</span>
+                            <span class="card-keyword">
+                                <span>SITE</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //cardType02 -->
+
+    <!-- cardType03 -->
+    <section class="cardType">
+        <div class="container">
+            <div class="cardType03">
+                <h2>웹스토리보이 레퍼런스 북</h2>
+                <p>웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 레퍼런스 북입니다.</p>
+                <div class="popular">
+                    <a href="#" style="color: red">✓최신순</a>
+                    <a href="#">&nbsp;&nbsp;&nbsp;✓인기순</a>
+                </div>
+                <div class="card-wrap">
+                    <ul>
+                        <li class="card">
+                            <a href="#">
+                                <img src="img/image 5.jpg" alt="꽃1 이미지입니다." class="card-img">
+                                <div class="right">
+                                    <em class="card-cate red">HTML</em>
+                                    <strong class="card-title">&lt;wbr&gt; 태그는 줄바꿈 할 위치를 정의할 때 사용합니다.</strong>
+                                    <span class="card-desc">&lt;wbr&gt; 태그의 사용은 제한적입니다. 일반적인 한글이나 영어에서는 해당이 되지 않습니다. 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을 할 때 사용합니다. 예를 들면 의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다. 단어의 줄바꿈이나 글자의 줄바꿈을 컨트롤 하고 싶다면 word-break 속성을 사용합니다.</span>
+                                    <span class="card-date">2021.04.03</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="#">
+                                <img src="img/image 6.jpg" alt="꽃2 이미지입니다." class="card-img">
+                                <div class="right">
+                                    <em class="card-cate blue">CSS</em>
+                                    <strong class="card-title">&lt;aside&gt; 태그는 주요 콘텐츠의 보조적 컨텐츠 섹션을 설정합니다.</strong>
+                                    <span class="card-desc">&lt;aside&gt; 태그는 주요 콘텐츠의 보조적 컨텐츠 섹션을 설정합니다. 웹 페이지의 메인 콘텐츠와 관련된 사이드의 정보, 광고 등 부분적인 정보를 나타낼 때 사용합니다. &lt;aside&gt; 태그는 주요 콘텐츠의 보조적 컨텐츠 섹션을 설정합니다. &lt;aside&gt; 태그는 웹 페이지의 메인 콘텐츠와 관련된 사이드의 정보, 광고 등 부분적인 정보를 나타낼 때 사용합니다.</span>
+                                    <span class="card-date">2021.04.03</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="#">
+                                <img src="img/image 7.jpg" alt="꽃3 이미지입니다." class="card-img">
+                                <div class="right">
+                                    <em class="card-cate red">JAVASCRIPT</em>
+                                    <strong class="card-title">&lt;article&gt; 태그는 사이트의 독립적인 컨텐츠 섹션을 설정합니다.</strong>
+                                    <span class="card-desc">&lt;article&gt; 태그는 사이트의 독립적인 컨텐츠 섹션을 설정합니다. 독립적인 컨텐츠에는 포럼, 신문기사, 잡지, 블러그 항목, 게시판 글 등이 있으며, 각각의 컨테츠에는 제목(&lt;h1&gt;~&lt;h6&gt;)이 표시되어야 합니다. &lt;article&gt; 태그는 사이트의 독립적인 컨텐츠 섹션을 설정합니다. &lt;article&gt; 태그는 포럼, 신문기사, 잡지, 블러그 항목, 게시판 글 등 콘텐츠의 독립적인 항목을 나타냅니다.</span>
+                                    <span class="card-date">2021.04.03</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card">
+                            <a href="#">
+                                <img src="img/image 8.jpg" alt="꽃4 이미지입니다." class="card-img">
+                                <div class="right">
+                                    <em class="card-cate green">JQUERY</em>
+                                    <strong class="card-title">&lt;abbr&gt; 태그는 줄임말이나 머리글자를 표현하는데 사용합니다.</strong>
+                                    <span class="card-desc">&lt;abbr&gt; 태그는 줄임말이나 머리글자를 표현하는데 사용합니다. abbr은 abbreviation의 약자로, "약자 또는 생략어"라는 의미를 가집니다. title 속성을 사용하여 전체 단어를 지정 할 수 있으며, &lt;dfn&gt; 태그와 같이 사용하여 정의할 수 있습니다.<br><br></span>
+                                    <span class="card-date">2021.04.03</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //cardType03 -->
+
+</body>
 </html>
