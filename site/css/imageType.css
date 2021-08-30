@@ -153,3 +153,38 @@ body {
     margin-top: 5px;
     display: inline-block;
 }
+
+/* imgType03 */
+
+.imageType03 h2 {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.imageType03 h3 {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 0 65px;
+}
+
+.imageType03 .image {
+    margin: 0;
+}
+
+.imageType03 .imgbox {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    /* justify-content 가운대로 정렬 */
+    gap: 25px;
+    justify-content: center;
+    padding: 0 0 100px 0;
+}
+
+.imageType03 .img01 {
+    margin: 0;
+}

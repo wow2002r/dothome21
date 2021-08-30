@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -34,7 +33,7 @@
                     <li><a href="jqueryRefer06.html">애니메이션 메서드</a></li>
                     <li><a href="jqueryRefer07.html">이벤트 메서드</a></li>
                 </ul>
-                    <li><a href="jqueryRefer08.html">샘플</a></li>
+                <li><a href="jqueryRefer08.html">샘플</a></li>
                 </ul>
             </nav>
 
@@ -44,16 +43,16 @@
                 <table>
                     <caption>기본 선택자</caption>
                     <colgroup>
-                        <col style = "width: 4%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 36%" />
+                        <col style="width: 4%" />
+                        <col style="width: 20%" />
+                        <col style="width: 20%" />
+                        <col style="width: 20%" />
+                        <col style="width: 36%" />
                     </colgroup>
                     <thead>
                         <tr>
-                            <th class="center">번호</th>
-                            <th>종류</th>
+                            <th class="center">종류</th>
+                            <th>선택자</th>
                             <th>jQuery</th>
                             <th>javascript</th>
                             <th>설명</th>
@@ -61,32 +60,129 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="center" rowspan="5"><a href="#sample01">1</a></td>
-                            <td>태그 선택자</td>
-                            <td>$("li")</td>
-                            <td>querySelectorAll("li")</td>
-                            <td>기본 태그를 선택합니다.</td>
+                            <td class="center" rowspan="9">필터링</td>
+                            <td>.eq</td>
+                            <td>$("selector").eq(3)</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>클래스 선택자</td>
+                            <td>filter</td>
                             <td>$(".class")</td>
                             <td>querySelector(".class")</td>
                             <td>클래스를 선택합니다.</td>
                         </tr>
                         <tr>
-                            <td>아이디 선택자</td>
+                            <td>first()</td>
                             <td>$("#id")</td>
                             <td>getElementById("#id)</td>
                             <td>아이디를 선택합니다.</td>
                         </tr>
                         <tr>
-                            <td>그룹 선택자</td>
+                            <td>.has</td>
                             <td>$("#id, .class")</td>
                             <td>-</td>
                             <td>여러개를 선택합니다.</td>
                         </tr>
                         <tr>
-                            <td>전체 선택자</td>
+                            <td>.last</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.map</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.not</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.not</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td class="center" rowspan="13">트리구조</td>
+                            <td>.chil</td>
+                            <td>$("selector").eq(3)</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>.closets</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.find</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.next</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.nextAll()</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.nextUntil</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.parents</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.previl</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.previl</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.adBack</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.contents</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.each</td>
+                            <td>$("*")</td>
+                            <td>-</td>
+                            <td>전체를 선택합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>.rf</td>
                             <td>$("*")</td>
                             <td>-</td>
                             <td>전체를 선택합니다.</td>
@@ -101,11 +197,11 @@
                 <table>
                     <caption>계층 선택자</caption>
                     <colgroup>
-                        <col style = "width: 4%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 20%" />
-                        <col style = "width: 36%" />
+                        <col style="width: 4%" />
+                        <col style="width: 20%" />
+                        <col style="width: 20%" />
+                        <col style="width: 20%" />
+                        <col style="width: 36%" />
                     </colgroup>
                     <thead>
                         <tr>
@@ -144,148 +240,196 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+                <div class="table">
+                    <table>
+                        <caption>계층 선택자</caption>
+                        <colgroup>
+                            <col style="width: 4%" />
+                            <col style="width: 20%" />
+                            <col style="width: 20%" />
+                            <col style="width: 20%" />
+                            <col style="width: 36%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="center">번호</th>
+                                <th>종류</th>
+                                <th>jQuery</th>
+                                <th>javascript</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center" rowspan="4"><a href="#sample01">1</a>내용 필터 선택자</td>
+                                <td>:contains</td>
+                                <td>$("div p")</td>
+                                <td>querySelectorAll('webs'))</td>
+                                <td>선택된 요소에서 일치하는 문자열 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:empty</td>
+                                <td>$("div > p")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 텍스트가 없는 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:has()♥</td>
+                                <td>$("div + p")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 텍스트가 있는 요소를 선택합니다</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>$("div ~ p")</td>
+                                <td>-</td>
+                                <td>div 태그의 인접한 형제 p 태그 중 모든 태그를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td class="center" rowspan="2"><a href="#sample01">1</a>보임 필터 선택자</td>
+                                <td>:hidden</td>
+                                <td>$("div:hidden()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 일치하는 문자열 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:ivisble()</td>
+                                <td>$("div:ivisble()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 보이는 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td class="center" rowspan="10"><a href="#sample01">1</a>자식 요소 필터 선택자</td>
+                                <td>:first-child</td>
+                                <td>$("li:first-child")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 첫 번째 자식 유형 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:furst-of-type()</td>
+                                <td>$("div:ivisble()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 마지막 번째 자식 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:furst-of-()</td>
+                                <td>$("div:ivisble()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 첫 번째 자식 유형 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:furst-of-()</td>
+                                <td>$("div:ivisble()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 첫 번째 자식 유형 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:furst-of-()</td>
+                                <td>$("div:ivisble()")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 마지막 인덱스 번호 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:nth-child()</td>
+                                <td>$("li:nth-last-child(2)")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 첫 번째 자식 유형 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:only-child()</td>
+                                <td>$("only-child")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 유형이 하나인 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:only-child()</td>
+                                <td>$("only-child")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 유형이 하나인 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td class="center" rowspan="15">폼 선택자</td>
+                                <td>:button</td>
+                                <td>$(":button")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 버튼 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:checkbox</td>
+                                <td>$(":checkbox")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 체크 박스 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:file</td>
+                                <td>$(":file")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 파일 업로드 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:image</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 이미지 입력 양식 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:image</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 이미지 입력 양식 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:reset</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td class="center" rowspan="3">슬라이드</td>
+                                <td>:slideDown</td>
+                                <td>$(":button")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 버튼 요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>:slideToggle</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>.flnish</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>.stop()</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>.stop()</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>.deque()</td>
+                                <td>$(":image")</td>
+                                <td>-</td>
+                                <td>선택된 요소에서 리셋 버튼                                                                                                                                                                                              요소를 선택합니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
         </main>
     </div>
 
     <hr>
 
-    <!-- sample01 -->
-    <div id="sample01" class="sample">
-        <h2>01. 기본 선택자<span class="dot"></span></h2>
-        <div class="view view1">
-            <ul>
-                <li>$("li")</li>
-                <li class="class">$(".class")</li>
-                <li id="id">$("#id")</li>
-                <li>$(".class, #id")</li>
-                <li>$("*")</li>
-            </ul>
-        </div>
-        <div class="btn btn1">
-            <a href="#c" class="reset1">리셋</a>
-            <a href="#c" class="btn1-1">클릭하면 클래스(.class)를 선택합니다.</a>
-            <a href="#c" class="btn1-2">클릭하면 아이디(#id)를 선택합니다.</a>
-            <a href="#c" class="btn1-3">클릭하면 기본(li) 태그를 선택합니다.</a>
-            <a href="#c" class="btn1-4">클릭하면 여러가지(#id, .class) 태그를 선택합니다.</a>
-            <a href="#c" class="btn1-5">클릭하면 전체 태그(*)를 선택합니다.</a>
-        </div>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
-    $(".reset1").click(function(){
-        $(".view1 li").removeClass("blue");
-    });
-    $(".btn1-1").click(function(){
-        $(".view1 .class").addClass("blue");
-    });
-    $(".btn1-2").click(function(){
-        $(".view1 #id").addClass("blue");
-    });
-    $(".btn1-3").click(function(){
-        $(".view1 li").addClass("blue");
-    });
-    $(".btn1-4").click(function(){
-        $(".view1 .class, .view #id").addClass("blue");
-    });
-    $(".btn1-5").click(function(){
-        $(".view1 *").addClass("blue");
-    });
-}
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <script>
-        $(".reset1").click(function(){
-            $(".view1 li").removeClass("blue");
-        });
-        $(".btn1-1").click(function(){
-            $(".view1 .class").addClass("blue");
-        });
-        $(".btn1-2").click(function(){
-            $(".view1 #id").addClass("blue");
-        });
-        $(".btn1-3").click(function(){
-            $(".view1 li").addClass("blue");
-        });
-        $(".btn1-4").click(function(){
-            $(".view1 .class, .view #id").addClass("blue");
-        });
-        $(".btn1-5").click(function(){
-            $(".view1 *").addClass("blue");
-        });
-    </script>
-    <!-- sample01 -->
-</code></pre>
-        </div>
-    </div>
-    <hr>
-    <script>
-        const j1reset1 = document.querySelector(".jreset1");
-        const jbtn1_1 = document.querySelector(".jbtn1-1");
-        const jbtn1_2 = document.querySelector(".jbtn1-2");
-        const jbtn1_3 = document.querySelector(".jbtn1-3");
-        const jbtn1_4 = document.querySelector(".jbtn1-4");
-        const jbtn1_5 = document.querySelector(".jbtn1-5");
-
-        j1reset1.addEventListener("click", function(){
-            const liList = document.querySelectorAll(".jview1 li");
-            for( let i = 0; i < liList.length; i++ ){
-                liList[i].classList.remove("red");
-            }
-        });
-
-        jbtn1_1.addEventListener("click", function(){
-            document.querySelector(".j1_class").classList.add("red");
-        });
-
-        jbtn1_2.addEventListener("click", function(){
-            document.getElementById("j1_id").classList.add("red");
-        });
-
-        //for문
-        jbtn1_3.addEventListener("click", function(){
-            // document.querySelector(".jview1 li").classList.add("red");
-            // document.querySelectorAll(".jview1 li").classList.add("red");
-            const liList = document.querySelectorAll(".jview1 li");
-            for( let i = 0; i < liList.length; i++ ){
-                liList[i].classList.add("red");
-            };
-        });
-
-        //forEach문
-        // jbtn1_3.addEventListener("click", function(){
-        //     const liList = document.querySelectorAll(".jview1 li");
-        //     liList.forEach(function(el){
-        //         el.classList.add("red");
-        //     });
-        // });
-
-        // //for of
-        // jbtn1_3.addEventListener("click", function(){
-        //     const liList = document.querySelectorAll(".jview1 li");
-        //     for(let el of liList){
-        //         el.classList.add("red")
-        //     };
-        // });
-
-        //for in
-        // jbtn1_3.addEventListener("click", function(){
-        //     const liList = document.querySelectorAll(".jview1 li");
-        //     for(let el in liList){
-        //         liList[el].classList.add("red");
-        //     }
-        // });
-    </script>
-    <!-- jsample01 -->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>

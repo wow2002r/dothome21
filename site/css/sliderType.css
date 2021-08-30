@@ -125,9 +125,10 @@ body {
     box-sizing: border-box;
 }
 .sliderType01 .slider:nth-child(1) {
-    background-image: url(../img/SLIDER-TYPE01.jpg);
+    background-image: url(img/SLIDER-TYPE01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
 }
+
