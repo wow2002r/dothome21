@@ -47,7 +47,7 @@ body {
 .imageType01 .image .image-img {
     opacity: 0.8;
     transform: scale(1);
-    transition: opacity 0.4s transform 0.4s;
+    transition: opacity 1.4s transform 1.4s;
 }
 
 .imageType01 .image:hover .image-img {

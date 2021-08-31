@@ -70,6 +70,9 @@ body {
     font-weight: 300;
     opacity: 0.5;
 }
+/* cardType01 */
+
+/*------------------------------------------------------------------------------------------------------------*/
 
 /* cardType02 */
 .cardType02 {
@@ -135,6 +138,9 @@ body {
     padding: 4px 16px 3px;
     border-radius: 20px;
 }
+/* //cardType02 */
+
+/*------------------------------------------------------------------------------------------------------------*/
 
 /* cardType03 */
 .cardType03 {
@@ -215,3 +221,98 @@ body {
     text-decoration: underline;
     margin-top: 11px;
 }
+/* //cardType03 */
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* cardType04 */
+.cardType04 {
+    font-family: 'Noto Sans KR'
+}
+
+.cardType04 h2 {
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 67px;
+}
+
+.cardType04 .card-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.cardType04 .card-wrap .card {
+    width: 387px;
+    height: 607px;
+    border-radius: 17px;
+    background-color: #f2f2f2;
+    position: relative;
+    border: 1px solid #f2f2f2;
+}
+
+.cardType04 .card-wrap .card .card-head {
+    font-size: 15px;
+    font-weight: 600;
+    color: #a9a9b0;
+    position: absolute;
+    top: 59px;
+    left: 45px;
+}
+
+.cardType04 .card-wrap .card .card-title {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 93px;
+    left: 45px;
+}
+
+.cardType04 .card-wrap .card img {
+    width: 341px;
+    height: 310px;
+    position: absolute;
+    right: 0;
+    bottom: 71px;
+}
+/* cardType04 */
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* imgType05 */
+.imageType05 h2 {
+    font-family: 'NanumSquare';
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.imageType05 h3 {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 0 65px;
+}
+
+.imageType05 .image {
+    margin: 0;
+}
+
+.imageType05 .imgbox {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    /* justify-content 가운대로 정렬 */
+    gap: 25px;
+    justify-content: center;
+    padding: 0 0 100px 0;
+}
+
+.imageType05 .img01 {
+    margin: 0;
+}
+
+/* //imgType05 */

@@ -154,7 +154,7 @@ body {
     display: inline-block;
 }
 
-/* imgType03 */
+/* imageType03 */
 
 .imageType03 h2 {
     font-family: 'NanumSquare';
@@ -164,7 +164,7 @@ body {
     padding: 100px 0 0 0;
 }
 
-.imageType03 h3 {
+.imageType05 h3 {
     font-family: 'NanumSquare';
     font-weight: 400;
     font-size: 15px;
@@ -172,11 +172,11 @@ body {
     padding: 8px 0 65px;
 }
 
-.imageType03 .image {
+.imageType05 .image {
     margin: 0;
 }
 
-.imageType03 .imgbox {
+.imageType05 .imgbox {
     display: grid;
     grid-template-columns: repeat(3, 380px);
     /* justify-content 가운대로 정렬 */
@@ -185,6 +185,8 @@ body {
     padding: 0 0 100px 0;
 }
 
-.imageType03 .img01 {
+.imageType05 .img01 {
     margin: 0;
 }
+
+/* //imageType03 */
