@@ -5,18 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Effect04</title>
-
-    <!-- jquety -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <title>Menu Effect01</title>
 
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/highlight.css">
+    <style>
+        #tab-menu {
+            max-width: 600px;
+            background: #C4A6A6;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'NEXONLv2Gothic';
+            color: #fff;
+        }
+
+        #tab-btn ul {
+            display: flex;
+        }
+
+        #tab-btn li {
+            width: 20%;
+            list-style: none;
+            text-align: center;
+        }
+
+        #tab-btn li a {
+            font-family: 'S-CoreDream';
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+
+        #tab-btn li.active a {
+            font-family: 'S-CoreDream';
+            font-weight: 500;
+            border-bottom: 3px solid #958181;
+            color: #958181;
+        }
+
+        #tab-cont {
+            font-family: 'S-CoreDream';
+            font-weight: 500;
+            background: #fff;
+            padding: 20px;
+            color: rgb(95, 95, 95);
+        }
+
+        #tab-cont>div {
+            display: none;
+        }
+
+        #tab-cont>div:first-child {
+            display: block;
+        }
+
+        .tab-cont>div h2 {
+            margin-bottom: 10px;
+        }
+
+        .tab-cont>div p {
+            line-height: 1.6;
+        }
+    </style>
+
 </head>
 
 <body class="bg bg0">
+
+    <!-- contents -->
+    <main>
+        <div id="tab-menu">
+            <div id="tab-btn">
+                <ul>
+                    <li class="active"><a href="#">Click1</a></li>
+                    <li><a href="#">Click2</a></li>
+                    <li><a href="#">Click3</a></li>
+                    <li><a href="#">Click4</a></li>
+                    <li><a href="#">Click5</a></li>
+                </ul>
+            </div>
+            <div id="tab-cont">
+                <div>
+                    <h2>도전</h2>
+                    <p>도전하는 자는 안 하는 자보다 그 이상의 가치를 가질 수 있습니다</p>
+                </div>
+                <div>
+                    <h2>걱정</h2>
+                    <p>해보지도 않고 걱정부터 하지 마세요</p>
+                </div>
+                <div>
+                    <h2>실천</h2>
+                    <p>도전을 했으면 끝까지 한번 해보는 겁니다</p>
+                </div>
+                <div>
+                    <h2>목표</h2>
+                    <p>목표를 가지고 한번 끝까지 가보세요 언젠간 될 겁니다</p>
+                </div>
+                <div>
+                    <h2>결론</h2>
+                    <p>결과가 별로 안 좋아도 괜찮습니다 본인이 얼마나 노력했는지가 더 중요하니까요</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //contents -->
+
     <!-- info -->
     <div class="info">
-        <h1>javascript Menu Effect04</h1>
+        <h1>javascript Menu Effect01</h1>
         <p>메뉴 이펙트 - 탭 메뉴</p>
     </div>
 
@@ -24,37 +126,128 @@
         <ul>
             <li><a href="javascriptME01.html">1</a></li>
             <li><a href="javascriptME02.html">2</a></li>
-        </ul>
-        <ul>
             <li><a href="javascriptME03.html">3</a></li>
             <li class="active"><a href="javascriptME04.html">4</a></li>
+            <li><a href="javascriptME05.html">5</a></li>
         </ul>
         <ul>
-            <li><a class="list5" href="javascriptME05.html">5</a></li>
+            <li><a href="jqueryMe01.html">1</a></li>
+            <li><a href="jqueryMe02.html">2</a></li>
+            <li><a href="jqueryMe03.html">3</a></li>
+            <li><a href="jqueryMe04.html">4</a></li>
+            <li><a href="jqueryMe05.html">5</a></li>
         </ul>
     </div>
-
-    <div class="info botton">
+    <div class="info bottom">
         <button>소스 보기</button>
     </div>
+    <!-- //info -->
+
+    <!-- modal  -->
     <div id="modal">
         <div class="modal-bg">
-          <div class="modal-cont">
-            <h2>Code</h2>
-            <p>아무거나</p>
-            <button>닫기</button>
-          </div>
+            <div class="modal-cont">
+                <div class="code-view">
+                    <div class="view-header">
+                        <div class="dot" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="view-title">
+                        <ul>
+                            <li class="active"><a href="#">Html</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Javascript</a></li>
+                        </ul>
+                    </div>
+                    <div class="view-cont">
+        
+                        <!-- no.1 code -->
+                        <div>
+<pre><code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;link href=&quot;/path/to/tailwind.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- ... --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- ... --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                        </div>
+                        <!-- //no.1 code -->
+
+                        <!-- no.2 code -->
+                        <div>
+<pre><code class="language-css">
+아무내용2
+</code></pre>
+                        </div>
+                        <!-- //no.2 code -->
+
+                        <!-- no.3 code -->
+                        <div>
+<pre><code class="language-javascript">
+아무내용3
+</code></pre>
+                        </div>
+                        <!-- //no.3 code -->
+                    </div>
+                    <button>닫기</button>
+                </div>
+            </div>
         </div>
-      </div>
-    <!-- //info -->
+    </div>
+    <!-- //modal -->
+    <!-- script -->
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
     <script>
-        $("button").click(function () {
-            $("#modal").removeClass().addClass("show");
+        //1. 버튼을 클릭하면 클릭한 버튼한테 active추가
+        const tabBtn = document.querySelectorAll("#tab-btn ul li");
+        const tabCont = document.querySelectorAll("#tab-cont > div");
+
+        tabBtn.forEach((element, index) => {
+            element.addEventListener("click", function () {
+
+                tabBtn.forEach(el => {
+                    el.classList.remove("active")
+                });
+                element.classList.add("active");
+
+                tabCont.forEach(el => {
+                    el.style.display = "none";
+                })
+                tabCont[index].style.display = "block";
+            });
         });
 
-        $("button").click(function () {
-            $("#modal").addClass("hide");
+        //2. 자바 스크립트로 소스보기 css / javascript 버튼 상호작용 완성하기
+        
+        const viewTitle = document.querySelectorAll(".view-title ul li");
+        const viewCont = document.querySelectorAll(".view-cont > div");
+
+        viewTitle.forEach((element, index) => {
+            element.addEventListener("click", function () {
+
+                viewTitle.forEach(el => {
+                    el.classList.remove("active")
+                });
+                element.classList.add("active")
+
+                viewCont.forEach(el => {
+                    el.style.display = "none";
+                });
+                viewCont[index].style.display = "block"
+            });
         });
+        
     </script>
 </body>
 

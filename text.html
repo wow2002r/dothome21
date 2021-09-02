@@ -1,126 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        함수
-        함수(function): 하나의 로직을 재실행 할 수 있도록 하는 것.코드의 재사용성을 높여줌
-        함수의 형식
-
-        function 함수명([인자...[, 인자]]) {
-            코드
-            return 반환값
-        }
-
-        함수의 정의와 호출
-
-        function 뒤에 함수이름, 소괄호
-        소괄호 안에 인자라는 값이 차례로 들어옴
-        인자는 함수를 호출할 때 함수의 로직으로 전달할 변수
-        인자는 생략 가능
-        함수를 호출했을 때 실행하게 될 부분이 중괄호 안에 옴
-
-        function numbering() {
-            i = 0;
-
-            while (i < 10) {
-
-                document.write(i);
-                i += 1;
-
-            }
-
-        }
-
-        numbering(); //numbering이라는 이름의 함수 호출 //결과 0123456789
-
-        함수 이름: numbering
-        내용: 0 부터 9 까지를 화면에 출력
-        함수가 없다면
-        var i = 0;
-        while (i < 10) {
-            document.write(i);
-            i += 1;
-        }
-        var i = 0;
-        while (i < 10) {
-            document.write(i);
-            i += 1;
-        }
-        var i = 0;
-        while (i < 10) {
-            document.write(i);
-            i += 1;
-        }
-        var i = 0;
-        while (i < 10) {
-            document.write(i);
-            i += 1;
-        }
-        var i = 0;
-        while (i < 10) {
-            document.write(i);
-            i += 1;
-        } //0부터 9까지를 5번 출력 function numbering(){ var i = 0; while(i < 10){ document.write(i); i += 1; } } numbering(); numbering(); numbering(); numbering(); numbering(); //0부터 9까지를 5번 출력
-
-        입력과 출력
-        함수의 핵심은 입력과 출력
-        입력된 값을 연산해서 출력하는 것이 함수의 기본적인 역할
-        return
-
-        함수 내에서 사용한 return은
-        return 뒤에 따라오는 값을 함수의 결과로 반환
-        동시에 함수를 종료시킴
-
-        function get_member1() {
-            return 'egoing';
-        }
-
-        function get_member2() {
-            return 'k8805';
-        }
-        alert(get_member1());
-        alert(get_member2()); //결과 egoing k8805
-
-        함수 내에서 문자열 egoing과 k8805을
-        return
-
-        function get_member() {
-            return 'egoing';
-            return 'k8805';
-            return 'sorialgi';
-        }
-        alert(get_member()); //결과 eoing
-
-        return 'egoing'
-        을 실행한 후에 함수가 종료
-        인자
-
-        인자(argument): 함수로 유입되는 입력 값
-        어떤 값을 인자로 전달하느냐에 따라서 함수가 반환하는 값이나 메소드의 동작방법을 다르게 할 수 있음
-
-        function get_argument(arg) {
-            return arg;
-        } //정의된 함수를 실행 alert(get_argument(1)); //1 : get_argument로 1이라는 값을 전달 //위에 정의된 (arg) 구문에 의해서 변수 arg의 값으로 숫자 1이 함수 안으로 전달 alert(get_argument(2)); //결과 1 2 //변수 arg는 함수 get_argument 안에서만 유효 복수의 인자function get_arguments(arg1, arg2){ return arg1 + arg2 } alert(get_arguments(10, 20)); //함수를 호출 할 때 전달한 인자 10과 20은 함수의 선언부(1행)의 arg1, arg2에 차례로 할당 //전달된 값은 함수 내부로 전달되서 더해진 후에 반환 alert(get_arguments(20, 30));
-
-        함수를 정의하는 다른 방법
-        var numbering = function () {
-            i = 0;
-            while (i < 10) {
-                document.write(i);
-                i += 1;
-            }
-        }
-        numbering();
-    </script>
-</head>
-
-<body>
-
-</body>
-
-</html>
+<!-- contents -->
+<main>
+    <div id="tab-menu">
+        <div id="tab-btn">
+            <ul>
+                <li class="active"><a href="#">Tab1</a></li>
+                <li><a href="#">Tab2</a></li>
+                <li><a href="#">Tab3</a></li>
+                <li><a href="#">Tab4</a></li>
+                <li><a href="#">Tab5</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont">
+            &gtdiv>
+                <h2>도전</h2>
+                <p>도전하는 자는 안 하는 자보다 그 이상의 가치를 가질 수 있습니다</p>
+            </div>
+            <div>
+                <h2>걱정</h2>
+                <p>해보지도 않고 걱정부터 하지 마세요</p>
+            </div>
+            <div>
+                <h2>실천</h2>
+                <p>도전을 했으면 끝까지 한번 해보는 겁니다</p>
+            </div>
+            <div>
+                <h2>목표</h2>
+                <p>목표를 가지고 한번 끝까지 가보세요 언젠간 될 겁니다</p>
+            </div>
+            <div>
+                <h2>결론</h2>
+                <p>결과가 별로 안 좋아도 괜찮습니다 당신이 얼마나 노력했는지가 더 중요하니까요</p>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- //contents -->

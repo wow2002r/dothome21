@@ -1,3 +1,109 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 100;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 200;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 600;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 800;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  font-weight: 900;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXONLv2Gothic';
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'NEXONLv1Gothic';
   font-weight: 300;
@@ -176,6 +282,14 @@ figcaption {
   background-image: url(../img/bg20@2.jpg);
 }
 
+body {
+  height: 100vh;
+  font-family: 'NEXONLv2Gothic';
+  background-image: -webkit-gradient(linear, left top, right top, from(#eea2a2), color-stop(19%, #bbc1bf), color-stop(42%, #57c6e1), color-stop(79%, #b49fda), to(#7ac5d8));
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-blend-mode: screen;
+}
+
 #main {
   width: 100%;
   height: 100vh;
@@ -265,35 +379,38 @@ figcaption {
 }
 
 .info {
-  color: #fff;
-  font-family: 'NEXONLv1Gothic';
-  font-weight: 400;
+  color: #C4A6A6;
   padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .info.right {
-  position: absolute;
+  left: auto;
   right: 0px;
-  top: 0px;
 }
 
-.info.botton {
-  position: absolute;
+.info.bottom {
+  top: auto;
+  left: auto;
   bottom: 0;
   right: 0;
 }
 
 .info h1 {
-  font-weight: 300;
-  font-size: 20px;
+  font-family: 'S-CoreDream';
+  font-weight: 900;
+  font-size: 25px;
   line-height: 1.6;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #C4A6A6;
   display: inline-block;
   margin-bottom: 10px;
 }
 
 .info p {
-  font-weight: 300;
+  font-family: 'S-CoreDream';
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -305,90 +422,42 @@ figcaption {
 .info li a {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
-  border: 1px dashed #fff;
+  color: #C4A6A6;
+  border: 1px dashed #C4A6A6;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   font-size: 12px;
   margin-bottom: 5px;
+  font-family: 'S-CoreDream';
+  font-weight: 900;
 }
 
 .info li.active a {
-  background: #fff;
+  background: #C4A6A6;
   color: #000;
 }
 
-.botton {
+.info button {
   background: transparent;
-  border: 1px solid #fff;
+  border: 2px solid #C4A6A6;
   padding: 5px 20px;
-  color: #fff;
+  color: #C4A6A6;
   border-radius: 50px;
-  -webkit-box-shadow: 0 0 0 #fff inset;
-          box-shadow: 0 0 0 #fff inset;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  font-family: 'NEXONLv1Gothic';
-  font-weight: 400;
+  -webkit-box-shadow: 0 0 0 #dbcaca inset;
+          box-shadow: 0 0 0 #dbcaca inset;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  font-family: 'S-CoreDream';
+  font-weight: 600;
 }
 
-.botton:hover {
-  -webkit-box-shadow: 0 -50px 0 #fff inset;
-          box-shadow: 0 -50px 0 #fff inset;
-  color: #000;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NEXONLv2Gothic';
-  font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
-  font-style: normal;
-}
-
-body {
-  height: 100vh;
-  font-family: 'NEXONLv2Gothic';
-  background-image: -webkit-gradient(linear, left top, right top, from(#eea2a2), color-stop(19%, #bbc1bf), color-stop(42%, #57c6e1), color-stop(79%, #b49fda), to(#7ac5d8));
-  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-blend-mode: screen;
+.info button:hover {
+  -webkit-box-shadow: 0 -50px 0 #C4A6A6 inset;
+          box-shadow: 0 -50px 0 #C4A6A6 inset;
+  color: #ffffff;
 }
 
 .btn-wrap {
@@ -402,7 +471,6 @@ body {
 .btn-wrap button {
   border: 1px solid #fff;
   padding: 5px 15px;
-  background: #fff;
   border-radius: 50px;
   text-transform: uppercase;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -435,13 +503,6 @@ body {
           justify-content: center;
 }
 
-#modal .modal-bg .modal-cont {
-  background: #fff;
-  padding: 3vw;
-  max-width: 50vw;
-  border-radius: 5px;
-}
-
 #modal .modal-bg .modal-cont h2 {
   font-weight: 400;
   font-size: 30px;
@@ -461,16 +522,207 @@ body {
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;
-  font-family: 'NEXONLv2Gothic';
+  font-family: ‘NEXONLv2Gothic’;
+  margin-top: 10px;
 }
 
-#modal {
-  border: 1px solid #fff;
-  padding: 5px 15px;
+#modal.show {
+  -webkit-animation: unfoldIn 1s ease forwards;
+          animation: unfoldIn 1s ease forwards;
+}
+
+@-webkit-keyframes unfoldIn {
+  0% {
+    -webkit-transform: scaley(0.005) scalex(0);
+            transform: scaley(0.005) scalex(0);
+  }
+  50% {
+    -webkit-transform: scaley(0.005) scalex(1);
+            transform: scaley(0.005) scalex(1);
+  }
+  100% {
+    -webkit-transform: scaley(1) scalex(1);
+            transform: scaley(1) scalex(1);
+  }
+}
+
+@keyframes unfoldIn {
+  0% {
+    -webkit-transform: scaley(0.005) scalex(0);
+            transform: scaley(0.005) scalex(0);
+  }
+  50% {
+    -webkit-transform: scaley(0.005) scalex(1);
+            transform: scaley(0.005) scalex(1);
+  }
+  100% {
+    -webkit-transform: scaley(1) scalex(1);
+            transform: scaley(1) scalex(1);
+  }
+}
+
+#modal.show.hide {
+  -webkit-animation: unfoldOut 1s ease forwards;
+          animation: unfoldOut 1s ease forwards;
+}
+
+@-webkit-keyframes unfoldOut {
+  0% {
+    -webkit-transform: scaley(1) scalex(1);
+            transform: scaley(1) scalex(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.005) scalex(1);
+            transform: scaley(0.005) scalex(1);
+  }
+  100% {
+    -webkit-transform: scaley(0.005) scalex(0);
+            transform: scaley(0.005) scalex(0);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    -webkit-transform: scaley(1) scalex(1);
+            transform: scaley(1) scalex(1);
+  }
+  50% {
+    -webkit-transform: scaley(0.005) scalex(1);
+            transform: scaley(0.005) scalex(1);
+  }
+  100% {
+    -webkit-transform: scaley(0.005) scalex(0);
+            transform: scaley(0.005) scalex(0);
+  }
+}
+
+#modal.show .modal-bg .modal-cont {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: zoomIn 0.5s 0.8s ease forwards;
+          animation: zoomIn 0.5s 0.8s ease forwards;
+}
+
+#modal.show.hide .modal-bg .modal-cont {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: zoomOut 0.5s ease forwards;
+          animation: zoomOut 0.5s ease forwards;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+.code-view {
   background: #fff;
-  border-radius: 50px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  width: 60vw;
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.code-view .view-header {
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.code-view .view-header .dot {
+  padding: 13px 10px 10px 15px;
+}
+
+.code-view .view-header .dot span {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.code-view .view-header .dot span:nth-child(1) {
+  background-color: #F56565;
+}
+
+.code-view .view-header .dot span:nth-child(2) {
+  background-color: #F6E05E;
+}
+
+.code-view .view-header .dot span:nth-child(3) {
+  background-color: #48BB78;
+}
+
+.code-view .view-title {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 0 11px;
+  font-family: ‘NEXONLv2Gothic’;
+}
+
+.code-view .view-title li {
+  display: inline;
+  list-style: none;
+}
+
+.code-view .view-title li a {
+  text-decoration: none;
+  color: #CCCCCC;
+  padding: 10px 10px 12px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.code-view .view-title li.active a {
+  border-top: 2px solid #667EEA;
+  color: #4A5568;
+}
+
+.code-view .view-cont {
+  height: 500px;
+  overflow: scroll;
+}
+
+.code-view .view-cont > div {
+  display: none;
+}
+
+.code-view .view-cont > div:nth-child(1) {
+  display: block;
 }

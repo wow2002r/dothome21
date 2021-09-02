@@ -1,5 +1,110 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 100;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 200;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 600;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 800;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 900;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXONLv2Gothic';
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-style: normal;
+}
+
 // webfonts
 @font-face {
     font-family: 'NEXONLv1Gothic';
@@ -135,6 +240,13 @@ $gradient6: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     }
 }
 
+body {
+    height: 100vh;
+    font-family: 'NEXONLv2Gothic';
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    background-blend-mode: screen;
+}
+
 // main
 #main {
     width: 100%;
@@ -216,34 +328,37 @@ $gradient6: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 
 // info
 .info {
-    color: #fff;
-    font-family: 'NEXONLv1Gothic';
-    font-weight: 400;
+    color: #C4A6A6;
     padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     &.right {
-        position: absolute;
+        left: auto;
         right: 0px;
-        top: 0px;
     }
 
-    &.botton {
-        position: absolute;
+    &.bottom {
+        top: auto;
+        left: auto;
         bottom: 0;
         right: 0;
     }
 
     h1 {
-        font-weight: 300;
-        font-size: 20px;
+        font-family: 'S-CoreDream';
+        font-weight: 900;
+        font-size: 25px;
         line-height: 1.6;
-        border-bottom: 1px dashed #fff;
+        border-bottom: 1px dashed #C4A6A6;
         display: inline-block;
         margin-bottom: 10px;
     }
 
     p {
-        font-weight: 300;
+        font-family: 'S-CoreDream';
+        font-weight: 400;
         font-size: 16px;
     }
 
@@ -254,92 +369,46 @@ $gradient6: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
         a {
             display: inline-block;
             text-decoration: none;
-            color: #fff;
-            border: 1px dashed #fff;
+            color: #C4A6A6;
+            border: 1px dashed #C4A6A6;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
             text-align: center;
             font-size: 12px;
             margin-bottom: 5px;
+            font-family: 'S-CoreDream';
+            font-weight: 900;
         }
 
         &.active {
 
             a {
-                background: #fff;
+                background: #C4A6A6;
                 color: #000;
             }
         }
     }
-}
 
-.botton {
-    background: transparent;
-    border: 1px solid #fff;
-    padding: 5px 20px;
-    color: #fff;
-    border-radius: 50px;
-    box-shadow: 0 0 0 #fff inset;
-    transition: all 0.4s;
-    font-family: 'NEXONLv1Gothic';
-    font-weight: 400;
+    button {
+        background: transparent;
+        border: 2px solid #C4A6A6;
+        padding: 5px 20px;
+        color: #C4A6A6;
+        border-radius: 50px;
+        box-shadow: 0 0 0 #dbcaca inset;
+        transition: all 1.5s;
+        font-family: 'S-CoreDream';
+        font-weight: 600;
 
-    &:hover {
-        box-shadow: 0 -50px 0 #fff inset;
-        color: #000;
+        &:hover {
+            box-shadow: 0 -50px 0 #C4A6A6 inset;
+            color: #ffffff;
+        }
     }
 }
 
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
-    font-style: normal;
-}
-
-body {
-    height: 100vh;
-    font-family: 'NEXONLv2Gothic';
-    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-    background-blend-mode: screen;
-}
 
 .btn-wrap {
     position: absolute;
@@ -350,7 +419,6 @@ body {
     button {
         border: 1px solid #fff;
         padding: 5px 15px;
-        background: #fff;
         border-radius: 50px;
         text-transform: uppercase;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -358,6 +426,11 @@ body {
     }
 }
 
+
+
+
+
+// modal
 #modal {
     position: fixed;
     left: 0;
@@ -375,11 +448,6 @@ body {
         justify-content: center;
 
         .modal-cont {
-            background: #fff;
-            padding: 3vw;
-            max-width: 50vw;
-            border-radius: 5px;
-
             h2 {
                 font-weight: 400;
                 font-size: 30px;
@@ -399,18 +467,152 @@ body {
                 color: #fff;
                 padding: 5px 10px;
                 cursor: pointer;
-                font-family: 'NEXONLv2Gothic';
+                font-family: ‘NEXONLv2Gothic’;
+                margin-top: 10px;
             }
         }
     }
 }
 
-#modal {
-    border: 1px solid #fff;
-    padding: 5px 15px;
+#modal.show {
+    animation: unfoldIn 1s ease forwards;
+}
+
+@keyframes unfoldIn {
+    0% {
+        transform: scaley(0.005) scalex(0);
+    }
+
+    50% {
+        transform: scaley(0.005) scalex(1);
+    }
+
+    100% {
+        transform: scaley(1) scalex(1);
+    }
+}
+
+#modal.show.hide {
+    animation: unfoldOut 1s ease forwards;
+}
+
+@keyframes unfoldOut {
+    0% {
+        transform: scaley(1) scalex(1);
+    }
+
+    50% {
+        transform: scaley(0.005) scalex(1);
+    }
+
+    100% {
+        transform: scaley(0.005) scalex(0);
+    }
+}
+
+#modal.show .modal-bg .modal-cont {
+    transform: scale(0);
+    animation: zoomIn 0.5s 0.8s ease forwards;
+}
+
+#modal.show.hide .modal-bg .modal-cont {
+    transform: scale(0);
+    animation: zoomOut 0.5s ease forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+// code-view
+.code-view {
     background: #fff;
-    border-radius: 50px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    width: 60vw;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .view-header {
+        border-bottom: 1px solid #F2F2F2;
+
+        .dot {
+            padding: 13px 10px 10px 15px;
+
+            span {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 2px;
+            }
+
+            span:nth-child(1) {
+                background-color: #F56565;
+            }
+
+            span:nth-child(2) {
+                background-color: #F6E05E;
+            }
+
+            span:nth-child(3) {
+                background-color: #48BB78;
+            }
+        }
+    }
+
+    .view-title {
+        border-bottom: 1px solid #F2F2F2;
+        padding: 0 11px;
+        font-family: ‘NEXONLv2Gothic’;
+
+        li {
+            display: inline;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #CCCCCC;
+                padding: 10px 10px 12px;
+                margin: 0 5px;
+                display: inline-block;
+            }
+
+            &.active a {
+                border-top: 2px solid #667EEA;
+                color: #4A5568;
+            }
+        }
+    }
+
+    .view.view-title {}
+
+    .view-cont {
+        height: 500px;
+        overflow: scroll;
+
+        >div {
+            display: none;
+        }
+
+        >div:nth-child(1) {
+            display: block;
+        }
+
+    }
 }
