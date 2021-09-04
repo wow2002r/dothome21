@@ -1,0 +1,94 @@
+/* login & botton */
+body {
+    width: 1000px;
+    height: 800px;
+    background-image: url(../img/bg.png);
+}
+
+.bottomType {}
+
+.bottomType .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 180px);
+}
+
+.bottomType .container {
+    padding: 10px;
+}
+
+.bottomType .container .top {}
+
+.bottomType .container .top .logobox {
+    margin: 0;
+}
+
+.bottomType .container .top .logo {
+    width: 30px;
+    height: 30px;
+}
+
+.bottomType .container .top .bottom00box {}
+
+.bottomType .container .top .bottom00box {}
+
+.bottomType .container .top .bottom00 {
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+}
+
+.bottomType .container .top .bottom01 {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    right: 0;
+    color: #fff;
+}
+
+.bottomType .container .top .bottom02 {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    color: #fff;
+}
+
+.bottomType .container .top .bottom03 {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    color: #fff;
+}
+
+.bottomType .container .top .bottom04 {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    color: #fff;
+}
+
+.bottomType .container .top .bottom05 {
+    font-family: 'NanumSquare';
+    font-weight: 300;
+    color: #fff;
+}
+
+.bottomType .container .top .login {
+    display: inline-block;
+    font-family: 'NanumSquare';
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 20px;
+    border: 1px solid hsla(0,0%,100%,.5);
+    line-height: 36px;
+}
+
+/* text */
+.textType {}
+
+.textType .textbox {}
+
+.textType .textbox .text1 {}
+
+.textType .textbox .text2 {}
+
+.textType .textbox .text3 {}

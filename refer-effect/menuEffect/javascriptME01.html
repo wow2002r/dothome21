@@ -76,7 +76,7 @@
 
 </head>
 
-<body class="bg bg0">
+<body class="bg bg0 whale">
 
     <!-- contents -->
     <main>
@@ -209,6 +209,12 @@
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/highlight.min.js"></script>
     <script>
+        window.onload = function () {
+            agentCheck()
+        }
+        // init
+
+
         //1. 버튼을 클릭하면 클릭한 버튼한테 active추가
         const tabBtn = document.querySelectorAll("#tab-btn ul li");
         const tabCont = document.querySelectorAll("#tab-cont > div");
