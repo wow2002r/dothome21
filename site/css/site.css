@@ -1,94 +1,459 @@
 /* login & botton */
 body {
-    width: 1000px;
-    height: 800px;
-    background-image: url(../img/bg.png);
+    height: 65.1vw;
+    background: #232323 url(../img/bg.png) repeat-x 50% 0/3380px 1652px;
 }
 
-.bottomType {}
-
-.bottomType .grid {
-    display: grid;
-    grid-template-columns: repeat(8, 180px);
+.bottonType .container .flex .logobox_login {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    gap: 69px;
+    z-index: 3;
 }
 
-.bottomType .container {
-    padding: 10px;
+#black {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    gap: 69px;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 2;
+    opacity: 0;
+    margin-top: 1px;
+    transition: transform 0.7s, opacity 1s;
 }
 
-.bottomType .container .top {}
 
-.bottomType .container .top .logobox {
-    margin: 0;
-}
-
-.bottomType .container .top .logo {
-    width: 30px;
-    height: 30px;
-}
-
-.bottomType .container .top .bottom00box {}
-
-.bottomType .container .top .bottom00box {}
-
-.bottomType .container .top .bottom00 {
-    font-family: 'NanumSquare';
-    font-weight: 700;
-    font-size: 15px;
-    color: #fff;
-    margin: 0;
-}
-
-.bottomType .container .top .bottom01 {
-    font-family: 'NanumSquare';
-    font-weight: 300;
-    right: 0;
-    color: #fff;
-}
-
-.bottomType .container .top .bottom02 {
-    font-family: 'NanumSquare';
-    font-weight: 300;
-    color: #fff;
-}
-
-.bottomType .container .top .bottom03 {
-    font-family: 'NanumSquare';
-    font-weight: 300;
-    color: #fff;
-}
-
-.bottomType .container .top .bottom04 {
-    font-family: 'NanumSquare';
-    font-weight: 300;
-    color: #fff;
-}
-
-.bottomType .container .top .bottom05 {
-    font-family: 'NanumSquare';
-    font-weight: 300;
-    color: #fff;
-}
-
-.bottomType .container .top .login {
+.bottonType .container .flex .logo {
     display: inline-block;
-    font-family: 'NanumSquare';
+    vertical-align: top;
+    width: 30px;
+}
+
+.bottonType .container .flex .logo_text {
+    display: inline-block;
+    color: #fff;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 1000;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.bottonType .container .flex .login {
+    display: inline-block;
+    font-family: nanumsquare, sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #fff;
     border-radius: 30px;
     padding: 0 20px;
-    border: 1px solid hsla(0,0%,100%,.5);
+    border: 1px solid hsla(0, 0%, 100%, .5);
     line-height: 36px;
 }
 
+.bottonType .container .flex .botton01 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 11px;
+    padding: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.bottonType .container .flex .botton01:hover {
+    color: #4be988;
+
+}
+
+.bottonType .container .flex .botton02 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 11px;
+    padding: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.bottonType .container .flex .botton02:hover {
+    color: #4be988;
+}
+
+.bottonType .container .flex .botton03 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 11px;
+    padding: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.bottonType .container .flex .botton03:hover {
+    color: #4be988;
+}
+
+.bottonType .container .flex .botton04 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 11px;
+    padding: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.bottonType .container .flex .botton04:hover {
+    color: #4be988;
+}
+
+.bottonType .container .flex .botton05 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 11px;
+    padding: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.bottonType .container .flex .botton05:hover {
+    color: #4be988;
+}
+
 /* text */
-.textType {}
+.textType {
+    display: grid;
+    justify-items: center;
+    padding: 166px 0 50px;
+}
 
-.textType .textbox {}
+.textType .textbox .textbox {
+    /* margin-bottom: 50px; */
+}
 
-.textType .textbox .text1 {}
+.textType .textbox .text1 {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 800;
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 100px;
+}
 
-.textType .textbox .text2 {}
+.textType .textbox .text1:not(svg) {
+    transform-origin: 0px 0px;
+}
 
-.textType .textbox .text3 {}
+.textType .textbox .text2 {
+    display: block;
+    padding: 78px 0 32px;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -.88px;
+    color: #fff;
+}
+
+.textType .textbox .text3 {
+    display: block;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 44px;
+    letter-spacing: -.4px;
+    color: #fff;
+    margin-bottom: 130px;
+}
+
+.imgType {
+    background-color: #1c1c1c;
+    height: 65.1vw;
+}
+
+.imgType .box01 {
+    background-color: #313235;
+    position: relative;
+    padding: 52px 50px 0;
+    z-index: 0;
+    vertical-align: top;
+    width: 396px;
+    height: 818px;
+    border-radius: 15px;
+}
+
+.imgType .box02 {
+    background-color: #313235;
+    position: relative;
+    padding: 52px 50px 0;
+    z-index: 0;
+    vertical-align: top;
+    width: 396px;
+    height: 518px;
+    border-radius: 15px;
+}
+
+.imgType .box03 {
+    background-color: #313235;
+    position: relative;
+    padding: 52px 50px 0;
+    z-index: 0;
+    vertical-align: top;
+    width: 396px;
+    height: 489px;
+    border-radius: 15px;
+}
+
+.imgType .box01 .text1-2 {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.imgType .box01 span {
+    display: inline-block;
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    color: #6d8bff;
+}
+
+.imgType .box01 .text1-3 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+}
+
+.imgType .box02 .text1-4 {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.imgType .box02 .text1-5 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+}
+
+.imgType .box02 span {
+    display: inline-block;
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    color: #6d8bff;
+}
+
+.imgType .box03 .text1-6 {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.imgType .box03 .text1-7 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+}
+
+.imgType .box03 span {
+    display: inline-block;
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    color: #6d8bff;
+}
+
+.imgType .center {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.imgType .text {
+    display: block;
+    margin-bottom: 72px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #6d8bff;
+}
+
+
+
+.imgType .img01 {
+    width: 496px;
+    height: 593px;
+    vertical-align: top;
+}
+
+.imgType .img02 {
+    width: 496px;
+    height: 294px;
+    vertical-align: top;
+}
+
+.imgType .img03 {
+    width: 496px;
+    height: 294px;
+    vertical-align: top;
+}
+
+footer .footerbox {
+    background-image: url(../img/main-bg-bottom-p@2x.52c31ca37d17d3860b7029e3eaa57310.png);
+    padding: 135px 0;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+    background-repeat: reprepeat-x;
+    text-align: center;
+}
+
+footer .footerbox .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    justify-content: center;
+    margin: 45px 30px 0 0px;
+}
+
+footer .footerbox .f_1 {
+    display: block;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: #fff;
+}
+
+footer .footerbox .f_2 {
+    display: inline-block;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    width: 340px;
+    border-radius: 41px;
+    box-shadow: 0 10px 6px -10px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    font-size: 22px;
+    line-height: 80px;
+    letter-spacing: -.4px;
+    color: #000;
+}
+
+footer .footerbox .f_3 {
+    display: block;
+    margin-left: 20px;
+    border-radius: 41px;
+    font-family: nanumsquare, sans-serif;
+    font-weight: 300;
+    width: 340px;
+    background-color: #4b65f7;
+    line-height: 80px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.topbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    background: #000;
+    font-family: HelveticaNeue, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    letter-spacing: .47px;
+}
+
+.topbox span {
+    color: #666;
+    white-space: nowrap;
+}
+
+.and-login {
+    padding-bottom: 50px;
+    background: #000;
+    text-align: center;
+}
+
+.and-login .login {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 80px;
+    height: 29px;
+    border-radius: 4px;
+    background: #323232;
+    font-size: 13px;
+    letter-spacing: -.5px;
+    color: #999;
+}
+
+.and-login .저작권 {
+    display: block;
+    margin: 30px 0px 10px 0px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -.3px;
+    color: hsla(0, 0%, 100%, .3);
+}
+
+.and-login .naver {
+    font-family: nanumsquare, sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, .3);
+    width: 74;
+    height: 16;
+}
+
+@media (width: 777px) {
+    body {
+        height: 65.1vw;
+        background-image: url(../img/bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

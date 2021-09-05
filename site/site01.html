@@ -6,70 +6,382 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site01</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+        .nanumgothic * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 
     <!-- 나눔스퀘어 웹 폰트 -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 
     <!-- css -->
     <link rel="stylesheet" href="../site/css/site.css">
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+        .swiper-wrapper {
+            justify-content: center;
+        }
+        .swiper-button-next {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            right: -32px;
+            width: 64px;
+            height: 64px;
+            margin-top: -32px;
+            border-radius: 50%;
+            background-color: #111;
+            z-index: 0;
+            color: #fff;
+            transform: rotate(360deg);
+        }
+
+        .swiper-button-prev {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: -32px;
+            width: 64px;
+            height: 64px;
+            margin-top: -32px;
+            border-radius: 50%;
+            background-color: #111;
+            z-index: 0;
+            color: #fff;
+        }
+
+        .swiper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            justify-content: center;
+        }
+
+        .swiper-slide:nth-child(1) {
+            background-image: url(img/siteB1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .swiper-slide:nth-child(2) {
+            background-image: url(img/siteB2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(3) {
+            background-image: url(img/siteB3.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(4) {
+            background-image: url(img/siteB4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(5) {
+            background-image: url(img/siteB5.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide:nth-child(6) {
+            background-image: url(img/siteB6.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1024px;
+            height: 410px;
+            border-radius: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <section class="bottomType">
+    <section class="bottonType">
         <div class="container">
-            <div class="top">
-                <div class="grid">
-                    <div class="logobox">
-                        <a href="#">
-                            <img src="../site/img/logo.gif" alt="logoimg" class="logo">
-                            <span class="bottom00">NAVER<br>
-                                INFLUENCER CENTER</span>
-                        </a>
-                    </div>
-                    <!-- <div class="bottom00box">
-                        <span class="bottom00">NAVER<br>
-                            INFLUENCER CENTER</span>
-                    </div> -->
-                    <div>
-                        <span class="bottom01">인플루언서 안내</span>
-                    </div>
-                    <div class="bottom02">
-                        <span>광고 수익 혜택</span>
-                    </div>
-                    <div class="bottom03">
-                        <span>성장 지원 프로그램</span>
-                    </div>
-                    <div class="bottom04">
-                        <span>브랜드커넥트</span>
-                    </div>
-                    <div class="bottom05">
-                        <span>공지</span>
-                    </div>
-                    <div class="login">
-                        <span>인플루언서로 로그인</span>
+            <div class="flex">
+                <div class="logobox_login hideme">
+                    <a href="#" style="text-decoration:none">
+                        <img src="../site/img/logo.gif" alt="logoimg" class="logo">
+                        <span class="logo_text"><strong>NAVER<br>
+                                INFLUENCER CENTER</strong></span>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <div class="botton01">
+                            <span><strong>인플루언서 안내</strong></span>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <div class="botton02">
+                            <span><strong>광고 수익 혜택</strong></span>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <div class="botton03">
+                            <span><strong>성장 지원 프로그램</strong></span>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <div class="botton04">
+                            <span><strong>브랜드커넥트</strong></span>
+                        </div>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <div class="botton05">
+                            <span><strong>공지</strong></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="login">
+                            <span><strong>인플루언서로 로그인</strong></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="black"></div>
+            <!-- //메뉴 버튼 -->
+
+            <div class="textType">
+                <div class="textbox">
+                    <span class="text1">NAVER<br>
+                        INFLUENCER CENTER
+                    </span>
+                    <span class="text2">인플루언서에게 필요한 모든것</span>
+                    <span class="text3">네이버 인플루언서 센터는 여러분들에게 다양한 지원 프로그램을 운영하고 있습니다.<br>
+                        더 큰 수익과 성장을 위한 다양한 혜택과 지원 프로그램을 지금 경험해보세요.</span>
+                </div>
+            </div>
+
+            <div class="sliderType">
+                <div class="sliderType01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-inner">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                        <div class="swiper-slide">Slide 4</div>
+                                        <div class="swiper-slide">Slide 5</div>
+                                        <div class="swiper-slide">Slide 6</div>
+                                        <div class="swiper-slide">Slide 7</div>
+                                        <div class="swiper-slide">Slide 8</div>
+                                        <div class="swiper-slide">Slide 9</div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="textType">
-            <div class="textbox">
-                <span class="text1">NAVER<br>
-                    INFLUENCER<br>
-                    CENTER</span>
-            </div>
-            <span class="text2">인플루언서에게 필요한 모든것</span>
-            <span class="text3">네이버 인플루언서 센터는<br>
-                여러분들에게 다양한 지원 프로그램을 운영하고 있습니다.<br>
-                더 큰 수익과 성장을 위한 다양한 혜택과 지원 프로그램을<br>
-                지금 경험해보세요.</span>
-        </div>
-        <div class="imgType">
-            <div class="imgbox">
 
+        <!-- //슬라이드 -->
+
+        <main class="imgType">
+            <div class="center">
+                <span class="text"><strong>인플루언서에게<br>
+                        제공되는<br>
+                        광고 수익과 혜택</strong></span>
+                <div class="box01">
+                    <span class="text1-2">인플루언서 홈</span>
+                    <span class="text1-3">취향을 자유롭게 표현하는<br>
+                        나만의 홈페이지</span>
+                    <span>자세히 알아보기→</span>
+                    <img class="img01" src="img/main-tool-1-p@2x.91f2f25f8f12e1d3f84fb80c6bbae013.png" alt="img1">
+                </div>
+                <div class="box02">
+                    <span class="text1-4">특별한 광고</span>
+                    <span class="text1-5">더 커진 수익과 효과 적인<br>
+                        헤드뷰 광고</span>
+                    <span>자세히 알아보기→</span>
+                    <img class="img02" src="img/main-tool-2-p@2x.fc0442321685ea2b3cada7edc2da0f05.png" alt="img2">
+                </div>
+                <div class="box03">
+                    <span class="text1-6">검색 참여</span>
+                    <span class="text1-7">인플루언서의 콘텐츠를<br>
+                        더 많이 보여주는 검색 결과</span>
+                    <span>자세히 알아보기→</span>
+                    <img class="img03" src="img/main-tool-3-p@2x.730c654b8f76767877534f86cbae80c7.png" alt="img3">
+                </div>
             </div>
+        </main>
+
+        <!-- //img -->
+
+        <footer>
+            <div class="footerbox">
+                <span class="f_1">인플루언서 검색에 대한 정보가 더 필요한가요?</span>
+                <div class="grid">
+                    <a href="#">
+                        <span class="f_2">인플루언서 검색 <strong>지원 안내</strong></span>
+                    </a>
+                    <a href="#" style="text-decoration:none">
+                        <span class="f_3">인플루언서 검색 <strong>소개페이지</strong></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="topbox">
+            <a href="#" style="text-decoration:none">
+                <span>TOP<b>↑</b></span>
+            </a>
         </div>
+
+        <div class="and-login">
+            <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Finfluencercenter.naver.com%2Fmy%3FredirectUrl%3Dhttps%3A%2F%2Finfluencercenter.naver.com%2F"
+                style="text-decoration:none">
+                <span class="login">로그인</span>
+            </a>
+            <span class="저작권">NAVER Copyright © RIPIA Corp. All Rights Reserved.</span>
+            <a href="https://www.naver.com/" style="text-decoration:none">
+                <span class="naver">NAVER</span>
+            </a>
         </div>
-    </section>
+
+        <!-- end -->
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            // jquery
+            // $(document).ready(function () {
+            //     /* 1 */
+            //     $(window).scroll(function () {
+            //         /* 2 */
+            //         $('#black').each(function (i) {
+            //             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            //             var bottom_of_window = $(window).scrollTop() + $(window).height();
+            //             /* 3 */
+            //             if (bottom_of_window > bottom_of_object / 2) {
+            //                 $(this).animate({
+            //                     'opacity': '1'
+            //                 }, 500);
+            //             }
+            //         });
+            //     });
+            // });
+
+            // $(document).ready(function () {
+            //     $(window).scroll(function () {
+            //         $('#black').each(function (i) {
+
+            //             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            //             var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            //             if (bottom_of_window > bottom_of_element) {
+            //                 $(this).animate({
+            //                     'margin-left': '0px'
+            //                 }, 1000);
+            //             }
+
+            //         });
+            //     });
+            // });
+            function isElementUnderBottom(elem, triggerDiff) {
+                const {
+                    top
+                } = elem.getBoundingClientRect();
+                const {
+                    innerHeight
+                } = window;
+                return top > innerHeight + (triggerDiff || 0);
+            }
+
+            function handleScroll() {
+                const elems = document.querySelectorAll('#black');
+                elems.forEach(elem => {
+                    if (isElementUnderBottom(elem, -10)) {
+                        elem.style.opacity = "0";
+                        elem.style.transform = 'translateY(70px)';
+                    } else {
+                        elem.style.opacity = "1";
+                        elem.style.transform = 'translateY(-1px)';
+                    }
+                })
+            }
+
+            window.addEventListener('scroll', handleScroll);
+
+            /* 1 */
+            $(window).scroll(function () {
+            /* 2 */
+            $('#black').each(function (i) {
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height(0);
+                /* 3 */
+                if (bottom_of_window > bottom_of_object / 2) {
+                    $(this).animate({
+                        'opacity': '1'
+                    }, 500);
+                }
+            });
+            });
+        </script>
 </body>
 
 </html>
