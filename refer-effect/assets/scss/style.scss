@@ -1,626 +1,150 @@
-@charset "utf-8";
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 100;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 200;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 500;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 600;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 800;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'S-CoreDream';
-    font-weight: 900;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
-    font-style: normal;
-}
-
-// webfonts
-@font-face {
+// parallax
+.parallax {
+    background: #222;
+    color: #fff;
     font-family: 'NEXONLv1Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
-    font-style: normal;
 }
-
-@font-face {
-    font-family: 'NEXONLv1Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-    font-style: normal;
+.paraScroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    width: 40px; height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
 }
-
-@font-face {
-    font-family: 'NEXONLv1Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
-    font-style: normal;
+.paraInfo2 {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    border-radius: 10px;
+    z-index: 1000;
 }
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 300;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NEXONLv2Gothic';
-    font-weight: 700;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
-    font-style: normal;
-}
-
-
-// reset
-// 여백 초기화 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-textarea,
-p,
-blockquote,
-th,
-td,
-input,
-select,
-button,
-figure,
-figcaption {
-    margin: 0;
-    padding: 0
-}
-
-// variable
-$font-Six: 'Six Caps';
-$font-Nexon1: 'NEXONLv1Gothic';
-$font-Nexon2: 'NEXONLv2Gothic';
-
-$gradient1: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
-$gradient2: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-$gradient3: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-$gradient4: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-$gradient5: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-$gradient6: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-
-// mixin
-@mixin positionCenter {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin flexCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@mixin content {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-//agent
-.iphone main {
-    padding: 10px;
-}
-.android main {
-    padding: 10px;
-}
-
-// bg
-.bg {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-    &::before {
-        @include content;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: -1;
-    }
-}
-
-@for $i from 0 through 20 {
-    .bg#{$i} {
-        background-image: url(../img/bg#{$i}@2.jpg);
-    }
-}
-
-body {
-    height: 100vh;
-    font-family: 'NEXONLv2Gothic';
-    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-    background-blend-mode: screen;
-}
-
-// main
-#main {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: #11e8bb;
-    background: $gradient1;
-
-    &.game {
-        background: $gradient2;
-    }
-
-    &.menu {
-        background: $gradient3;
-    }
-
-    &.mouse {
-        background: $gradient4;
-    }
-
-    &.parallax {
-        background: $gradient5;
-    }
-
-    &.slider {
-        background: $gradient6;
-    }
-}
-
-
-#contents {
-    h1 {
-        @include positionCenter;
-        font-size: 10vw;
-        white-space: nowrap;
-        font-family: $font-Six, sans-serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        letter-spacing: 1vw;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to bottom, #8200c9, #240038);
-    }
-}
-
-#nav {
-    @include positionCenter;
-    bottom: 10px;
-    top: auto;
-
+.paraNav {
+    position: fixed;
+    right: 20px; top: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    padding: 15px 20px;
+    border-radius: 50px;
     li {
+        display: inline-block;
         list-style: none;
-        display: inline;
-
         a {
             color: #fff;
             text-decoration: none;
-            width: 100px;
-            height: 40px;
-            line-height: 40px;
-            border: 1px solid #fff;
             display: inline-block;
-            border-radius: 50px;
-            font-size: 14px;
+            padding: 5px;
+            width: 30px; height: 30px;
             text-align: center;
-            margin: 4px;
-            font-family: $font-Nexon1;
-            box-shadow: inset 0 0 0 #fff;
-            transition: all 0.4s;
-
-            &:hover {
-                box-shadow: inset 0 -100px 0 #fff;
-                color: #6c4a70;
-            }
-        }
-    }
-}
-
-
-// info
-.info {
-    color: #C4A6A6;
-    padding: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    &.right {
-        left: auto;
-        right: 0px;
-    }
-
-    &.bottom {
-        top: auto;
-        left: auto;
-        bottom: 0;
-        right: 0;
-    }
-
-    h1 {
-        font-family: 'S-CoreDream';
-        font-weight: 900;
-        font-size: 25px;
-        line-height: 1.6;
-        border-bottom: 1px dashed #C4A6A6;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-family: 'S-CoreDream';
-        font-weight: 400;
-        font-size: 16px;
-    }
-
-    li {
-        list-style: none;
-        display: inline;
-
-        a {
-            display: inline-block;
-            text-decoration: none;
-            color: #C4A6A6;
-            border: 1px dashed #C4A6A6;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
             line-height: 30px;
-            text-align: center;
-            font-size: 12px;
-            margin-bottom: 5px;
-            font-family: 'S-CoreDream';
-            font-weight: 900;
         }
-
-        &.active {
-
-            a {
-                background: #C4A6A6;
-                color: #000;
-            }
-        }
-    }
-
-    button {
-        background: transparent;
-        border: 2px solid #C4A6A6;
-        padding: 5px 20px;
-        color: #C4A6A6;
-        border-radius: 50px;
-        box-shadow: 0 0 0 #dbcaca inset;
-        transition: all 1.5s;
-        font-family: 'S-CoreDream';
-        font-weight: 600;
-
-        &:hover {
-            box-shadow: 0 -50px 0 #C4A6A6 inset;
-            color: #ffffff;
+        &.active a {
+            background: #fff;
+            color: #000;
+            border-radius: 50%;
         }
     }
 }
-
-
-.btn-wrap {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    button {
-        border: 1px solid #fff;
-        padding: 5px 15px;
-        border-radius: 50px;
-        text-transform: uppercase;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
+.paraInfo {
+    padding: 20px;
+    h1 {
+        display: inline-block;
+        font-size: 20px;
+        border-bottom: 1px dashed #fff;
+        margin-bottom: 8px;
+        font-weight: 400;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.8;
     }
 }
-
-
-
-
-
-// modal
-#modal {
-    position: fixed;
-    left: 0;
-    top: 0;
+.paraCont {
     width: 100%;
-    height: 100vh;
-    z-index: 1000;
-    transform: scale(0);
-
-    .modal-bg {
-        background: rgba(0, 0, 0, 0.6);
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .modal-cont {
-            h2 {
-                font-weight: 400;
-                font-size: 30px;
-                margin-bottom: 10px;
-            }
-
-            p {
-                font-weight: 300;
-                line-height: 1.6;
-            }
-
-            button {
-                float: right;
-                border: 1px solid #000;
-                background: #000;
-                border-radius: 20px;
-                color: #fff;
-                padding: 5px 10px;
-                cursor: pointer;
-                font-family: ‘NEXONLv2Gothic’;
-                margin-top: 10px;
-            }
-        }
-    }
-}
-
-#modal.show {
-    animation: unfoldIn 1s ease forwards;
-}
-
-@keyframes unfoldIn {
-    0% {
-        transform: scaley(0.005) scalex(0);
-    }
-
-    50% {
-        transform: scaley(0.005) scalex(1);
-    }
-
-    100% {
-        transform: scaley(1) scalex(1);
-    }
-}
-
-#modal.show.hide {
-    animation: unfoldOut 1s ease forwards;
-}
-
-@keyframes unfoldOut {
-    0% {
-        transform: scaley(1) scalex(1);
-    }
-
-    50% {
-        transform: scaley(0.005) scalex(1);
-    }
-
-    100% {
-        transform: scaley(0.005) scalex(0);
-    }
-}
-
-#modal.show .modal-bg .modal-cont {
-    transform: scale(0);
-    animation: zoomIn 0.5s 0.8s ease forwards;
-}
-
-#modal.show.hide .modal-bg .modal-cont {
-    transform: scale(0);
-    animation: zoomOut 0.5s ease forwards;
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0)
-    }
-
-    100% {
-        transform: scale(1)
-    }
-}
-
-@keyframes zoomOut {
-    0% {
-        transform: scale(1)
-    }
-
-    100% {
-        transform: scale(0)
-    }
-}
-
-// code-view
-.code-view {
-    background: #fff;
-    width: 60vw;
-    border: 1px solid #F2F2F2;
-    border-radius: 10px;
     overflow: hidden;
-
-    .view-header {
-        border-bottom: 1px solid #F2F2F2;
-
-        .dot {
-            padding: 13px 10px 10px 15px;
-
-            span {
-                width: 12px;
-                height: 12px;
-                display: inline-block;
-                border-radius: 50%;
-                margin: 0 2px;
+    .content-item {
+        width: 1000px;
+        max-width: 70vw;
+        // background: rgba(255,255,255,0.3);
+        margin: 30vw 0;
+        padding-top: 10vw;
+        text-align: right;
+        position: relative;
+        .num {
+            font-family: 'Lato';
+            font-weight: 100;
+            font-size: 25vw;
+            opacity: 0.07;
+            position: absolute;
+            right: -5vw; top: -10vw;
+        }
+        .title {
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .img-Wrap {
+            width: 100%;
+            padding-bottom: 56%;
+            background: #000;
+            position: relative;
+            .img {
+                position: absolute;
+                left: 0; top: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: saturate(0%);
+                transition: all 1s;
+                &:hover{
+                    filter: saturate(100%);
+                }
             }
-
-            span:nth-child(1) {
-                background-color: #F56565;
+            
+        }
+        .desc {
+            font-size: 5vw;
+            line-height: 1.4;
+            margin-top: -6vw;
+            margin-right: -3vw;
+            position: relative;
+            z-index: 100;
+            word-break: keep-all;
+        }
+        &:nth-child(even){
+            margin-left: auto;
+            text-align: left;
+            .num {
+                right: auto; 
+                left: -5vw;
             }
-
-            span:nth-child(2) {
-                background-color: #F6E05E;
-            }
-
-            span:nth-child(3) {
-                background-color: #48BB78;
+            .desc {
+                margin-right: auto;
+                margin-left: -3vw;
             }
         }
     }
-
-    .view-title {
-        border-bottom: 1px solid #F2F2F2;
-        padding: 0 11px;
-        font-family: ‘NEXONLv2Gothic’;
-
-        li {
-            display: inline;
-            list-style: none;
-
-            a {
-                text-decoration: none;
-                color: #CCCCCC;
-                padding: 10px 10px 12px;
-                margin: 0 5px;
-                display: inline-block;
-            }
-
-            &.active a {
-                border-top: 2px solid #667EEA;
-                color: #4A5568;
+}
+@for $i from 1 through 9 {
+    .content-item {
+        &:nth-child(#{$i}){
+            .img {
+                background-image: url(../img/bg1#{$i}.jpg);
             }
         }
-    }
-
-    .view.view-title {}
-
-    .view-cont {
-        height: 500px;
-        overflow: scroll;
-
-        >div {
-            display: none;
-        }
-
-        >div:nth-child(1) {
-            display: block;
-        }
-
     }
 }

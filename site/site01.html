@@ -36,6 +36,7 @@
         .swiper-wrapper {
             justify-content: center;
         }
+
         .swiper-button-next {
             display: flex;
             align-items: center;
@@ -256,6 +257,25 @@
 
         <!-- //img -->
 
+        <div class="imgType02">
+            <div class="imgbox01">
+                <span>오직 네이버 인플루언서만을 위한<br>
+                    성장 지원 프로그램</span>
+                <span>슈퍼애드</span>
+                <span>네이버 배너를 통한<br>홍보 지원</span>
+            </div>
+            <div class="imgbox02">
+                <span>엑스퍼트 프로그램</span>
+                <span>세금, 법률 등<br>
+                    컨설팅 비용 지원</span>
+            </div>
+            <div class="imgbox03">
+                <span>크리에이터 워크숍</span>
+                <span>어디에서도 볼 수 없었던<br>
+                무료 강연과 교육</span>
+            </div>
+        </div>
+
         <footer>
             <div class="footerbox">
                 <span class="f_1">인플루언서 검색에 대한 정보가 더 필요한가요?</span>
@@ -308,40 +328,6 @@
                 },
             });
 
-            // jquery
-            // $(document).ready(function () {
-            //     /* 1 */
-            //     $(window).scroll(function () {
-            //         /* 2 */
-            //         $('#black').each(function (i) {
-            //             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            //             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            //             /* 3 */
-            //             if (bottom_of_window > bottom_of_object / 2) {
-            //                 $(this).animate({
-            //                     'opacity': '1'
-            //                 }, 500);
-            //             }
-            //         });
-            //     });
-            // });
-
-            // $(document).ready(function () {
-            //     $(window).scroll(function () {
-            //         $('#black').each(function (i) {
-
-            //             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            //             var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            //             if (bottom_of_window > bottom_of_element) {
-            //                 $(this).animate({
-            //                     'margin-left': '0px'
-            //                 }, 1000);
-            //             }
-
-            //         });
-            //     });
-            // });
             function isElementUnderBottom(elem, triggerDiff) {
                 const {
                     top
@@ -369,17 +355,17 @@
 
             /* 1 */
             $(window).scroll(function () {
-            /* 2 */
-            $('#black').each(function (i) {
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height(0);
-                /* 3 */
-                if (bottom_of_window > bottom_of_object / 2) {
-                    $(this).animate({
-                        'opacity': '1'
-                    }, 500);
-                }
-            });
+                /* 2 */
+                $('#black').each(function (i) {
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height(0);
+                    /* 3 */
+                    if (bottom_of_window > bottom_of_object / 2) {
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 500);
+                    }
+                });
             });
         </script>
 </body>
