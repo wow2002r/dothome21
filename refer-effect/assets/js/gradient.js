@@ -98,7 +98,3 @@ function animate() {
 
     renderer.render(scene, camera)
 };
-
-function botton() {
-    document.write(modal)
-}
