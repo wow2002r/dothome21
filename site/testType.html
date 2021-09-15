@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver influencer center</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Test Type CSS -->
+    <link rel="stylesheet" href="css/testType.css">
+
+    <!-- 나눔스퀘어 웹 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<style>
+    .sliderType {
+    width: 1000px;
+    position: relative;
+    bottom: 5%; left: 50%;
+    transform: translate(-50%, -5%);
+    }
+    .swiper {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    }
+    .swiper-wrapper .swiper-slide .slider-inner{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 420px;
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s1 {
+        background-image: url(img/testbanner-1.png);
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s2 {
+        background-image: url(img/testbanner-2.png);
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s3 {
+        background-image: url(img/testbanner-3.jpg);
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s4 {
+        background-image: url(img/testbanner-4.jpg);
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s5 {
+        background-image: url(img/testbanner-5.png);
+    }
+    .swiper-wrapper .swiper-slide .slider-inner.s6 {
+        background-image: url(img/testbanner-6.png);
+    }
+    .swiper-slide .slider-inner {
+        width: 870px;
+        margin: 0 auto;
+        color: #fff;
+    }
+    .swiper-slide .slider-inner em {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0.5;
+        padding: 55px 0 10px 70px;
+        display: block;
+    }
+    .swiper-slide .slider-inner h3 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 0 0 20px 70px;
+    }
+    .swiper-slide .slider-inner .btn {
+        display: block;
+        margin: 0 0 0 70px;
+    }
+    .swiper-slide .slider-inner .btn a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .swiper-pagination {
+        text-align: left;
+        margin: 0 0 40px 45px;
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+    
+    .swiper-button-prevs1 {
+        width: 62px; height: 62px;
+        position: fixed;
+        top: 52%;
+        right: 97%;
+        transform: translateY(-58%);
+        border-radius: 50%;
+        background: #000000f3;
+        color: #fff;
+        text-align: center;
+        line-height: 6;
+        z-index: 100;
+    }
+    .swiper-button-prevs1:hover {
+        background-color: #bdbdbd;
+    }
+    .swiper-button-prevs1 svg {
+        stroke: #fff;
+    }
+    .swiper-button-nexts1 {
+        width: 62px; height: 62px;
+        position: fixed;
+        top: 52%;
+        left: 97%;
+        transform: translateY(-58%);
+        border-radius: 50%;
+        background: #000000f3;
+        color: #fff;
+        text-align: center;
+        line-height: 6;
+        z-index: 100;
+    }
+    .swiper-button-nexts1:hover {
+        background-color: #bdbdbd;
+    }
+    .swiper-button-nexts1 svg {
+        stroke: #fff;
+        transform: rotate(180deg);
+    }
+</style>
+</head>
+<body>
+    <section class="testType">
+        <header>
+            <div>
+                <img class="headerimg" src="img/testmark.gif" alt="헤더 마크입니다.">
+                <strong>NAVER<br>INFLUENCER CENTER</strong>
+            </div>
+            <div>
+                <ul>
+                    <a id="top_menu" href="#">
+                        <li class="menu_1">인플루언서 안내
+                            <ul class="sub_1">
+                                <li>인플루언서로 성장</li>
+                                <li>인플루언서 홈</li>
+                                <li>검색 참여</li>
+                            </ul>
+                        </li>
+                        <li>광고 수익 혜택</li>
+                        <li class="menu_2">성장 지원 프로그램</li>
+                            <ul class="sub_2">
+                                <li>크리에이터 워크숍</li>
+                                <li>슈퍼애드</li>
+                                <li>엑스퍼트 컨설팅</li>
+                                <li>멤버십 혜택</li>
+                                <li>어워드</li>
+                            </ul>
+                        <li>브랜드 커넥트</li>
+                        <li>공지</li>
+                    </a>
+                </ul>
+            </div>
+            <a class="testkeyword" href="#">인플루언서로 로그인</a>
+        </header>
+        <div class="container">
+            <div class="testType01">
+                <h2>NAVER<br>INFLUENCER CENTER</h2>
+                <strong>인플루언서에게 필요한 모든 것</strong>
+                <p>네이버 인플루언서 센터는 여러분들에게 다양한 지원 프로그램을 운영하고 있습니다.<br>더 큰 수익과 성장을 위한 다양한 혜택과 지원 프로그램을 지금 경험해보세요.</p>
+            </div>
+        </div>
+
+        <!-- test slider -->
+        <section class="testslider">
+            <div class="sliderType">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-inner s1">
+                                <em>로고전문가 최은빈과 함께하는</em>
+                                <h3>세상에서 제일 쉬운<br>로고 만들기 심화편</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-inner s2">
+                                <em>로고전문가 최은빈과 함께하는</em>
+                                <h3>세상에서 제일쉬운<br>나만의 로고 만들기</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-inner s3">
+                                <em>광고 표시, 어떻게 하지?</em>
+                                <h3>정정당당하게 광고하자!<br>추천보증광고 표시법</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-inner s4">
+                                <em>@여행작가 박은하의</em>
+                                <h3>클릭을 부르는<br>포스팅 방법</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-inner s5">
+                                <em>세남자와 해결해요!</em>
+                                <h3>세금신고의 꽃<br>절세 노하우!</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-inner s6">
+                                <em>세남자와 해결해요!</em>
+                                <h3>세금 신고<br>FAQ</h3>
+                                <span class="btn">
+                                    <a href="#">지금 만나보세요 &#10140;</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prevs1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" stroke="#000" aria-hidden="true" width="30" height="30"><path d="M17 23.485L8.513 15 17 6.514" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                    <div class="swiper-button-nexts1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" stroke="#000" aria-hidden="true" width="30" height="30"><path d="M17 23.485L8.513 15 17 6.514" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                </div>
+            </div>
+        </section>
+        <section class="bodyType">
+            <div class="container">
+                <div class="testType02">
+                    <div class="testcont1">
+                        <h3>인플루언서에게<br>제공되는<br>광고 수익과 혜택</h3>
+                        <div class="cont1">
+                            <span class="text1">인플루언서 홈</span>
+                            <span class="text2">취향을 자유롭게 표현하는<br>나만의 홈페이지</span>
+                            <span class="text3">자세히 알아보기 &#10140;</span>
+                            <img class="textimg" src="img/testtext1.png" alt="첫번째 텍스트박스">
+                        </div>
+                    </div>
+                    <div class="testcont2">
+                        <div class="cont2">
+                            <span class="text1">특별한 광고</span>
+                            <span class="text2">더 커진 수익과 효과적인<br>헤드뷰 광고</span>
+                            <span class="text3">자세히 알아보기 &#10140;</span>
+                            <img class="textimg" src="img/testtext2.png" alt="두번째 텍스트박스">
+                        </div>
+                        <div class="cont3">
+                            <span class="text1">검색 참여</span>
+                            <span class="text2">인플루언서의 콘텐츠를<br>더 많이 보여주는 검색 결과</span>
+                            <span class="text3">자세히 알아보기 &#10140;</span>
+                            <img class="textimg" src="img/testtext3.png" alt="세번째 텍스트박스">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- //test slider -->
+</section>
+<section class="bodyType">
+    <div class="testType03">
+        <div class="container">
+            <h2>오직 네이버 인플루언서만을 위한<br>성장 지원 프로그램</h2>
+            <div class="testcont3">
+                <div class="cont4">
+                    <span class="text1">슈퍼애드</span>
+                    <span class="text2">네이버 배너를 통한<br>홍보 지원</span>
+                    <span class="text3">자세히 알아보기 &#10140;</span>
+                    <img class="textimg" src="img/testtext4.png" alt="네번째 텍스트박스">
+                </div>
+                <div class="cont5">
+                    <span class="text1">엑스퍼트 프로그램</span>
+                    <span class="text2">세금, 법률 등<br>컨설팅 비용 지원</span>
+                    <span class="text3">자세히 알아보기 &#10140;</span>
+                    <img class="textimg" src="img/testtext5.png" alt="다섯번째 텍스트박스">
+                </div>
+            </div>
+            <div class="testcont4">
+                <div class="cont6">
+                    <div class="cont6box">
+                    <span class="text1">크리에이터 워크숍</span>
+                    <span class="text2">어디에서도 볼 수 없었던<br>무료 강연과 교육</span>
+                    <span class="text3">자세히 알아보기 &#10140;</span>
+                    </div>
+                    <img class="textimg" src="img/testtext6.png" alt="여섯번째 텍스트박스">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="textlast">
+    <div class="container">
+        <h2>인플루언서 검색에 대한 정보가 더 필요한가요?</h2>
+        <a class="lastbtn" href="#">인플루언서 검색 지원 안내</a>
+        <a class="lastbtn blue" href="#">인플루언서 검색 소개페이지</a>
+    </div>
+</section>
+<footer class="footer">
+        <a class="testtop" href="#">TOP &#129045;</a>
+        <a class="login" href="#">로그인</a>
+        <span>NAVER Copyright © NAVER Corp. All Rights Reserved.</span>
+        <a class="naver" href="#">NAVER</a>
+</footer>
+
+
+    <script src="../refer-effect/assets/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 4000,
+            },
+
+            pagination: {   
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-nexts1',
+                prevEl: '.swiper-button-prevs1',
+            },
+        });
+
+        const header = document.querySelector(".testType header");
+            window.addEventListener("scroll", e => {
+                let scroll = document.documentElement.scrollTop;
+
+                if(scroll > 0) {
+                    header.style.position = "stick";
+                    header.style.backgroundColor = "rgba(20, 20, 20, 0.8)";
+                } else {
+                    header.style.position = "";
+                    header.style.top = "";
+                    header.style.backgroundColor = "";
+                }
+            });
+
+        $(document).ready(function(){
+            $('#top_menu .sub_1').hide();
+            $('#top_menu .sub_2').hide();
+
+            $('.menu_1').mouseover(function(){
+                $('.sub_1').slideDown();
+                $('.sub_2').hide();
+            });
+            $('.menu_2').mouseover(function(){
+                $('.sub_2').slideDown();
+                $('.sub_1').hide();
+            });
+            $('header').mouseleave(function(){
+                $('.sub_1').hide();
+                $('.sub_2').hide();
+            });
+        });
+    </script>
+</body>
+</html>

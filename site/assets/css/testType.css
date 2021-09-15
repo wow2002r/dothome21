@@ -1,0 +1,368 @@
+body {
+    background-image: url(../img/testbackgorund.png);
+}
+.testType {
+    margin: 30px 40px 30px 40px;
+    font-family:  'NanumSquare';
+}
+.testType header {
+    padding: 1.6% 7.5% 1.6% 7.5%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 85%;
+    z-index: 1000;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+}
+.testType header strong{
+    display: inline-block;
+    color: #fff;
+    font-family: 'S-CoreDream';
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+.testType header ul {
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+}
+.testType header ul li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 25px 0 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.testType header ul li:hover {
+    color: rgb(74, 204, 70);
+}
+.testType .sub_1 {
+    text-align: center;
+    position: fixed;
+    left: 50%;  top: 10.8%;
+    transform: translate(-50%);
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.testType .sub_1 > li {
+    color: rgb(144, 144, 144)
+}
+.testType .sub_2 {
+    text-align: center;
+    position: fixed;
+    left: 50%;  top: 10.8%;
+    transform: translate(-50%);
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.testType .sub_2 > li {
+    color: rgb(144, 144, 144)
+}
+.testType header .testkeyword {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.424);
+    border-radius: 40px;
+    padding: 7px 20px;
+}
+.testType .headerimg {
+    display: inline-block;
+    width: 30px; height: 30px;
+    margin: 0 6px 0 5px;
+    cursor: pointer;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.testType01 h2{
+    margin: 250px 0 60px 0;
+    color: #fff;
+    font-family: 'S-CoreDream';
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+.testType01 strong{
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    line-height: 1.2;
+}
+.testType01 p{
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 200px;
+}
+.testType02 {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.testType02 .testcont1 {
+    width: 48.5%;
+}
+.testType02 .testcont1 h3{
+    color: rgb(113, 126, 238);
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+.testType02 .testcont1 > div {
+    width: 100%;
+    height: 850px;
+    background: linear-gradient(to bottom,  rgb(53, 53, 56) 0%,rgb(31, 31, 34) 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.testType02 .text1 {
+    display: inline-block;
+    color: rgb(189, 189, 189);
+    font-size: 16px;
+    font-weight: 800;
+    margin: 45px 0 10px 50px;
+}
+.testType02 .text2 {
+    display: block;
+    margin: 0 0 15px 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.testType02 .text3 {
+    display: block;
+    margin: 0 0 0px 50px;
+    color: rgb(113, 126, 238);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.testType02 .testcont2 {
+    width: 48.5%;
+}
+.testType02 .testcont2 > div {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(to bottom,  rgb(53, 53, 56) 0%,rgb(31, 31, 34) 100%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.testType02 .testcont2 > div:nth-child(1) {
+    margin-bottom: 32px;
+}
+.testType02 .textimg {
+    transition: transform 0.45s;
+    transform: scale(1);
+}
+.testType02 .cont1:hover .textimg{
+    transform: scale(1.1);
+}
+.testType02 .cont2:hover .textimg{
+    transform: scale(1.1);
+}
+.testType02 .cont3:hover .textimg{
+    transform: scale(1.1);
+}
+.bodyType .testType03{
+    background: rgb(29, 29, 29);
+    padding-top: 150px ;
+}
+.testType03 {
+    font-family:  'NanumSquare';
+}
+.testType03 h2{
+    color: rgb(94, 241, 209);
+    text-align: center;
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 1.35;
+    margin-bottom: 80px;
+}
+.testType03 .testcont3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
+    margin-bottom: 35px;
+}
+.testType03 .testcont3 .cont4 {
+    width: 48.5%;
+    background-image: url(../img/cont4img.png);
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.testType03 .text1 {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 16px;
+    font-weight: 800;
+    margin: 45px 0 10px 50px;
+}
+.testType03 .text2 {
+    display: block;
+    margin: 0 0 15px 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.testType03 .text3 {
+    display: block;
+    margin: 0 0 0px 50px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.testType03 .textimg {
+    transition: transform 0.45s;
+    transform: scale(1);
+}
+.testType03 .cont4:hover .textimg{
+    transform: scale(1.1);
+}
+.testType03 .cont5:hover .textimg{
+    transform: scale(1.1);
+}
+.testType03 .cont6:hover .textimg{
+    transform: scale(1.1);
+}
+.testType03 .cont4 .text3 {
+    color: rgba(255, 255, 255, 0.863);
+}
+.testType03 .testcont3 .cont5 {
+    width: 48.5%;
+    background-color: rgb(84, 114, 245);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.testType03 .cont5 .text3 {
+    color: rgb(119, 241, 215);
+    margin-bottom: -20px;
+}
+.testType03 .testcont4 {
+    width: 100%;
+    height: 450px;
+}
+.testType03 .testcont4 .cont6 {
+    background-image: url(../img/cont6img.png);
+    background-color: #6452C7;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.testType03 .cont6 .cont6box {
+    width: 40%;
+}
+.testType03 .cont6 .text1 {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 16px;
+    font-weight: 800;
+    margin: 45px 0 10px 50px;
+}
+.testType03 .cont6 .text2 {
+    display: block;
+    margin: 0 0 15px 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.testType03 .cont6 .text3 {
+    display: block;
+    color: rgb(152, 235, 217);
+}
+.testType03 .cont6 .textimg {
+    width: 58%;
+    height: 230px;
+    margin-top: 80px;
+}
+.textlast {
+    font-family:  'NanumSquare';
+    text-align: center;
+    padding: 150px 0 180px 0;
+    background-image: url(../img/testbackgorund2.png);
+    background-size: cover;
+}
+.textlast h2 {
+    color: #fff;
+    width: 800;
+    font-size: 35px;
+    margin-bottom: 65px;
+}
+.textlast .lastbtn {
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 30px 65px;
+}
+.textlast .lastbtn.blue {
+    background: rgb(84, 114, 245);
+    color: #fff;
+    margin-left: 20px;
+}
+.footer {
+    width: 100%;
+    overflow: hidden;
+    padding: 14px 0;
+    background: rgba(0, 0, 0, 0.835);
+    font-family:  'NanumSquare';
+    text-align: center;
+}
+.footer .testtop {
+    color: rgba(255, 255, 255, 0.397);
+    padding-bottom: 14px;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.103);
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+}
+.footer .login {
+    background-color: rgb(51, 51, 51);
+    display: inline-block;
+    padding: 6px 25px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.548);
+    font-weight: 200;
+    font-size: 12px;
+}
+.footer span {
+    display: block;
+    color: rgba(255, 255, 255, 0.363);
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.footer .naver {
+    font-family: 'S-CoreDream';
+    display: block;
+    color: rgba(255, 255, 255, 0.198);
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
