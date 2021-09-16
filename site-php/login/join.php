@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입</title>
 
     <!-- style -->
     <link rel="stylesheet" href="../assets/css/fonts.css">
@@ -21,7 +21,7 @@
     <!-- //skip -->
 
     <header id="header">  
-        <? php
+        <?php
             include "../include/header.php";
         ?>
     </header>
@@ -39,6 +39,7 @@
                             <li>개인정보를 수집 및 이용하며, 회원의 개인정보를 안전하게 취급하고, 교육을 목적으로 사용됩니다.</li>
                         </ul>
                     </div>
+
                     <h4>개인정보 수집 및 이용에 대한 안내</h4>
                     <div class="join-privacy">
                         <ul class="list">
@@ -51,34 +52,34 @@
                     <form name="join" action="joinSave.php" method="POST">
                         <fieldset>
                             <legend class="ir_so">회원가입 입력폼</legend>
-                            <div class="join-box">
+                            <div class="member-box">
                                 <div>
-                                    <label youEmail>이메일</label>
-                                    <input type="email" name="youEmail" class="input_write" placeholder="Sample@naver.com" auto>
+                                    <label for="youEmail">이메일</label>
+                                    <input type="email" name="youEmail" id="youEmail" class="input_write" placeholder="Sample@naver.com" autocmplete="off" autofocus require>
                                 </div>
                                 <div>
-                                    <label>비밀번호</label>
-                                    <input type="youPass" name="youPass" class="input_write" placeholder="">
+                                    <label for="youPass">비밀번호</label>
+                                    <input type="password" name="youPass" id="youPass" class="input_write" maxlength="20" placeholder="비밀번호를 적어주세요!" autocmplete="off" required>
                                 </div>
                                 <div>
-                                    <label>비밀번호 확인</label>
-                                    <input type="email" name="youPassC" class="input_write" placeholder="">
+                                    <label for="youPassC">비밀번호 확인</label>
+                                    <input type="password" name="youPassC" id="youPassC" class="input_write" maxlength="20" placeholder="다시 한번 비밀번호를 적어주세요!" autocmplete="off" required>
                                 </div>
                                 <div>
-                                    <label youName>이름</label>
-                                    <input type="text" name="youName" class="input_write"  maxlength="5" placeholder="">
+                                    <label for="youName">이름</label>
+                                    <input type="text" name="youName" id="youName" class="input_write" maxlength="5" placeholder="이름을 적어주세요!" autocmplete="off" required>
                                 </div>
                                 <div>
-                                    <label youName>생년월일</label>
-                                    <input type="text" name="youBirth" class="input_write"  maxlength="5" placeholder="">
+                                    <label for="youBirth">생년월일</label>
+                                    <input type="text" name="youBirth" id="youBirth" class="input_write" placeholder="YYYY-MM-DD" autocmplete="off" required>
                                 </div>
                                 <div>
                                     <label for="youPhone">휴대폰 번호</label>
-                                    <input type="text" name="youPhone" class="input_write"  maxlength="5" placeholder="">
+                                    <input type="text" name="youPhone" id="youPhone" class="input_write" placeholder="000-0000-0000" autocmplete="off" required>
                                 </div>
                             </div>
                         </fieldset>
-                        <button id="join-btn" type="submit">회원가입 완료</button>
+                        <button id="joinBtn" class="btn_submit" type="submit">회원가입 완료</button>
                     </form>
                 </div>
             </article>
@@ -87,7 +88,9 @@
     <!-- //contents -->
 
     <footer id="footer">
-        footer
+        <?php
+            include "../include/footer.php";
+        ?>
     </footer>
     <!-- //footer -->
 </body>
