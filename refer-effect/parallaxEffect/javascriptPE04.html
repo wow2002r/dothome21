@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/highlight.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .paraNav {
+            top: 20px;
+            transition: top 0.4s ease;
+        }
+
+        .paraNav .hide {}
+
+        .paraNav.show {
+            top: 20px;
+        }
+
+        .paraNav li a {
+            width: auto;
+            padding: 5px 20px;
+        }
+
+        .paraNav li.active a {
+            border-radius: 30px;
+        }
+    </style>
+
+</head>
+
+<body class="parallax">
+
+    <!-- header -->
+    <header class="paraInfo">
+        <h1><a href="index.html">Parallax Effect04 - javascript</a></h1>
+        <p>패랠랙스 스크로링 효과 - 숨김 메뉴</p>
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
+    <main>
+        <div class="paraScroll">scrollTop() : <span>0</span>px</div><!-- //scroll -->
+
+        <nav class="paraNav">
+            <ul>
+                <li class="active"><a href="#section1">메뉴1</a></li>
+                <li><a href="#section2">메뉴2</a></li>
+                <li><a href="#section3">메뉴3</a></li>
+                <li><a href="#section4">메뉴4</a></li>
+                <li><a href="#section5">메뉴5</a></li>
+                <li><a href="#section6">메뉴6</a></li>
+                <li><a href="#section7">메뉴7</a></li>
+                <li><a href="#section8">메뉴8</a></li>
+                <li><a href="#section9">메뉴9</a></li>
+            </ul>
+        </nav>
+        <!-- //nav -->
+
+        <div class="paraCont">
+            <section id="section1" class="content-item">
+                <span class="content-item-num">01</span>
+                <h2 class="content-item-title">section1</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">거짓말은 그 자체가 죄일 뿐 아니라 정신을 더럽힌다</p>
+            </section>
+            <!-- //section1 -->
+
+            <section id="section2" class="content-item">
+                <span class="content-item-num">02</span>
+                <h2 class="content-item-title">section2</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">성실한 한마디의 말은 백만 마디의 헛된 찬사보다 낫다</p>
+            </section>
+            <!-- //section2 -->
+
+            <section id="section3" class="content-item">
+                <span class="content-item-num">03</span>
+                <h2 class="content-item-title">section3</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">일찍 일어나는 새가 벌레를 잡는다</p>
+            </section>
+            <!-- //section3 -->
+
+            <section id="section4" class="content-item">
+                <span class="content-item-num">04</span>
+                <h2 class="content-item-title">section4</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">역경은 청년에게 있어서 빛나는 가치이다</p>
+            </section>
+            <!-- //section4 -->
+
+            <section id="section5" class="content-item">
+                <span class="content-item-num">05</span>
+                <h2 class="content-item-title">section5</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">고통 뒤의 즐거움은 달콤하다</p>
+            </section>
+            <!-- //section5 -->
+
+            <section id="section6" class="content-item">
+                <span class="content-item-num">06</span>
+                <h2 class="content-item-title">section6</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">나에게 필요한 것이 남에게는 더 절실할 수도 있다</p>
+            </section>
+            <!-- //section6 -->
+
+            <section id="section7" class="content-item">
+                <span class="content-item-num">07</span>
+                <h2 class="content-item-title">section7</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">비가 온 다음에는 맑은 날씨가 된다</p>
+            </section>
+            <!-- //section7 -->
+
+            <section id="section8" class="content-item">
+                <span class="content-item-num">08</span>
+                <h2 class="content-item-title">section8</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">불행의 원인은 늘 나 자신에게 있다</p>
+            </section>
+            <!-- //section8 -->
+
+            <section id="section9" class="content-item">
+                <span class="content-item-num">09</span>
+                <h2 class="content-item-title">section9</h2>
+                <figure class="content-item-imgWrap">
+                    <div class="content-item-img"></div>
+                </figure>
+                <p class="content-item-desc">남에게, 또 남의 일에 대해서 말을 삼가라</p>
+            </section>
+            <!-- //section9 -->
+        </div>
+        <!-- //contents -->
+    </main>
+    <!-- //main -->
+
+    <!-- footer -->
+    <footer class="paraFooter">
+        <h1>Parallax <em>Scrolling</em></h1>
+        <div class="footerInfo">
+            <h2>자바스크립트</h2>
+            <ul>
+                <li><a href="javascriptPE01.html">1</a></li>
+                <li><a href="javascriptPE02.html">2</a></li>
+                <li><a href="javascriptPE03.html">3</a></li>
+                <li class="active"><a href="javascriptPE04.html">4</a></li>
+                <li><a href="javascriptPE05.html">5</a></li>
+            </ul>
+        </div>
+        <div class="footerInfo">
+            <h2>제이쿼리</h2>
+            <ul>
+                <li><a href="jqueryPE01.html">1</a></li>
+                <li><a href="jqueryPE02.html">2</a></li>
+                <li><a href="jqueryPE03.html">3</a></li>
+                <li><a href="jqueryPE04.html">4</a></li>
+                <li><a href="jqueryPE05.html">5</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- source -->
+    <div class="info bottom">
+        <button>소스 보기</button>
+    </div>
+    <!-- //source -->
+
+    <div id="modal">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <div class="code-view">
+                    <div class="view-header">
+                        <div class="dot" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="view-title">
+                        <ul>
+                            <li class="active"><a href="#">Html</a></li>
+                            <li><a href="#">Css</a></li>
+                            <li><a href="#">Jquery</a></li>
+                        </ul>
+                    </div>
+                    <div class="view-cont">
+                        <div class="html">
+                            <pre><code class="language-html">&lt;div class="paraCont"&gt;
+    &lt;section id="section1" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;01&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section1&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;거짓말은 그 자체가 죄일 뿐 아니라 정신을 더럽힌다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section2" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;02&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section2&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;성실한 한마디의 말은 백만 마디의 헛된 찬사보다 낫다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section3" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;03&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section3&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;일찍 일어나는 새가 벌레를 잡는다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section4" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;04&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section4&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;역경은 청년에게 있어서 빛나는 가치이다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section5" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;05&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section5&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;고통 뒤의 즐거움은 달콤하다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section6" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;06&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section6&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;나에게 필요한 것이 남에게는 더 절실할 수도 있다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section7" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;07&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section7&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;비가 온 다음에는 맑은 날씨가 된다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section8" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;08&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section8&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;불행의 원인은 늘 나 자신에게 있다&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="section9" class="content-item"&gt;
+        &lt;span class="content-item-num"&gt;09&lt;/span&gt;
+        &lt;h2 class="content-item-title"&gt;section9&lt;/h2&gt;
+        &lt;figure class="content-item-imgWrap"&gt;
+            &lt;div class="content-item-img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="content-item-desc"&gt;남에게, 또 남의 일에 대해서 말을 삼가라&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <div class="css">
+                            <pre><code class="language-css">.parallax {
+    background: #222;
+    color: #fff;
+    font-family: "NEXONLv1Gothic";
+}
+
+.paraScroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.paraInfo2 {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.paraInfo2 li {
+    list-style: none;
+}
+
+.paraNav {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+.paraNav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.paraNav li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.paraNav li.active a {
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+.paraInfo {
+    padding: 20px;
+}
+
+.paraInfo h1 {
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.719);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.paraInfo h1 a {
+    color: rgba(255, 255, 255, 0.719);
+    text-decoration: none;
+}
+
+.paraInfo p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.paraCont {
+    width: 100%;
+    overflow: hidden;
+}
+
+.paraCont .content-item {
+    position: relative;
+    width: 1000px;
+    margin: 300px 0;
+    max-width: 70vw;
+    text-align: right;
+}
+
+.paraCont .content-item:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+}
+
+.paraCont .content-item:nth-child(even) .content-item-num {
+    margin-right: auto;
+    margin-left: -5vw;
+}
+
+.paraCont .content-item:nth-child(even) .content-item-desc {
+    text-align: left;
+    margin-right: 0;
+    margin-left: -3vw;
+}
+
+.paraCont .content-item-num {
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 25vw;
+    opacity: 0.07;
+    margin-right: -5vw;
+    margin-bottom: -20vw;
+    display: inline-block;
+}
+
+.paraCont .content-item-title {
+    padding-bottom: 5px;
+}
+
+.paraCont .content-item-imgWrap {
+    width: 100%;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+.paraCont .content-item-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.paraCont .content-item-img:hover {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+}
+
+.paraCont .content-item-desc {
+    font-size: 3.5vw;
+    line-height: 1.4;
+    margin-top: -6vw;
+    margin-right: -3vw;
+    z-index: 100;
+    position: relative;
+    word-break: keep-all;
+}
+
+.content-item:nth-child(1) .content-item-img {
+    background: url(../img/bg1@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(2) .content-item-img {
+    background: url(../img/bg2@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(3) .content-item-img {
+    background: url(../img/bg3@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(4) .content-item-img {
+    background: url(../img/bg4@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(5) .content-item-img {
+    background: url(../img/bg5@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(6) .content-item-img {
+    background: url(../img/bg6@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(7) .content-item-img {
+    background: url(../img/bg7@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(8) .content-item-img {
+    background: url(../img/bg8@2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content-item:nth-child(9) .content-item-img {
+    background: url(../img/bg9@2.jpg) no-repeat;
+    background-size: cover;
+}
+</code></pre>
+                        </div>
+                        <div class="javascript">
+                            <pre><code class="language-javascript">$(".paraNav ul li").click(function(e){
+    e.preventDefault();
+    let target = $(this);
+    let index = target.index();
+    let section = $(".paraCont &gt; section").eq(index);
+    let offset = section.offset().top +10;
+    $("html, body").animate({ scrollTop : offset }, 600);
+});
+
+$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+
+    $(".content-item").each(function(index){
+        if(scrollTop &gt;= $(".paraCont &gt; section").eq(index).offset().top){
+            $(".paraNav ul li").eq(index).addClass("active").siblings().removeClass("active");
+        }
+    });
+    
+    $(".paraScroll span").text(parseInt(scrollTop));
+    
+    for(i=1; i&lt;=9; i++){
+        $(".offset"+i).text(parseInt($("#section"+i).offset().top +10) + "px");
+    }
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <button>닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        document.querySelectorAll(".paraNav ul li a").forEach(li => {
+            li.addEventListener("click", e => {
+                e.preventDefault();
+                document.querySelector(li.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                })
+            })
+        })
+        let nowScrollTop;
+        let lastScrollTop = 0;
+        function scrollProgress(){
+            nowScrollTop = true;
+            setInterval( () => {
+                if(nowScrollTop){
+                    nowScrollTop = false;
+                    hasScroll();
+                }
+            }, 500)
+        }
+        function hasScroll(){
+            let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+            if( scrollTop >= lastScrollTop ){
+                document.querySelector(".paraNav").classList.add("hide");
+            } else {
+                document.querySelector(".paraNav").classList.remove("hide");
+            }
+            lastScrollTop = scrollTop;
+            //메뉴
+            document.querySelectorAll(".content-item").forEach((item, index) => {
+                if( scrollTop >= item.offsetTop - 2){
+                    document.querySelectorAll(".paraNav ul li").forEach(li => {
+                        li.classList.remove("active");
+                    })
+                    document.querySelector(".paraNav ul li:nth-child("+(index+1)+")").classList.add("active");
+                }
+            })
+            //출력
+            document.querySelector(".paraScroll span").innerText = parseInt(scrollTop);
+        }
+        window.addEventListener("scroll", scrollProgress);
+    </script>
+</body>
+
+</html>

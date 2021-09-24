@@ -11,15 +11,16 @@
 <body>
 
     <script>
-        {
-            const obj = {
-                a:100,
-                b:200,
-                c:"javascript",
+        function func(){
+            let a = 0, sum = 0;
+            while( a < 10 ){
+                a++;
+                if(a % 2 == 1) continue;
+                sum += a;
             }
-            const obj = {a, b, c};
-
+            document.write(sum);
         }
+        func();
     </script>
 </body>
 
