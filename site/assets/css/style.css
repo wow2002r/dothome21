@@ -249,6 +249,37 @@
     background-size: cover;
 }
 
+.slider .swiper-slide h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 62px;
+    line-height: 70px;
+    color: #fff;
+    margin-top: 200px;
+}
+
+.slider .swiper-slide h2 em {
+    display: block;
+    font-size: 59px;
+    font-weight: 100;
+}
+
+.slider .swiper-slide h2 em:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255,0.3);
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+}
+
+.slider .swiper-slide p {
+    font-size: 27px;
+    color: #fff;
+    padding-top: 55px;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 1290px) {
     .container {
@@ -261,7 +292,7 @@
 
     .header .nav ul li a {
         font-size: 15px;
-        padding: 17px 10px
+        padding: 17px 10px;
     }
 
     .header h1 em {
@@ -270,6 +301,14 @@
 
     .header h1 strong {
         top: 19px;
+    }
+
+    .slider .swiper-slide h2 {
+        padding-left: 20px;
+    }
+
+    .slider .swiper-slide p {
+        padding-left: 20px;
     }
 }
 
@@ -293,6 +332,14 @@
 
     .header h1 strong {
         left: 24px;
+    }
+
+    .banner_menu .bm_left ul {
+        display: none;
+    }
+
+    .banner_menu .bm_right ul:first-child {
+        display: none;
     }
 }
 
